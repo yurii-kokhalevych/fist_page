@@ -1,69 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>
-        Top 20 best football players 20 century
+        Top 10 best football players 20 century
     </title>
+    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/gallery.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/gallery-2.css" type="text/css" />
+
 </head>
 
-<body background="heder_1.jpg">
-  <!--HEDER-->
-  <header class="header">
-         <h1>TOP 20 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-  </header>
-  <!--/HEDER-->
-  <!--NAV-->
-  <nav class="page-navigator">
-    <div class="container">
-        <ul>
-              <li><a href="index.html">Main<a></li>
+<body background="img/heder_1.jpg">
+    <!--HEDER-->
+    <header class="header">
+        <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+    </header>
+    <!--/HEDER-->
+    <!--NAV-->
+    <nav class="page-navigator">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Main<a></li>
               <li><a href="player_history.html">Player history</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="video.html">Video</a></li>
-              <li><a href="blog.html">Blog</a></li>
-        </ul>
-        <br>
-        <!--Login form-->
-        <form action="#" class="login">
-            <input type="text" placeholder="login" required>
-            <input type="password" placeholder="Password" required>
-            <input type="search" placeholder="Search">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
             <br>
-            <br>
-            <input type="submit" value="Sign in">
-            <input type="submit" value="Sign Out">
-            <input type="submit" value="Regist">
-        </form>
-        <!--/Login form-->
-    </div>
-  </nav>
-  <!--/NAV-->
-  <!--MAIN-->
-  <main>
-        <section class="section">
-          <img src="foto_1.jpg" alt="foto_1" style="width:460px; height:350px;"></img>
-          <img src="foto_2.jpg" alt="foto_2" style="width:460px; height:350px;"></img>
-          <img src="foto_3.jpg" alt="foto_3" style="width:460px; height:350px;"></img>
-          <img src="foto_4.jpg" alt="foto_4" style="width:460px; height:350px;"></img>
-          <img src="foto_5.jpg" alt="foto_5" style="width:460px; height:350px;"></img>
-          <img src="foto_6.jpg" alt="foto_6" style="width:460px; height:350px;"></img>
-        </section>
-          
-      
-  </main>
-  <!--/MAIN-->
-  <!--FOOTER-->
-  <footer class="footer">
-  <div>
-      <p>
-          Copirigth © yuriyk.com 2016
-      </p>
-  </div>   
-  </footer>
-  <!--/FOOTER--> 
-  
+            <!--Login form-->
+            <form action="#" class="login">
+                <input type="text" placeholder="login" required>
+                <input type="password" placeholder="Password" required>
+                <input type="search" placeholder="Search">
+                <br>
+                <br>
+                <input type="submit" value="Sign in">
+                <input type="submit" value="Sign Out">
+                <input type="submit" value="Regist">
+            </form>
+            <!--/Login form-->
+        </div>
+    </nav>
+    <!--/NAV-->
+    <!--MAIN-->
+    <main>
+        <div id="inl">
+            <button id="mar">Maradona</button>
+            <button id="mar1">Eusebio</button>
+            <button id="mar2">Puskas</button>
+            <button id="mar3">Beckenbauer</button>
+            <button id="mar4">Cruyff</button>
+            <button id="mar5">Platini</button>
+            <button id="mar6">Pele</button>
+            <button id="mar7">Muller</button>
+            <button id="mar8">Best</button>
+            <button id="mar9">Charlton</button>
+        </div>
+        
+        <button id="ret">Return</button>
+        <button id="ret1">Return</button>
+        <button id="ret2">Return</button>
+        <button id="ret3">Return</button>
+        <button id="ret4">Return</button>
+        <button id="ret5">Return</button>
+        <button id="ret6">Return</button>
+        <button id="ret7">Return</button>
+        <button id="ret8">Return</button>
+        <button id="ret9">Return</button>
+
+        <div class="mar">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/maradona/maradona_foto_13.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/maradona/maradona_foto_2.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/maradona/maradona_foto_3.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/maradona/maradona_foto_4.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/maradona/maradona_foto_5.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/maradona/maradona_foto_6.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/maradona/maradona_foto_7.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/maradona/maradona_foto_8.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/maradona/maradona_foto_9.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/maradona/maradona_foto_10.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/maradona/maradona_foto_11.jpg" alt="foto_madonna" /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/maradona/maradona_foto_12.jpg" alt="foto_madonna" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/maradona/maradona_foto_13.jpg" alt="foto_madonna"/></label>
+                <label for="pic-2" class="grid-item"><img src="img/maradona/maradona_foto_2.jpg" alt="foto_madonna"/></label>
+                <label for="pic-3" class="grid-item"><img src="img/maradona/maradona_foto_3.jpg" alt="foto_madonna"/></label>
+                <label for="pic-4" class="grid-item"><img src="img/maradona/maradona_foto_4.jpg" alt="foto_madonna"/></label>
+                <label for="pic-5" class="grid-item"><img src="img/maradona/maradona_foto_5.jpg" alt="foto_madonna"/></label>
+                <label for="pic-6" class="grid-item"><img src="img/maradona/maradona_foto_6.jpg" alt="foto_madonna"/></label>
+                <label for="pic-7" class="grid-item"><img src="img/maradona/maradona_foto_7.jpg" alt="foto_madonna"/></label>
+                <label for="pic-8" class="grid-item"><img src="img/maradona/maradona_foto_8.jpg" alt="foto_madonna"/></label>
+                <label for="pic-9" class="grid-item"><img src="img/maradona/maradona_foto_9.jpg" alt="foto_madonna"/></label>
+                <label for="pic-10" class="grid-item"><img src="img/maradona/maradona_foto_10.jpg" alt="foto_madonna"/></label>
+                <label for="pic-11" class="grid-item"><img src="img/maradona/maradona_foto_11.jpg" alt="foto_madonna"/></label>
+                <label for="pic-12" class="grid-item"><img src="img/maradona/maradona_foto_12.jpg" alt="foto_madonna"/></label>
+            </div>
+        </div>
+        <div class="mar1">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/eusebio/eusebio_foto_1.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/eusebio/eusebio_foto_2.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/eusebio/eusebio_foto_3.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/eusebio/eusebio_foto_4.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/eusebio/eusebio_foto_5.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/eusebio/eusebio_foto_6.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/eusebio/eusebio_foto_7.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/eusebio/eusebio_foto_8.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/eusebio/eusebio_foto_9.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/eusebio/eusebio_foto_10.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/eusebio/eusebio_foto_11.jpg" alt="foto_eusebio" /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/eusebio/eusebio_foto_12.jpg" alt="foto_eusebio"/></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/eusebio/eusebio_foto_1.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-2" class="grid-item"><img src="img/eusebio/eusebio_foto_2.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-3" class="grid-item"><img src="img/eusebio/eusebio_foto_3.jpg" alt="foto_eusebio"></label>
+                <label for="pic-4" class="grid-item"><img src="img/eusebio/eusebio_foto_4.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-5" class="grid-item"><img src="img/eusebio/eusebio_foto_5.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-6" class="grid-item"><img src="img/eusebio/eusebio_foto_6.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-7" class="grid-item"><img src="img/eusebio/eusebio_foto_7.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-8" class="grid-item"><img src="img/eusebio/eusebio_foto_8.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-9" class="grid-item"><img src="img/eusebio/eusebio_foto_9.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-10" class="grid-item"><img src="img/eusebio/eusebio_foto_10.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-11" class="grid-item"><img src="img/eusebio/eusebio_foto_11.jpg" alt="foto_eusebio"/></label>
+                <label for="pic-12" class="grid-item"><img src="img/eusebio/eusebio_foto_12.jpg" alt="foto_eusebio"/></label>
+            </div>
+        </div>
+        <div class="mar2">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/puskas/puskas_foto_2.jpg" alt="foto_puskas" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/puskas/puskas_foto_3.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/puskas/puskas_foto_4.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/puskas/puskas_foto_5.jpg" alt="foto_puskas" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/puskas/puskas_foto_6.jpg" alt="foto_puskas" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/puskas/puskas_foto_7.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/puskas/puskas_foto_8.jpg" alt="foto_puskas" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/puskas/puskas_foto_9.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/puskas/puskas_foto_10.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/puskas/puskas_foto_11.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/puskas/puskas_foto_12.jpg" alt="foto_puskas"  /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/puskas/puskas_foto_13.jpg" alt="foto_puskas" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/puskas/puskas_foto_2.jpg" alt="foto_puskas" /></label>
+                <label for="pic-2" class="grid-item"><img src="img/puskas/puskas_foto_3.jpg" alt="foto_puskas" /></label>
+                <label for="pic-3" class="grid-item"><img src="img/puskas/puskas_foto_4.jpg" alt="foto_puskas" /></label>
+                <label for="pic-4" class="grid-item"><img src="img/puskas/puskas_foto_5.jpg" alt="foto_puskas" /></label>
+                <label for="pic-5" class="grid-item"><img src="img/puskas/puskas_foto_6.jpg" alt="foto_puskas" /></label>
+                <label for="pic-6" class="grid-item"><img src="img/puskas/puskas_foto_7.jpg" alt="foto_puskas" /></label>
+                <label for="pic-7" class="grid-item"><img src="img/puskas/puskas_foto_8.jpg" alt="foto_puskas" /></label>
+                <label for="pic-8" class="grid-item"><img src="img/puskas/puskas_foto_9.jpg" alt="foto_puskas" /></label>
+                <label for="pic-9" class="grid-item"><img src="img/puskas/puskas_foto_10.jpg" alt="foto_puskas" /></label>
+                <label for="pic-10" class="grid-item"><img src="img/puskas/puskas_foto_11.jpg" alt="foto_puskas" /></label>
+                <label for="pic-11" class="grid-item"><img src="img/puskas/puskas_foto_12.jpg" alt="foto_puskas" /></label>
+                <label for="pic-12" class="grid-item"><img src="img/puskas/puskas_foto_13.jpg" alt="foto_puskas" /></label>
+            </div>
+        </div>
+        <div class="mar3">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_1.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_2.jpg" alt="foto_beckenbauer"/></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_3.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_4.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_5.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_6.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_7.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_8.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_9.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_10.jpg" alt="foto_beckenbauer"/></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_11.jpg" alt="foto_beckenbauer" /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/beckenbauer/beckenbauer_foto_12.jpg" alt="foto_beckenbauer" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_1.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-2" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_2.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-3" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_3.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-4" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_4.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-5" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_5.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-6" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_6.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-7" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_7.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-8" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_8.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-9" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_9.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-10" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_10.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-11" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_11.jpg" alt="foto_beckenbauer"/></label>
+                <label for="pic-12" class="grid-item"><img src="img/beckenbauer/beckenbauer_foto_12.jpg" alt="foto_beckenbauer"/></label>
+            </div>
+        </div>
+        <div class="mar4">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/cruyff/cruyff_foto_1.jpg" alt="foto_cruyff" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/cruyff/cruyff_foto_2.jpg" alt="foto_cruyff" /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/cruyff/cruyff_foto_3.jpg" alt="foto_cruyff" /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/cruyff/cruyff_foto_4.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/cruyff/cruyff_foto_5.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/cruyff/cruyff_foto_6.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/cruyff/cruyff_foto_7.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/cruyff/cruyff_foto_8.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/cruyff/cruyff_foto_9.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/cruyff/cruyff_foto_10.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/cruyff/cruyff_foto_11.jpg" alt="foto_cruyff"  /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/cruyff/cruyff_foto_12.jpg" alt="foto_cruyff" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/cruyff/cruyff_foto_1.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-2" class="grid-item"><img src="img/cruyff/cruyff_foto_2.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-3" class="grid-item"><img src="img/cruyff/cruyff_foto_3.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-4" class="grid-item"><img src="img/cruyff/cruyff_foto_4.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-5" class="grid-item"><img src="img/cruyff/cruyff_foto_5.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-6" class="grid-item"><img src="img/cruyff/cruyff_foto_6.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-7" class="grid-item"><img src="img/cruyff/cruyff_foto_7.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-8" class="grid-item"><img src="img/cruyff/cruyff_foto_8.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-9" class="grid-item"><img src="img/cruyff/cruyff_foto_9.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-10" class="grid-item"><img src="img/cruyff/cruyff_foto_10.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-11" class="grid-item"><img src="img/cruyff/cruyff_foto_11.jpg" alt="foto_cruyff" /></label>
+                <label for="pic-12" class="grid-item"><img src="img/cruyff/cruyff_foto_12.jpg" alt="foto_cruyff" /></label>
+            </div>
+        </div>
+        <div class="mar5">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/platini/platini_foto_1.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/platini/platini_foto_2.jpg" alt="foto_platini"/></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/platini/platini_foto_3.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/platini/platini_foto_4.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/platini/platini_foto_5.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/platini/platini_foto_6.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/platini/platini_foto_7.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/platini/platini_foto_8.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/platini/platini_foto_9.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/platini/platini_foto_10.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/platini/platini_foto_11.jpg" alt="foto_platini" /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/platini/platini_foto_12.jpg" alt="foto_platini" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/platini/platini_foto_1.jpg" alt="foto_platini"/></label>
+                <label for="pic-2" class="grid-item"><img src="img/platini/platini_foto_2.jpg" alt="foto_platini"/></label>
+                <label for="pic-3" class="grid-item"><img src="img/platini/platini_foto_3.jpg" alt="foto_platini"/></label>
+                <label for="pic-4" class="grid-item"><img src="img/platini/platini_foto_4.jpg" alt="foto_platini"/></label>
+                <label for="pic-5" class="grid-item"><img src="img/platini/platini_foto_5.jpg" alt="foto_platini"/></label>
+                <label for="pic-6" class="grid-item"><img src="img/platini/platini_foto_6.jpg" alt="foto_platini"/></label>
+                <label for="pic-7" class="grid-item"><img src="img/platini/platini_foto_7.jpg" alt="foto_platini"/></label>
+                <label for="pic-8" class="grid-item"><img src="img/platini/platini_foto_8.jpg" alt="foto_platini"/></label>
+                <label for="pic-9" class="grid-item"><img src="img/platini/platini_foto_9.jpg" alt="foto_platini"/></label>
+                <label for="pic-10" class="grid-item"><img src="img/platini/platini_foto_10.jpg" alt="foto_platini"/></label>
+                <label for="pic-11" class="grid-item"><img src="img/platini/platini_foto_11.jpg" alt="foto_platini"/></label>
+                <label for="pic-12" class="grid-item"><img src="img/platini/platini_foto_12.jpg" alt="foto_platini"/></label>
+            </div>
+        </div>
+        <div class="mar6">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/pele/pele_foto_1.jpg" alt="foto_pele" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/pele/pele_foto_2.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/pele/pele_foto_3.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/pele/pele_foto_4.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/pele/pele_foto_5.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/pele/pele_foto_6.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/pele/pele_foto_7.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/pele/pele_foto_8.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/pele/pele_foto_9.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/pele/pele_foto_10.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/pele/pele_foto_11.jpg" alt="foto_pele"  /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/pele/pele_foto_12.jpg" alt="foto_pele"  /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/pele/pele_foto_1.jpg" alt="foto_pele" /></label>
+                <label for="pic-2" class="grid-item"><img src="img/pele/pele_foto_2.jpg" alt="foto_pele" /></label>
+                <label for="pic-3" class="grid-item"><img src="img/pele/pele_foto_3.jpg" alt="foto_pele" /></label>
+                <label for="pic-4" class="grid-item"><img src="img/pele/pele_foto_4.jpg" alt="foto_pele" /></label>
+                <label for="pic-5" class="grid-item"><img src="img/pele/pele_foto_5.jpg" alt="foto_pele" /></label>
+                <label for="pic-6" class="grid-item"><img src="img/pele/pele_foto_6.jpg" alt="foto_pele" /></label>
+                <label for="pic-7" class="grid-item"><img src="img/pele/pele_foto_7.jpg" alt="foto_pele" /></label>
+                <label for="pic-8" class="grid-item"><img src="img/pele/pele_foto_8.jpg" alt="foto_pele" /></label>
+                <label for="pic-9" class="grid-item"><img src="img/pele/pele_foto_9.jpg" alt="foto_pele" /></label>
+                <label for="pic-10" class="grid-item"><img src="img/pele/pele_foto_10.jpg" alt="foto_pele" /></label>
+                <label for="pic-11" class="grid-item"><img src="img/pele/pele_foto_11.jpg" alt="foto_pele" /></label>
+                <label for="pic-12" class="grid-item"><img src="img/pele/pele_foto_12.jpg" alt="foto_pele" /></label>
+            </div>
+        </div>
+        <div class="mar7">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/muller/muller_foto_1.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/muller/muller_foto_2.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/muller/muller_foto_3.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/muller/muller_foto_4.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/muller/muller_foto_5.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/muller/muller_foto_6.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/muller/muller_foto_7.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/muller/muller_foto_8.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/muller/muller_foto_9.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/muller/muller_foto_10.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/muller/muller_foto_11.jpg" alt="foto_muller" /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/muller/muller_foto_12.jpg" alt="foto_muller" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/muller/muller_foto_1.jpg" alt="foto_muller"/></label>
+                <label for="pic-2" class="grid-item"><img src="img/muller/muller_foto_2.jpg" alt="foto_muller"/></label>
+                <label for="pic-3" class="grid-item"><img src="img/muller/muller_foto_3.jpg" alt="foto_muller"/></label>
+                <label for="pic-4" class="grid-item"><img src="img/muller/muller_foto_4.jpg" alt="foto_muller"/></label>
+                <label for="pic-5" class="grid-item"><img src="img/muller/muller_foto_5.jpg" alt="foto_muller"/></label>
+                <label for="pic-6" class="grid-item"><img src="img/muller/muller_foto_6.jpg" alt="foto_muller"/></label>
+                <label for="pic-7" class="grid-item"><img src="img/muller/muller_foto_7.jpg" alt="foto_muller"/></label>
+                <label for="pic-8" class="grid-item"><img src="img/muller/muller_foto_8.jpg" alt="foto_muller"/></label>
+                <label for="pic-9" class="grid-item"><img src="img/muller/muller_foto_9.jpg" alt="foto_muller"/></label>
+                <label for="pic-10" class="grid-item"><img src="img/muller/muller_foto_10.jpg" alt="foto_muller"/></label>
+                <label for="pic-11" class="grid-item"><img src="img/muller/muller_foto_11.jpg" alt="foto_muller"/></label>
+                <label for="pic-12" class="grid-item"><img src="img/muller/muller_foto_12.jpg" alt="foto_muller"/></label>
+            </div>
+        </div>
+        <div class="mar8">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/best/best_foto_1.jpg" alt="foto_best" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/best/best_foto_2.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/best/best_foto_3.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/best/best_foto_4.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/best/best_foto_5.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/best/best_foto_6.jpg" alt="foto_best" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/best/best_foto_7.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/best/best_foto_8.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/best/best_foto_9.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/best/best_foto_10.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/best/best_foto_11.jpg" alt="foto_best"  /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/best/best_foto_12.jpg" alt="foto_best"  /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/best/best_foto_1.jpg" alt="foto_best" /></label>
+                <label for="pic-2" class="grid-item"><img src="img/best/best_foto_2.jpg" alt="foto_best" /></label>
+                <label for="pic-3" class="grid-item"><img src="img/best/best_foto_3.jpg" alt="foto_best" /></label>
+                <label for="pic-4" class="grid-item"><img src="img/best/best_foto_4.jpg" alt="foto_best" /></label>
+                <label for="pic-5" class="grid-item"><img src="img/best/best_foto_5.jpg" alt="foto_best" /></label>
+                <label for="pic-6" class="grid-item"><img src="img/best/best_foto_6.jpg" alt="foto_best" /></label>
+                <label for="pic-7" class="grid-item"><img src="img/best/best_foto_7.jpg" alt="foto_best" /></label>
+                <label for="pic-8" class="grid-item"><img src="img/best/best_foto_8.jpg" alt="foto_best" /></label>
+                <label for="pic-9" class="grid-item"><img src="img/best/best_foto_9.jpg" alt="foto_best" /></label>
+                <label for="pic-10" class="grid-item"><img src="img/best/best_foto_10.jpg" alt="foto_best" /></label>
+                <label for="pic-11" class="grid-item"><img src="img/best/best_foto_11.jpg" alt="foto_best" /></label>
+                <label for="pic-12" class="grid-item"><img src="img/best/best_foto_12.jpg" alt="foto_best" /></label>
+            </div>
+        </div>
+        <div class="mar9">
+            <input type="checkbox" id="pic-1" />
+            <label for="pic-1" class="lightbox"><img src="img/charlton/charlton_foto_1.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-2" />
+            <label for="pic-2" class="lightbox"><img src="img/charlton/charlton_foto_2.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-3" />
+            <label for="pic-3" class="lightbox"><img src="img/charlton/charlton_foto_3.jpg" alt="foto_charlton"/></label>
+            <input type="checkbox" id="pic-4" />
+            <label for="pic-4" class="lightbox"><img src="img/charlton/charlton_foto_4.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-5" />
+            <label for="pic-5" class="lightbox"><img src="img/charlton/charlton_foto_5.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-6" />
+            <label for="pic-6" class="lightbox"><img src="img/charlton/charlton_foto_6.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-7" />
+            <label for="pic-7" class="lightbox"><img src="img/charlton/charlton_foto_7.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-8" />
+            <label for="pic-8" class="lightbox"><img src="img/charlton/charlton_foto_8.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-9" />
+            <label for="pic-9" class="lightbox"><img src="img/charlton/charlton_foto_9.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-10" />
+            <label for="pic-10" class="lightbox"><img src="img/charlton/charlton_foto_10.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-11" />
+            <label for="pic-11" class="lightbox"><img src="img/charlton/charlton_foto_11.jpg" alt="foto_charlton" /></label>
+            <input type="checkbox" id="pic-12" />
+            <label for="pic-12" class="lightbox"><img src="img/charlton/charlton_foto_12.jpg" alt="foto_charlton" /></label>
+
+            <div class="grid">
+                <label for="pic-1" class="grid-item"><img src="img/charlton/charlton_foto_1.jpg" alt="foto_charlton"/></label>
+                <label for="pic-2" class="grid-item"><img src="img/charlton/charlton_foto_2.jpg" alt="foto_charlton"/></label>
+                <label for="pic-3" class="grid-item"><img src="img/charlton/charlton_foto_3.jpg" alt="foto_charlton"/></label>
+                <label for="pic-4" class="grid-item"><img src="img/charlton/charlton_foto_4.jpg" alt="foto_charlton"/></label>
+                <label for="pic-5" class="grid-item"><img src="img/charlton/charlton_foto_5.jpg" alt="foto_charlton"/></label>
+                <label for="pic-6" class="grid-item"><img src="img/charlton/charlton_foto_6.jpg" alt="foto_charlton"/></label>
+                <label for="pic-7" class="grid-item"><img src="img/charlton/charlton_foto_7.jpg" alt="foto_charlton"/></label>
+                <label for="pic-8" class="grid-item"><img src="img/charlton/charlton_foto_8.jpg" alt="foto_charlton"/></label>
+                <label for="pic-9" class="grid-item"><img src="img/charlton/charlton_foto_9.jpg" alt="foto_charlton"/></label>
+                <label for="pic-10" class="grid-item"><img src="img/charlton/charlton_foto_10.jpg" alt="foto_charlton"/></label>
+                <label for="pic-11" class="grid-item"><img src="img/charlton/charlton_foto_11.jpg" alt="foto_charlton"/></label>
+                <label for="pic-12" class="grid-item"><img src="img/charlton/charlton_foto_12.jpg" alt="foto_charlton"/></label>
+            </div>
+        </div>
+    </main>
+    <!--/MAIN-->
+    <!--FOOTER-->
+    <footer class="footer">
+        <div>
+            <p>
+                Copirigth © yuriyk.com 2016
+            </p>
+        </div>
+    </footer>
+    <!--/FOOTER-->
+    <script type="text/javascript" src="maradonna.js"></script>
+    <script type="text/javascript" src="best.js"></script>
+    <script type="text/javascript" src="eusebio.js"></script>
+    <script type="text/javascript" src="platini.js"></script>
+    <script type="text/javascript" src="puskas.js"></script>
+    <script type="text/javascript" src="pele.js"></script>
+    <script type="text/javascript" src="muller.js"></script>
+    <script type="text/javascript" src="beckenbauer.js"></script>
+    <script type="text/javascript" src="cruyff.js"></script>
+    <script type="text/javascript" src="charlton.js"></script>
 </body>
+
 </html>
