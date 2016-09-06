@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    
+    <fieldset id="contact1">
+            <legend><h1>Registration form</h1></legend>
+    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" pattern="[A-Za-z]" title="Enter your name" /><br> <br>
+        <label for="surname">Your surname*</label>
+        <input type="text" id="surname" pattern="[A-Za-z]" title="Enter your surname" /><br> <br>
+        <label for="gender">Your gender*</label>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female<br><br>
+        <label for="birthday">Your date of birthday*</label>
+        <input type="text" id="name" pattern="\d+(\.\d{2})?" title="Enter your birthday" required /><br><br>
+        <label for="email">Your email*</label>
+        <input type="text" id="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" required/><br><br>
+        <label for="mobilephone">Your mobilephone*</label>
+        <input type="text" id="mobilephone"pattern="[0-9]{7,10}" title="Enter your mobilephone without '+' "required/><br><br>
+        <label for="city">City</label>
+        <input type="text" id="sity" pattern="[A-Za-z]" title="Enter your city"required/><br><br>
+        <input type="submit" value="OK" id="btn-send"/>
+    </form>
+    </fieldset>
+        
+    
+</body>
+</html>

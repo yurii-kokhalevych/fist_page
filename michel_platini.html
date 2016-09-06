@@ -1,130 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>
         Top 10 best football players 20 century
     </title>
+    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/michel_platini.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
 </head>
 
 <body background="heder_1.jpg">
-  <!--HEDER-->
-  <header class="header">
-         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-  </header>
-  <!--/HEDER-->
-  <!--NAV-->
-  <nav class="page-navigator">
-    <div class="container">
-        <ul>
-              <li><a href="index.html">Main<a></li>
+    <!--HEDER-->
+    <header class="header">
+        <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+    </header>
+    <!--/HEDER-->
+    <!--NAV-->
+    <nav class="page-navigator">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Main<a></li>
               <li><a href="player_history.html">Player history</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="video.html">Video</a></li>
-              <li><a href="blog.html">Blog</a></li>
-        </ul>
-        <br>
-        <!--Login form-->
-        <form action="#" class="login">
-            <input type="text" placeholder="login" required>
-            <input type="password" placeholder="Password" required>
-            <input type="search" placeholder="Search">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="blog.html">Comments</a></li>
+            </ul>
             <br>
-            <br>
-            <input type="submit" value="Sign in">
-            <input type="submit" value="Sign Out">
-            <input type="submit" value="Regist">
-        </form>
-        <!--/Login form-->
-    </div>
-  </nav>
-  <!--/NAV-->
-  <!--MAIN-->
-  <main>
+            <!--Login form-->
+            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <!--<input type="search" placeholder="Search">-->
+                <br>
+                <br>
+                <input type="submit" value="Sign in" id="in">
+                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Regist" id="reg">
+            </form>
+            <!--/Login form-->
+        </div>
+    </nav>
+    <!--/NAV-->
+    <!--MAIN-->
+    <main>
         <section class="section">
-          <!--HEDER-->
-              <header class="header-of-section">
-                  <h2>Michel Platini</h2>
-              </header>
-          <!--/HEDER-->
-          <!--MAIN--> 
+            <!--HEDER-->
+            <header class="header-of-section">
+                <h2>Michel Platini</h2>
+            </header>
+            <!--/HEDER-->
+            <!--MAIN-->
             <div class="item">
-                 <img src="platini.jpg" alt="michel_platini" style="width:250px; height:450px;"></img>
+                <img src="platini.jpg" alt="michel_platini" style="width:250px; height:450px;"></img>
             </div>
-            <p>Michel Francois Platini (born 21 June 1955) is a French former football player, manager and administrator. Nicknamed Le Roi (The King) for his ability and leadership, he is regarded as one of the greatest footballers of all time. Platini won the Ballon d'Or three times, in 1983, 1984 and 1985, and came sixth in the FIFA Player of the Century vote. In recognition of his achievements, he was named Chevalier of the Legion of Honour in 1985 and became Officier in 1988.
-
-During his career, Platini played for the clubs Nancy, Saint-Etienne, and Juventus. Despite primarily serving as an advanced midfield playmaker, he was a prolific goalscorer; he won the Serie A capocannoniere award three consecutive times between 1983 and 1985, and was the top scorer of Juventus's victorious 1984–85 European Cup campaign. Platini was a key player of the French national team that won the 1984 European Championship, a tournament in which he was the top scorer and best player, and reached the semi-finals of the 1982 and 1986 World Cups. Together with the midfielders Alain Giresse, Luis Fernandez and Jean Tigana, he formed the carre magique (magic square) of the French team in the 1980s. Platini was his country's record goalscorer until 2007, and holds the record for most goals (9) scored in the European Championship despite only appearing in the victorious 1984 edition.
-
-Following his retirement as a player, Platini was the French national team coach for four years, and was the co-organizer of the 1998 World Cup in France. From 2007, he served as the president of the Union of European Football Associations (UEFA). He also held the positions of chairman of FIFA's Technical and Development Committee and vice-president of the French Football Federation. In 2015, however, he was banned from football administration for conflict of interest by the FIFA Ethics Committee.
+            <p>Michel Francois Platini (born 21 June 1955) is a French former football player, manager and administrator. Nicknamed Le Roi (The King) for his ability and leadership, he is regarded as one of the greatest footballers of all time. Platini won
+                the Ballon d'Or three times, in 1983, 1984 and 1985, and came sixth in the FIFA Player of the Century vote. In recognition of his achievements, he was named Chevalier of the Legion of Honour in 1985 and became Officier in 1988. During
+                his career, Platini played for the clubs Nancy, Saint-Etienne, and Juventus. Despite primarily serving as an advanced midfield playmaker, he was a prolific goalscorer; he won the Serie A capocannoniere award three consecutive times between
+                1983 and 1985, and was the top scorer of Juventus's victorious 1984–85 European Cup campaign. Platini was a key player of the French national team that won the 1984 European Championship, a tournament in which he was the top scorer and
+                best player, and reached the semi-finals of the 1982 and 1986 World Cups. Together with the midfielders Alain Giresse, Luis Fernandez and Jean Tigana, he formed the carre magique (magic square) of the French team in the 1980s. Platini
+                was his country's record goalscorer until 2007, and holds the record for most goals (9) scored in the European Championship despite only appearing in the victorious 1984 edition. Following his retirement as a player, Platini was the French
+                national team coach for four years, and was the co-organizer of the 1998 World Cup in France. From 2007, he served as the president of the Union of European Football Associations (UEFA). He also held the positions of chairman of FIFA's
+                Technical and Development Committee and vice-president of the French Football Federation. In 2015, however, he was banned from football administration for conflict of interest by the FIFA Ethics Committee.
             </p>
-            
+
             <p>
                 <h4>Club career</h4>
-                <hr>
-             Nancy (1972–1979)<br>
-Platini was quick to make a big impression at his new club, scoring a hat-trick in a reserve team match against Wittelsheim. Further outstanding displays put him in contention for a place in the Nancy first team. His introduction to the first-team squad was inauspicious. On the substitutes' bench for a match against Valenciennes, Platini was spat on and hit by various objects thrown from the crowd when a fight broke out in the stands. Playing for the reserves a few days later, a hefty challenge from an opponent left Platini with a bad ankle injury. His season would finish on a more positive note, and he would go on to make his league debut against Nimes on 3 May 1973.
+                <hr> Nancy (1972–1979)<br> Platini was quick to make a big impression at his new club, scoring a hat-trick in a reserve team match against Wittelsheim. Further outstanding displays put him in contention for a place in the Nancy first team.
+                His introduction to the first-team squad was inauspicious. On the substitutes' bench for a match against Valenciennes, Platini was spat on and hit by various objects thrown from the crowd when a fight broke out in the stands. Playing for
+                the reserves a few days later, a hefty challenge from an opponent left Platini with a bad ankle injury. His season would finish on a more positive note, and he would go on to make his league debut against Nimes on 3 May 1973. In March
+                1974, he suffered a setback when he sustained a double fracture of his left arm in a match at OGC Nice. Platini missed the remainder of the season as a result, unable to assist Nancy in an unsuccessful bid to avoid relegation from Ligue
+                1. The following season saw Nancy win promotion back to the French first division with ease. Platini became the team's most important player, scoring 17 goals, a number of which were scored from free-kicks, as was becoming Platini's specialty.
+                Saint-Etienne, the then reigning French league champions, were knocked out of the French Cup with two goals from Platini free-kicks. Platini practised his free-kicks with the help of his friend, goalkeeper Moutier, and using a row of dummies
+                to form a defensive wall of sorts. With Nancy back in Ligue 1, Platini's military service reduced his availability for matches, but he continued to make himself available to play when possible. In a match away to Laval, Platini, angered
+                by the taunts of the home supporters, scored a hat-trick, but unluckily sustained another injury. Press reports claimed that Platini's season was over and that he would require a knee operation, but neither claim proved to be correct.
+                Instead, Platini returned to first-team football two weeks later for Nancy's French Cup semi-final against Marseille at the Parc des Princes. Platini headed the only Nancy goal in their 4–1 loss and was forced to leave the field injured.
+                Following his participation in the 1976 Montreal Olympics, Platini signed a two-year contract with Nancy, his first professional contract. Before travelling to Argentina for the World Cup, Platini won the first major trophy of his playing
+                career, captaining Nancy to victory in the 1978 French Cup final against Nice and scoring the only goal of the game. President Valery Giscard d'Estaing presented him with the trophy. However, with the World Cup scheduled to start two weeks
+                after the cup final, there was little time left for preparation. Although Platini was not disgraced by his performances at his first World Cup, fans held him responsible for the French team's failure to progress in the tournament, and
+                in the season that followed he was a target of jeering crowds. The situation came to a head in a match away to Saint-Etienne. Spurred on by booing fans, Platini competed for every ball, and he picked up a bad ankle injury in a tackle.
+                As a result, he was ruled out of Nancy's Cup Winners' Cup campaign. His contract with the club expired in June 1979, and Internazionale, Paris Saint-Germain, and Saint-Etienne emerged as the clubs most likely to sign him, although the
+                Nancy club president had been unwilling to let Platini leave the club. Having set his mind on a transfer to Saint-Etienne, he signed a three-year contract with les Verts. In spite of his injuries and the boos that would greet him, Platini
+                maintained his pranksterish sense of humour. On away trips, he would set off firecrackers in public places and then pretend to be dead, inevitably drawing a crowd. While in Argentina for the World Cup, he would squeeze tubes of toothpaste
+                into his team-mates' beds.
 
-In March 1974, he suffered a setback when he sustained a double fracture of his left arm in a match at OGC Nice. Platini missed the remainder of the season as a result, unable to assist Nancy in an unsuccessful bid to avoid relegation from Ligue 1. The following season saw Nancy win promotion back to the French first division with ease. Platini became the team's most important player, scoring 17 goals, a number of which were scored from free-kicks, as was becoming Platini's specialty. Saint-Etienne, the then reigning French league champions, were knocked out of the French Cup with two goals from Platini free-kicks. Platini practised his free-kicks with the help of his friend, goalkeeper Moutier, and using a row of dummies to form a defensive wall of sorts.
+                <br>Saint-Etienne (1979–1982).<br> Platini's three years at Saint-Etienne were a mixed success. The club had signed him with a view to success in the European Cup, but despite some excellent results (including a 6–0 win over PSV in the
+                1979–80 UEFA Cup and a 5–0 win at Hamburger SV in the UEFA Cup the following season), the club were unable to surpass the feats of the Saint-Etienne side that had reached the final of the 1976 European Cup. Platini won the French league
+                title in 1981 with Les Verts, but was on a losing Saint-Etienne side in two French Cup finals, against Bastia in 1981 and against Paris Saint-Germain in 1982, in what was his last match for the club before joining Juventus. He left for
+                a nominal transfer fee (under UEFA regulations) despite being out of contract and no fee being necessary under French regulations at the time.
 
-With Nancy back in Ligue 1, Platini's military service reduced his availability for matches, but he continued to make himself available to play when possible. In a match away to Laval, Platini, angered by the taunts of the home supporters, scored a hat-trick, but unluckily sustained another injury. Press reports claimed that Platini's season was over and that he would require a knee operation, but neither claim proved to be correct. Instead, Platini returned to first-team football two weeks later for Nancy's French Cup semi-final against Marseille at the Parc des Princes. Platini headed the only Nancy goal in their 4–1 loss and was forced to leave the field injured. Following his participation in the 1976 Montreal Olympics, Platini signed a two-year contract with Nancy, his first professional contract.
-
-Before travelling to Argentina for the World Cup, Platini won the first major trophy of his playing career, captaining Nancy to victory in the 1978 French Cup final against Nice and scoring the only goal of the game. President Valery Giscard d'Estaing presented him with the trophy. However, with the World Cup scheduled to start two weeks after the cup final, there was little time left for preparation.
-
-Although Platini was not disgraced by his performances at his first World Cup, fans held him responsible for the French team's failure to progress in the tournament, and in the season that followed he was a target of jeering crowds. The situation came to a head in a match away to Saint-Etienne. Spurred on by booing fans, Platini competed for every ball, and he picked up a bad ankle injury in a tackle. As a result, he was ruled out of Nancy's Cup Winners' Cup campaign. His contract with the club expired in June 1979, and Internazionale, Paris Saint-Germain, and Saint-Etienne emerged as the clubs most likely to sign him, although the Nancy club president had been unwilling to let Platini leave the club. Having set his mind on a transfer to Saint-Etienne, he signed a three-year contract with les Verts.
-
-In spite of his injuries and the boos that would greet him, Platini maintained his pranksterish sense of humour. On away trips, he would set off firecrackers in public places and then pretend to be dead, inevitably drawing a crowd. While in Argentina for the World Cup, he would squeeze tubes of toothpaste into his team-mates' beds.
-
-<br>Saint-Etienne (1979–1982).<br>
-Platini's three years at Saint-Etienne were a mixed success. The club had signed him with a view to success in the European Cup, but despite some excellent results (including a 6–0 win over PSV in the 1979–80 UEFA Cup and a 5–0 win at Hamburger SV in the UEFA Cup the following season), the club were unable to surpass the feats of the Saint-Etienne side that had reached the final of the 1976 European Cup.
-
-Platini won the French league title in 1981 with Les Verts, but was on a losing Saint-Etienne side in two French Cup finals, against Bastia in 1981 and against Paris Saint-Germain in 1982, in what was his last match for the club before joining Juventus. He left for a nominal transfer fee (under UEFA regulations) despite being out of contract and no fee being necessary under French regulations at the time.
-
-<br>Juventus (1982–1987).<br>
-
-Platini holding aloft the Ballon d'Or in Juventus colours.
-At Juventus, in a team featuring numerous members of Italy's victorious World Cup squad, Platini had a difficult introduction to Italian football. He was a target in the demanding Italian sports media, and even came close to leaving Italy in the winter of his first season. Platini and teammate Zbigniew Boniek successfully called for a change in tactics, and in the second half of the season Juventus saw an upturn in their fortunes. They reached the European Cup final, losing to Hamburger SV, but won the Italian Cup, the first of many club honours to follow for Platini in the coming seasons.
-He won the Serie A title with Juventus in 1984 and 1986, the European Cup Winners' Cup in 1984, the 1984 European Super Cup, the European Cup in 1985 and the 1985 Intercontinental Cup. He finished top scorer in Serie A for three consecutive seasons (1982–83, 1983–84, and 1984–85), and won a hat-trick of European Footballer of the Year awards (1983 through 1985). He was also voted Player of the Year by World Soccer magazine in 1984 and 1985.
-The 1985 European Cup final against Liverpool at the Heysel Stadium in Brussels should have been the crowning moment of Platini's Juventus career, but was instead overshadowed by the Heysel Stadium disaster in which 39 people died, and 600 more were injured. It was decided to proceed with the match in order to avoid inciting any further trouble, and after both captains had appealed for calm, the match began just under an hour and a half beyond schedule, with riot police still engaged in a pitched battle with Juventus fans. Platini scored the only goal of the match from a penalty kick awarded for a foul on Zbigniew Boniek. In the days following the final, Platini was criticised in some quarters for his lack of restraint in celebrating Juventus' win. In his own defence, Platini maintained that he had not been made fully aware of the scale of the disaster. Following the 1986 World Cup in Mexico, Platini spent another season at Juventus before retiring from football in June 1987.
-<h4>International career</h4>
-<hr>
-Having first attracted the attention of national team selectors in the Coupe Gambardella tournament, Platini was selected for the French junior team, but injuries prevented him from playing. He made his first appearance for a French national selection playing for the French amateur side on 26 September 1973.
-Platini began his military service in summer 1975. He was assigned to the Joinville battalion, as were all talented French sportspeople fulfilling their military obligations. His colleagues in the battalion included his Nancy team-mates Olivier Rouyer and Jean-Michel Moutier, as well as Maxime Bossis, soon to become a regular in the French national team along with Platini. Platini would turn out for the French military team, in addition to representing the French under-23s and the French Olympic team. He impressed in the Olympic team's 4–0 win over Romania in Brest, a result made even more impressive by the fact that Romania had fielded a full international side for the Olympic qualifier. Platini's performance made him a star in France. The away leg of the qualifying tie was a mere formality, France coming away with a 1–1 draw. Three days after the draw in Bucharest, Platini received his first call-up to the a national team for what was coach Michel Hidalgo's first game in charge, a friendly against Czechoslovakia in Paris (27 March 1976, 2–2), and scored his first goal with a trademark free kick.
-<br>1976 Olympics<br>
-Platini was a member of the French football team at the 1976 Summer Olympics in Montreal. Their tournament began on 19 July with an 4–0 win over Mexico. They registered another 4–0 win in their next match against Guatemala, with two goals from Platini. The French team completed the group stage with a draw against Israel, Platini scoring from a penalty. France progressed to the quarter-final stage, where they would face a full-strength East German team. France lost 4–0 and finished the match with nine men.
-<br>Prior to 1978 World Cup<br>
-With a 3–1 win over Bulgaria at the Parc des Princes on 16 November 1977, a match in which Platini excelled in the role of playmaker and scored with a strike from 30 yards, France secured qualification for the 1978 World Cup in Argentina for their first appearance in the World Cup finals since 1966. In the month following the decisive qualifying match, Platini finished third in the voting for the 1977 European Footballer of the Year.
-Among the international friendlies France played in preparation for the World Cup, their match against Italy in Naples on 8 February 1978 (2–2) was particularly significant for Platini. With a number of scouts from Italian clubs in attendance, he was in excellent form. He beat Italian goalkeeper Dino Zoff from two direct free-kicks, the first being ruled out because the referee had not blown his whistle. The re-taken free-kick was blocked by the defensive wall, but minutes later Platini had the ball in the Italian net from another free-kick. Zoff attempted to anticipate the flight of the ball by positioning himself on the left side of the goal, only for Platini to find the unguarded area of the net with his free-kick, leaving Zoff rooted to the spot. Platini's duels with Zoff and his performance in a match that was broadcast on Italian television made him a name in Italy. A number of clubs both in France (Paris Saint-Germain and Saint-Etienne) and across Europe (Juventus, Internazionale, Napoli, Barcelona, Valencia, and Arsenal, to name a few) began the clamour for his services.
-<br>1978 World Cup<br>
-In retrospect, this match may have been a Pyrrhic victory because Platini's brilliance drew the attention of Italy coach Enzo Bearzot, who devised a successful plan to contain him in a match-up that really mattered—the first round of the 1978 World Cup four months later. Platini was kept in check by Marco Tardelli's implacable marking and Italy won 2–1. Drawn in a difficult group with Italy as well as hosts (and eventual winners) Argentina, France's loss to the hosts in Buenos Aires effectively ensured their elimination; France did not survive the first round.
-<br>Road to Spain '82 and the World Cup<br>
-Platini was nonetheless made captain of the French national side after the World Cup and made the number 10 jersey his own. One of his trademark free-kicks helped France defeat the Netherlands 2–0 in Paris (18 November 1981) in a crucial qualifying match for the 1982 World Cup in Spain.
-France unexpectedly reached the semifinals of the 1982 World Cup where they met West Germany in Seville for what proved to be one of the great matches of World Cup history. German goalkeeper Harald Schumacher had collided with Patrick Battiston, leaving the Frenchman knocked-out cold, and the referee did not call a penalty, much to the anger of the French. With both sides level at 3–3 after extra time had been played (Platini having scored France's first goal of the game from a penalty) the match went to a penalty shoot-out which West Germany won 5–4. Interestingly, Platini would consider this match the greatest memory of his career.
-<br>Euro '84<br>
-In 1984, Platini captained France to success in the European Championship on home soil. His individual impact on the tournament was huge with nine of France's 14 goals in just five games (the top goal scorer in Euro '84).
-He scored the winner in France's opening match against Denmark, and scored one "perfect" hat-trick against Belgium as France topped their first-round group with three wins out of three. In the dramatic semi-final in Marseille against Portugal, Platini scored the final goal of the match for a memorable 3–2 win in the last minute of extra time.
-In the final against Spain at the Princes Stadium in Paris, he opened the scoring with a free kick-goal, helped by a monumental blunder from Spain goalkeeper Luis Arconada. A second goal from Bruno Bellone in injury time at the end of the match secured France's first major title in international football.
-<br>Mexico '86<br>
-Suffering from groin pain and playing under injection, Platini was not in peak physical condition for the 1986 World Cup in Mexico. Nonetheless he contributed two important goals. The first contributed to their 2–0 defeat of defending champions Italy at the Olimpico Stadium in Mexico City. The second came during the quarter-final match against Brazil in Guadalajara. After Careca scored for Brazil, Platini scored the equalizer, his 41st on his 31st birthday, which sent the game into a penalty shoot-out. France won 4–3, with Platini infamously sending his over the bar. This goal was to be the last of his international career. After losing a second World Cup semi-final in a row to West Germany in Guadalajara, France had to settle for third place. Platini did not take part in the 1982 or 1986 World Cup third-place matches.
-<br>Retirement<br>
-Platini made his last appearance for France on 29 April 1987, in a European Championship qualifier at home to Iceland, a few weeks before announcing his retirement from all football. In 72 appearances for France from 1976 to 1987, including 49 appearances as captain, Platini scored 41 times, a record for the French national team, which has since only been surpassed by Thierry Henry after scoring his 42nd and 43rd national team goals against Lithuania in a Euro 2008 qualifying match on 17 October 2007.
+                <br>Juventus (1982–1987).<br> Platini holding aloft the Ballon d'Or in Juventus colours. At Juventus, in a team featuring numerous members of Italy's victorious World Cup squad, Platini had a difficult introduction to Italian football.
+                He was a target in the demanding Italian sports media, and even came close to leaving Italy in the winter of his first season. Platini and teammate Zbigniew Boniek successfully called for a change in tactics, and in the second half of
+                the season Juventus saw an upturn in their fortunes. They reached the European Cup final, losing to Hamburger SV, but won the Italian Cup, the first of many club honours to follow for Platini in the coming seasons. He won the Serie A title
+                with Juventus in 1984 and 1986, the European Cup Winners' Cup in 1984, the 1984 European Super Cup, the European Cup in 1985 and the 1985 Intercontinental Cup. He finished top scorer in Serie A for three consecutive seasons (1982–83, 1983–84,
+                and 1984–85), and won a hat-trick of European Footballer of the Year awards (1983 through 1985). He was also voted Player of the Year by World Soccer magazine in 1984 and 1985. The 1985 European Cup final against Liverpool at the Heysel
+                Stadium in Brussels should have been the crowning moment of Platini's Juventus career, but was instead overshadowed by the Heysel Stadium disaster in which 39 people died, and 600 more were injured. It was decided to proceed with the match
+                in order to avoid inciting any further trouble, and after both captains had appealed for calm, the match began just under an hour and a half beyond schedule, with riot police still engaged in a pitched battle with Juventus fans. Platini
+                scored the only goal of the match from a penalty kick awarded for a foul on Zbigniew Boniek. In the days following the final, Platini was criticised in some quarters for his lack of restraint in celebrating Juventus' win. In his own defence,
+                Platini maintained that he had not been made fully aware of the scale of the disaster. Following the 1986 World Cup in Mexico, Platini spent another season at Juventus before retiring from football in June 1987.
+                <h4>International career</h4>
+                <hr> Having first attracted the attention of national team selectors in the Coupe Gambardella tournament, Platini was selected for the French junior team, but injuries prevented him from playing. He made his first appearance for a French national
+                selection playing for the French amateur side on 26 September 1973. Platini began his military service in summer 1975. He was assigned to the Joinville battalion, as were all talented French sportspeople fulfilling their military obligations.
+                His colleagues in the battalion included his Nancy team-mates Olivier Rouyer and Jean-Michel Moutier, as well as Maxime Bossis, soon to become a regular in the French national team along with Platini. Platini would turn out for the French
+                military team, in addition to representing the French under-23s and the French Olympic team. He impressed in the Olympic team's 4–0 win over Romania in Brest, a result made even more impressive by the fact that Romania had fielded a full
+                international side for the Olympic qualifier. Platini's performance made him a star in France. The away leg of the qualifying tie was a mere formality, France coming away with a 1–1 draw. Three days after the draw in Bucharest, Platini
+                received his first call-up to the a national team for what was coach Michel Hidalgo's first game in charge, a friendly against Czechoslovakia in Paris (27 March 1976, 2–2), and scored his first goal with a trademark free kick.
+                <br>1976 Olympics<br> Platini was a member of the French football team at the 1976 Summer Olympics in Montreal. Their tournament began on 19 July with an 4–0 win over Mexico. They registered another 4–0 win in their next match against
+                Guatemala, with two goals from Platini. The French team completed the group stage with a draw against Israel, Platini scoring from a penalty. France progressed to the quarter-final stage, where they would face a full-strength East German
+                team. France lost 4–0 and finished the match with nine men.
+                <br>Prior to 1978 World Cup<br> With a 3–1 win over Bulgaria at the Parc des Princes on 16 November 1977, a match in which Platini excelled in the role of playmaker and scored with a strike from 30 yards, France secured qualification for
+                the 1978 World Cup in Argentina for their first appearance in the World Cup finals since 1966. In the month following the decisive qualifying match, Platini finished third in the voting for the 1977 European Footballer of the Year. Among
+                the international friendlies France played in preparation for the World Cup, their match against Italy in Naples on 8 February 1978 (2–2) was particularly significant for Platini. With a number of scouts from Italian clubs in attendance,
+                he was in excellent form. He beat Italian goalkeeper Dino Zoff from two direct free-kicks, the first being ruled out because the referee had not blown his whistle. The re-taken free-kick was blocked by the defensive wall, but minutes later
+                Platini had the ball in the Italian net from another free-kick. Zoff attempted to anticipate the flight of the ball by positioning himself on the left side of the goal, only for Platini to find the unguarded area of the net with his free-kick,
+                leaving Zoff rooted to the spot. Platini's duels with Zoff and his performance in a match that was broadcast on Italian television made him a name in Italy. A number of clubs both in France (Paris Saint-Germain and Saint-Etienne) and across
+                Europe (Juventus, Internazionale, Napoli, Barcelona, Valencia, and Arsenal, to name a few) began the clamour for his services.
+                <br>1978 World Cup<br> In retrospect, this match may have been a Pyrrhic victory because Platini's brilliance drew the attention of Italy coach Enzo Bearzot, who devised a successful plan to contain him in a match-up that really mattered—the
+                first round of the 1978 World Cup four months later. Platini was kept in check by Marco Tardelli's implacable marking and Italy won 2–1. Drawn in a difficult group with Italy as well as hosts (and eventual winners) Argentina, France's
+                loss to the hosts in Buenos Aires effectively ensured their elimination; France did not survive the first round.
+                <br>Road to Spain '82 and the World Cup<br> Platini was nonetheless made captain of the French national side after the World Cup and made the number 10 jersey his own. One of his trademark free-kicks helped France defeat the Netherlands
+                2–0 in Paris (18 November 1981) in a crucial qualifying match for the 1982 World Cup in Spain. France unexpectedly reached the semifinals of the 1982 World Cup where they met West Germany in Seville for what proved to be one of the great
+                matches of World Cup history. German goalkeeper Harald Schumacher had collided with Patrick Battiston, leaving the Frenchman knocked-out cold, and the referee did not call a penalty, much to the anger of the French. With both sides level
+                at 3–3 after extra time had been played (Platini having scored France's first goal of the game from a penalty) the match went to a penalty shoot-out which West Germany won 5–4. Interestingly, Platini would consider this match the greatest
+                memory of his career.
+                <br>Euro '84<br> In 1984, Platini captained France to success in the European Championship on home soil. His individual impact on the tournament was huge with nine of France's 14 goals in just five games (the top goal scorer in Euro '84).
+                He scored the winner in France's opening match against Denmark, and scored one "perfect" hat-trick against Belgium as France topped their first-round group with three wins out of three. In the dramatic semi-final in Marseille against Portugal,
+                Platini scored the final goal of the match for a memorable 3–2 win in the last minute of extra time. In the final against Spain at the Princes Stadium in Paris, he opened the scoring with a free kick-goal, helped by a monumental blunder
+                from Spain goalkeeper Luis Arconada. A second goal from Bruno Bellone in injury time at the end of the match secured France's first major title in international football.
+                <br>Mexico '86<br> Suffering from groin pain and playing under injection, Platini was not in peak physical condition for the 1986 World Cup in Mexico. Nonetheless he contributed two important goals. The first contributed to their 2–0 defeat
+                of defending champions Italy at the Olimpico Stadium in Mexico City. The second came during the quarter-final match against Brazil in Guadalajara. After Careca scored for Brazil, Platini scored the equalizer, his 41st on his 31st birthday,
+                which sent the game into a penalty shoot-out. France won 4–3, with Platini infamously sending his over the bar. This goal was to be the last of his international career. After losing a second World Cup semi-final in a row to West Germany
+                in Guadalajara, France had to settle for third place. Platini did not take part in the 1982 or 1986 World Cup third-place matches.
+                <br>Retirement<br> Platini made his last appearance for France on 29 April 1987, in a European Championship qualifier at home to Iceland, a few weeks before announcing his retirement from all football. In 72 appearances for France from
+                1976 to 1987, including 49 appearances as captain, Platini scored 41 times, a record for the French national team, which has since only been surpassed by Thierry Henry after scoring his 42nd and 43rd national team goals against Lithuania
+                in a Euro 2008 qualifying match on 17 October 2007.
             </p>
-           <!--MAIN--> 
+            <!--MAIN-->
         </section>
-          
-      
-  </main>
-  <!--/MAIN-->
-  <!--FOOTER-->
-  <footer class="footer">
-  <div>
-      <p>
-          Copirigth © yuriyk.com 2016
-      </p>
-  </div>   
-  </footer>
-  <!--/FOOTER--> 
-  
+
+
+    </main>
+    <!--/MAIN-->
+    <!--FOOTER-->
+    <footer class="footer">
+        <div>
+            <p>
+                Copirigth © yuriyk.com 2016
+            </p>
+        </div>
+    </footer>
+    <!--/FOOTER-->
+    <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>

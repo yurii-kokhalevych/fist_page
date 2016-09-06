@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>
         Top 10 best football players 20 century
     </title>
+    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/player_history.css" type="text/css" />
 </head>
 
 <body background="soker.jpg">
-  <!--HEDER-->
-  <header class="header">
-         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-  </header>
-  <!--/HEDER-->
-  <!--NAV-->
-  <nav class="page-navigator">
-    <div class="container">
-        <ul>
-              <li><a href="index.html">Main<a></li>
+    <!--HEDER-->
+    <header class="header">
+        <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+    </header>
+    <!--/HEDER-->
+    <!--NAV-->
+    <nav class="page-navigator">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Main<a></li>
               <li><a href="player_history.html">Player history</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="video.html">Video</a></li>
-              <li><a href="blog.html">Blog</a></li>
-        </ul>
-        <br>
-        <!--Login form-->
-        <form action="#" class="login">
-            <input type="text" placeholder="login" required>
-            <input type="password" placeholder="Password" required>
-            <input type="search" placeholder="Search">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="blog.html">Comments</a></li>
+            </ul>
             <br>
-            <br>
-            <input type="submit" value="Sign in">
-            <input type="submit" value="Sign Out">
-            <input type="submit" value="Regist">
-        </form>
-        <!--/Login form-->
-    </div>
-  </nav>
-  <!--/NAV-->
-  <!--MAIN-->
-  <main>
-      <div class="images">
-                <a href="franz_beckenbauer.html"><img src="bekenbauer.jpg" alt="bekenbauer" title="Franz Beckenbauer" style="width:200px; height:200px;"></img></a>
-                <a href="george_best.html"><img src="best.jpg" alt="best" title="George Best" style="width:200px; height:200px;"></img></a>
-                <a href="eusébio_da_silva_ferreira.html"><img src="eusebio.jpg" alt="eusebio" title="Eusébio da Silva Ferreira" style="width:200px; height:200px;"></img></a>
-                <a href="johan_cruyff.html"><img src="kroif.jpg" alt="kroif" title="Johan Cruyff" style="width:200px; height:200px;"></img></a>
-                <a href="diego_maradona.html"><img src="maradonna.jpg" alt="maradonna" title="Diego Maradona" style="width:200px; height:200px;"></img></a>
-                <a href="gerd_müller.html"><img src="muler.jpg" alt="muler" title="Gerd Müller" style="width:200px; height:200px;"></img></a>
-                <a href="pele.html"><img src="pele.jpg" alt="pele" title="Pele" style="width:200px; height:200px;"></img></a>
-                <a href="ferenc_puskás.html"><img src="puskas_1.jpg" alt="puskas" title="Ferenc Puskás" style="width:200px; height:200px;"></img></a>
-                <a href="michel_platini.html"><img src="platini.jpg" alt="platini" title="Michel Platini" style="width:200px; height:200px;"></img></a>
-                <a href="bobby_charlton.html"><img src="charlton-2.jpg" alt="charlton" title="Bobby Charlton" style="width:200px; height:200px;"></img></a>
-     </div>
-  </main>
-  <!--/MAIN-->
-  <!--FOOTER-->
-  <footer class="footer">
-  <div>
-      <p>
-          Copirigth © yuriyk.com 2016
-      </p>
-  </div>   
-  </footer>
-  <!--/FOOTER--> 
+            <!--Login form-->
+            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <!--<input type="search" placeholder="Search">-->
+                <br>
+                <br>
+                <input type="submit" value="Sign in" id="in">
+                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Regist" id="reg">
+            </form>
+            <!--/Login form-->
+        </div>
+    </nav>
+    <!--/NAV-->
+    <!--MAIN-->
+    <main>
+        <div class="images">
+            <a href="franz_beckenbauer.html"><img src="bekenbauer.jpg" alt="bekenbauer" title="Franz Beckenbauer" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="george_best.html"><img src="best.jpg" alt="best" title="George Best" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="eusébio_da_silva_ferreira.html"><img src="eusebio.jpg" alt="eusebio" title="Eusébio da Silva Ferreira" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="johan_cruyff.html"><img src="kroif.jpg" alt="kroif" title="Johan Cruyff" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="diego_maradona.html"><img src="maradonna.jpg" alt="maradonna" title="Diego Maradona" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="gerd_müller.html"><img src="muler.jpg" alt="muler" title="Gerd Müller" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="pele.html"><img src="pele.jpg" alt="pele" title="Pele" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="ferenc_puskás.html"><img src="puskas_1.jpg" alt="puskas" title="Ferenc Puskás" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="michel_platini.html"><img src="platini.jpg" alt="platini" title="Michel Platini" style="width:200px; height:200px;"></img>
+            </a>
+            <a href="bobby_charlton.html"><img src="charlton-2.jpg" alt="charlton" title="Bobby Charlton" style="width:200px; height:200px;"></img>
+            </a>
+        </div>
+    </main>
+    <!--/MAIN-->
+    <!--FOOTER-->
+    <footer class="footer">
+        <div>
+            <p>
+                Copirigth © yuriyk.com 2016
+            </p>
+        </div>
+    </footer>
+    <!--/FOOTER-->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>

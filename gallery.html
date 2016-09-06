@@ -27,19 +27,19 @@
               <li><a href="player_history.html">Player history</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="video.html">Video</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html">Comments</a></li>
             </ul>
             <br>
             <!--Login form-->
-            <form action="#" class="login">
-                <input type="text" placeholder="login" required>
-                <input type="password" placeholder="Password" required>
-                <input type="search" placeholder="Search">
+            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <!--<input type="search" placeholder="Search">-->
                 <br>
                 <br>
-                <input type="submit" value="Sign in">
-                <input type="submit" value="Sign Out">
-                <input type="submit" value="Regist">
+                <input type="submit" value="Sign in" id="in">
+                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Regist" id="reg">
             </form>
             <!--/Login form-->
         </div>
@@ -59,7 +59,7 @@
             <button id="mar8">Best</button>
             <button id="mar9">Charlton</button>
         </div>
-        
+
         <button id="ret">Return</button>
         <button id="ret1">Return</button>
         <button id="ret2">Return</button>
@@ -502,6 +502,7 @@
     <script type="text/javascript" src="beckenbauer.js"></script>
     <script type="text/javascript" src="cruyff.js"></script>
     <script type="text/javascript" src="charlton.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

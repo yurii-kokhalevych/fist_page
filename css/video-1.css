@@ -2,7 +2,12 @@
 	list-style-type: none;
 	text-align: center;
 	float:left;
+	margin-top: 100px;
 	padding: 10px;
 	margin: 10px;
 	z-index: -1;
+	position: relative;
+}
+.filmstrip li:hover{
+	border:3px solid grey;
 }
