@@ -1,6 +1,6 @@
 .header{
 	padding: 10px 10px;
-	bbackground: repeating-linear-gradient(
+	background: repeating-linear-gradient(
   		-55deg,
   		#222,
   		#222 10px,
@@ -116,11 +116,11 @@ body {
 	}
 .item img{
 	float: right;
-	}
+}
 /*footer form*/
 .footer{
 	clear: both;
-	background: repeating-linear-gradient(
+    background: repeating-linear-gradient(
   		-55deg,
   		#222,
   		#222 10px,

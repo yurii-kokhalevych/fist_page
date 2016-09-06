@@ -129,6 +129,7 @@ body {
 	padding: 5px;
 	margin-top: 5px;
 	text-align: center;
+	clear: both;
 }	
 @media (min-width:320px)and (max-width:600px) { 
 .page-navigator li, .login input[type="text"],.article button,
