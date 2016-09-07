@@ -165,9 +165,6 @@ body {
 	padding: 15px;
 	margin: 10px;
 	}
-main {
-		margin-top: 500px;
-	}
 }
 
 @media (max-width:400px) { 
@@ -179,9 +176,7 @@ main {
 	padding: 5px;
 	margin: 5px;
 	}
-main {
-		margin-top: 700px;
-	}
+
 	.page-navigator{	
 	width: 100%;
 	
@@ -210,9 +205,7 @@ main {
 	margin: 5px;
 	position: relative;
 	z-index: -1;}
-	main {
-		margin-top: 800px;
-	}
+
 	}
 	
 
