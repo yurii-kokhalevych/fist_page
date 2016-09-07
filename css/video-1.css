@@ -8,6 +8,6 @@
 	z-index: -1;
 	position: relative;
 }
-.filmstrip li:hover{
+.filmstrip li>video:hover{
 	border:3px solid grey;
 }

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/video.css" type="text/css" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="css/video-1.css" type="text/css" />
+  <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="heder_1.jpg">
@@ -37,8 +38,8 @@
         <br>
         <br>
         <input type="submit" value="Sign in" id="in">
-        <input type="reset" value="Sign Out" id="out">
-        <input type="submit" value="Regist" id="reg">
+                <input type="reset" value="Sign Out" id="out">
+                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
       </form>
       <!--/Login form-->
     </div>
@@ -46,6 +47,32 @@
   <!--/NAV-->
   <!--MAIN-->
   <main>
+    <div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+         
+            <h1>Registration form</h1>
+    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+        <label for="surname">Your surname*</label>
+        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+        <label for="gender">Your gender*</label>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female<br><br>
+        <label for="birthday">Your date of birthday*</label>
+        <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+        <label for="email">Your email*</label>
+        <input type="text" id="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+        <label for="mobilephone">Your mobilephone*</label>
+        <input type="text" id="mobilephone"pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 "required/><br><br>
+        <label for="city">City</label>
+        <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+        <input type="submit" value="OK" id="btn-send"/>
+    </form>
+    
+    </div>
+</div>
     <ul class="filmstrip">
       <li><video width="350" height="260" controls>
           <source src="video/beckenbauer/Franz_Beckenbauer_Top_5_Goals.mp4" type="video/mp4" title="Franz_Beckenbauer_Top_5_Goals" >
@@ -122,8 +149,6 @@
     </div>
   </footer>
   <!--/FOOTER-->
-  <script type="text/javascript" src="video.js"></script>
-  <script type="text/javascript" src="index.js"></script>
-</body>
+  </body>
 
 </html>

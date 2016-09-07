@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/new.css" type="text/css" />
-   
-    
+    <link rel="stylesheet" href="css/reg.css" type="text/css" />
+
+
 </head>
 
 <body background="img/soker.jpg" style="height:100%; weight:100%">
-
+<div class="wrapper">
     <!--HEDER-->
     <header class="header">
         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
@@ -41,20 +42,49 @@
                 <br>
                 <input type="submit" value="Sign in" id="in">
                 <input type="reset" value="Sign Out" id="out">
-                <input type="submit" value="Regist" id="reg">
+                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
             </form>
+
             <!--/Login form-->
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <main>
-        <div class="w3-content w3-display-container" style="max-width:800px">
+    <main class="main"> 
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+
+                <h1>Registration form</h1>
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                    <label for="surname">Your surname*</label>
+                    <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                    <label for="gender">Your gender*</label>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female<br><br>
+                    <label for="birthday">Your date of birthday*</label>
+                    <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <label for="email">Your email*</label>
+                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                    <label for="mobilephone">Your mobilephone*</label>
+                    <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="submit" value="OK" id="btn-send" />
+                </form>
+
+            </div>
+        </div>
+
+        <div class="w3-content w3-display-container" style="max-width:1400px">
             <img class="mySlides" src="img/main/foto_team.jpg" style="width:100%">
             <img class="mySlides" src="img/main/foto_team_2.jpg" style="width:100%">
             <img class="mySlides" src="img/main/foto_team_3.jpg" style="width:100%">
             <img class="mySlides" src="img/main/foto_team_4.jpg" style="width:100%">
-            
+
             <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
                 <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                 <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -64,7 +94,7 @@
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
             </div>
         </div>
-       
+
         <article class="article">
             <!--HEDER OF ARTICLE-->
             <header class="header-of-article">
@@ -87,9 +117,10 @@
             </p>
             <button id="btn">Read|Hide</button>
             <br>
-                        <!--MAIN OF ARTICLE-->
+            <!--MAIN OF ARTICLE-->
         </article>
     </main>
+    
     <!--/MAIN-->
     <!--FOOTER-->
     <footer class="footer">
@@ -100,9 +131,9 @@
         </div>
     </footer>
     <!--/FOOTER-->
-<script type="text/javascript" src="button.js"></script>
-<script type="text/javascript" src="slide-1.js"></script>
-<script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="button.js"></script>
+    <script type="text/javascript" src="slide-1.js"></script>
+</div>
 </body>
 
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/gallery.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/gallery-2.css" type="text/css" />
+    <link rel="stylesheet" href="css/reg.css" type="text/css" />
 
 </head>
 
@@ -39,13 +40,39 @@
                 <br>
                 <input type="submit" value="Sign in" id="in">
                 <input type="reset" value="Sign Out" id="out">
-                <input type="submit" value="Regist" id="reg">
+                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
             </form>
             <!--/Login form-->
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
+    <div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+         
+            <h1>Registration form</h1>
+    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+        <label for="surname">Your surname*</label>
+        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+        <label for="gender">Your gender*</label>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female<br><br>
+        <label for="birthday">Your date of birthday*</label>
+        <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+        <label for="email">Your email*</label>
+        <input type="text" id="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+        <label for="mobilephone">Your mobilephone*</label>
+        <input type="text" id="mobilephone"pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 "required/><br><br>
+        <label for="city">City</label>
+        <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+        <input type="submit" value="OK" id="btn-send"/>
+    </form>
+    
+    </div>
+</div>
     <main>
         <div id="inl">
             <button id="mar">Maradona</button>
@@ -59,7 +86,7 @@
             <button id="mar8">Best</button>
             <button id="mar9">Charlton</button>
         </div>
-
+<div id="inl1">
         <button id="ret">Return</button>
         <button id="ret1">Return</button>
         <button id="ret2">Return</button>
@@ -70,6 +97,7 @@
         <button id="ret7">Return</button>
         <button id="ret8">Return</button>
         <button id="ret9">Return</button>
+        </div>
 
         <div class="mar">
             <input type="checkbox" id="pic-1" />
@@ -502,7 +530,7 @@
     <script type="text/javascript" src="beckenbauer.js"></script>
     <script type="text/javascript" src="cruyff.js"></script>
     <script type="text/javascript" src="charlton.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    
 </body>
 
 </html>

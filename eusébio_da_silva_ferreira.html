@@ -9,6 +9,7 @@
     <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/eusébio_da_silva_ferreira.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
@@ -37,7 +38,7 @@
                 <br>
                 <input type="submit" value="Sign in" id="in">
                 <input type="reset" value="Sign Out" id="out">
-                <input type="submit" value="Regist" id="reg">
+                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
             </form>
             <!--/Login form-->
         </div>
@@ -52,6 +53,32 @@
             </header>
             <!--/HEDER-->
             <!--MAIN-->
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+
+                    <h1>Registration form</h1>
+                    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+                        <label for="name">Your name*</label>
+                        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                        <label for="surname">Your surname*</label>
+                        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                        <label for="gender">Your gender*</label>
+                        <input type="radio" name="gender" value="male" />Male
+                        <input type="radio" name="gender" value="female" />Female<br><br>
+                        <label for="birthday">Your date of birthday*</label>
+                        <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                        <label for="email">Your email*</label>
+                        <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                        <label for="mobilephone">Your mobilephone*</label>
+                        <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                        <label for="city">City</label>
+                        <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                        <input type="submit" value="OK" id="btn-send" />
+                    </form>
+
+                </div>
+            </div>
             <div class="item">
                 <img src="eusébio_da_silva_ferreira.jpg" alt="eusébio_da_silva_ferreira" style="width:250px; height:450px;"></img>
             </div>
@@ -63,17 +90,17 @@
             <hr>
             <p>
                 <h4>Club career</h4>
-                <h5>Early career</h5> He first started to play for a local amateur team called Os Brasileiros (The Brazilians), in honour of the great Brazil national team of the 1950s that he and his friends formed, they would play under the names of some of those superstars.
-                The balls they used were made of socks stuffed with newspapers rolled into spheres. He tried to enlist with some friends for the team Grupo Desportivo de Lourenço de Marques, his favourite team and a Benfica feeder team, also the team
-                where Mário Coluna had played for before his move to Benfica, but was rejected, without even being given a chance to prove his worth. He then tried his luck with Sporting Clube de Lourenço Marques, who accepted him. He affirmed that he
-                was spotted by a former Juventus goalkeeper turned scout when he was 15 years old: "When I was 15, Juventus of Italy, wanted to hire me, because one of their scouts, who had been a famous Italian goalkeeper for them, saw me and told them
-                that there was a boy with a potential, that it would be good to take advantage while I was still unknown. Juventus proposed but my mum never wanted to hear anything from anyone". Eusébio played for two seasons with their youth team, while
-                he made sporadic appearances in the senior team. There he won the Campeonato Provincial de Moçambique and the Campeonato Distrital de Lourenço Marques in his last season, in 1960.
+                <h5>Early career</h5> He first started to play for a local amateur team called Os Brasileiros (The Brazilians), in honour of the great Brazil national team of the 1950s that he and his friends formed, they would play under the names of some
+                of those superstars. The balls they used were made of socks stuffed with newspapers rolled into spheres. He tried to enlist with some friends for the team Grupo Desportivo de Lourenço de Marques, his favourite team and a Benfica feeder
+                team, also the team where Mário Coluna had played for before his move to Benfica, but was rejected, without even being given a chance to prove his worth. He then tried his luck with Sporting Clube de Lourenço Marques, who accepted him.
+                He affirmed that he was spotted by a former Juventus goalkeeper turned scout when he was 15 years old: "When I was 15, Juventus of Italy, wanted to hire me, because one of their scouts, who had been a famous Italian goalkeeper for them,
+                saw me and told them that there was a boy with a potential, that it would be good to take advantage while I was still unknown. Juventus proposed but my mum never wanted to hear anything from anyone". Eusébio played for two seasons with
+                their youth team, while he made sporadic appearances in the senior team. There he won the Campeonato Provincial de Moçambique and the Campeonato Distrital de Lourenço Marques in his last season, in 1960.
 
-                <h5>Benfica</h5> He moved to Lisbon in his late teens, after joining Benfica as an 18-year-old from his local club, Sporting Clube de Lourenço Marques, for 350,000$ (equivalent to €136,000 in 2009). Benfica discovered Eusébio due to the efforts of Brazilian
-                former player José Carlos Bauer, who saw him in Lourenço Marques in 1960. Eusébio could run 100 metres in 11 seconds. Bauer recommended Eusébio first to his former club, São Paulo, but the Tricolor turned him down. Bauer then discussed
-                Eusébio with his former coach in São Paulo, Béla Guttmann, who was coaching Benfica at the time. Eusébio during his time at Benfica The move was controversial; Sporting Lourenço Marques was a subsidiary of Sporting Clube de Portugal and
-                the two rivals disputed the legality of the transfer. According to Eusébio: "I used to play in Sporting's feeder club in Mozambique. Benfica wanted to pay me in a contract to go while Sporting wanted to take me [to Portugal] as a junior
+                <h5>Benfica</h5> He moved to Lisbon in his late teens, after joining Benfica as an 18-year-old from his local club, Sporting Clube de Lourenço Marques, for 350,000$ (equivalent to €136,000 in 2009). Benfica discovered Eusébio due to the efforts
+                of Brazilian former player José Carlos Bauer, who saw him in Lourenço Marques in 1960. Eusébio could run 100 metres in 11 seconds. Bauer recommended Eusébio first to his former club, São Paulo, but the Tricolor turned him down. Bauer then
+                discussed Eusébio with his former coach in São Paulo, Béla Guttmann, who was coaching Benfica at the time. Eusébio during his time at Benfica The move was controversial; Sporting Lourenço Marques was a subsidiary of Sporting Clube de Portugal
+                and the two rivals disputed the legality of the transfer. According to Eusébio: "I used to play in Sporting's feeder club in Mozambique. Benfica wanted to pay me in a contract to go while Sporting wanted to take me [to Portugal] as a junior
                 player for experience with no monetary reward. Benfica made a nice approach. They went to speak to my mum, my brother, and offered €1,000 for three years. My brother asked for double and they paid it. They signed the contract with my mother
                 and she got the money". By 17 December 1960, Eusébio arrived at Lisbon and was sent to Lagos, in the Algarve, with Benfica fearing a kidnapping operation by Sporting rivals. During his transfer he was codenamed Ruth Malosso. He remained
                 there for 12 days, until the transfer upheaval would calm down. While he stayed in a hotel room he was warned for possible running-overs. Eusébio considered leaving Portugal, but his mother convinced him to stay. Benfica only registered
@@ -94,12 +121,12 @@
                 Cup wins (1961–1962, 1963–1964, 1968–1969, 1969–1970 and 1971–1972), 1 European Cup win (1961–1962) and 3 European Cup finals (1962–1963, 1964–1965 and 1967–1968). Eusébio scored 638 goals in 614 official matches for Benfica, including
                 317 goals in 301 Primeira Liga matches, 97 goals in 60 Taça de Portugal matches and 59 goals in 78 matches of UEFA club competitions. Overall, he scored 727 goals in 715 matches wearing Benfica's jersey.
 
-                <h5>Later career</h5> Eusébio (right) with Pelé (left) before a game in the NASL in April 1977 In 1976–77 and 1977–78, Eusébio played for two smaller Portuguese clubs, Beira-Mar, in the first division, and União de Tomar, in the Second Division. He also played
-                in the North American Soccer League (NASL), for three different teams, from 1975 to 1977: Boston Minutemen (1975), Toronto Metros-Croatia (1976), and the Las Vegas Quicksilvers (1977). His most successful season in the NASL was in 1976
-                with Toronto Metros-Croatia. He scored the winning goal in their 3–0 victory at the Soccer Bowl '76 to win the NASL title. The same year, he played ten games for Monterrey in the Mexican league. The following season (1977), he signed for
-                the Las Vegas Quicksilvers. By this time, injuries had taken their toll on the Black Panther, and he was constantly receiving medical treatment whilst playing for the Quicksilvers. During the season he only managed to score two goals.
-                Although his knees robbed him of his ability to continue in the NASL, Eusébio wanted to continue to play soccer. He found a home in 1978 with the New Jersey Americans of the second-tier American Soccer League (ASL). He went on to play
-                five games for the Buffalo Stallions during the 1979–80 Major Indoor Soccer League season. He retired in 1979 and formed part of the technical committee of the Portugal national football team
+                <h5>Later career</h5> Eusébio (right) with Pelé (left) before a game in the NASL in April 1977 In 1976–77 and 1977–78, Eusébio played for two smaller Portuguese clubs, Beira-Mar, in the first division, and União de Tomar, in the Second Division.
+                He also played in the North American Soccer League (NASL), for three different teams, from 1975 to 1977: Boston Minutemen (1975), Toronto Metros-Croatia (1976), and the Las Vegas Quicksilvers (1977). His most successful season in the NASL
+                was in 1976 with Toronto Metros-Croatia. He scored the winning goal in their 3–0 victory at the Soccer Bowl '76 to win the NASL title. The same year, he played ten games for Monterrey in the Mexican league. The following season (1977),
+                he signed for the Las Vegas Quicksilvers. By this time, injuries had taken their toll on the Black Panther, and he was constantly receiving medical treatment whilst playing for the Quicksilvers. During the season he only managed to score
+                two goals. Although his knees robbed him of his ability to continue in the NASL, Eusébio wanted to continue to play soccer. He found a home in 1978 with the New Jersey Americans of the second-tier American Soccer League (ASL). He went
+                on to play five games for the Buffalo Stallions during the 1979–80 Major Indoor Soccer League season. He retired in 1979 and formed part of the technical committee of the Portugal national football team
             </p>
 
             <h4>International career</h4>
@@ -124,7 +151,6 @@
         </div>
     </footer>
     <!--/FOOTER-->
-    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

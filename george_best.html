@@ -9,6 +9,7 @@
     <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/george_best.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
@@ -37,7 +38,7 @@
                 <br>
                 <input type="submit" value="Sign in" id="in">
                 <input type="reset" value="Sign Out" id="out">
-                <input type="submit" value="Regist" id="reg">
+                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
             </form>
             <!--/Login form-->
         </div>
@@ -45,6 +46,32 @@
     <!--/NAV-->
     <!--MAIN-->
     <main>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+
+                <h1>Registration form</h1>
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                    <label for="surname">Your surname*</label>
+                    <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                    <label for="gender">Your gender*</label>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female<br><br>
+                    <label for="birthday">Your date of birthday*</label>
+                    <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <label for="email">Your email*</label>
+                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                    <label for="mobilephone">Your mobilephone*</label>
+                    <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="submit" value="OK" id="btn-send" />
+                </form>
+
+            </div>
+        </div>
         <section class="section">
             <!--HEDER-->
             <header class="header-of-section">
@@ -73,18 +100,18 @@
             </p>
             <hr>
             <p>
-                <h4>Club career</h4> At the age of 15, Best was discovered in Belfast by Manchester United scout Bob Bishop, whose telegram to United manager Matt Busby read: "I think I've found you a genius."His local club Glentoran had previously rejected him for being
-                "too small and light". Best was subsequently given a trial and signed up by United's chief scout Joe Armstrong. His first time moving to the club, Best quickly became homesick and stayed for only two days before going back home to Northern
-                Ireland. He returned to Manchester and spent two years as an amateur, as English clubs were not allowed to take Northern Irish players on as apprentices. He was given a job as an errand boy on the Manchester Ship Canal, allowing him to
-                train with the club twice a week. Best made his First Division debut, aged 17, on 14 September 1963 against West Bromwich Albion at Old Trafford in a 1–0 victory. He then dropped back into the reserves, before scoring his first goal for
-                the first team in his second appearance in a 5–1 win over Burnley on 28 December. Manager Matt Busby then kept Best in the team, and by the end of the 1963–64 season, he had made 26 appearances, scoring six goals. Manchester United finished
-                second, four points behind Liverpool. They also reached the semi-finals of the FA Cup, where a defeat to West Ham United cost Best the chance to break a record; in the final Preston North End's Howard Kendall became the youngest ever player
-                in a FA Cup Final – he shared the same birthday as Best. That same season, Best was a part of the Manchester United side that won the 1964 FA Youth Cup, the sixth FA Youth Cup won under the management of Jimmy Murphy, and the first since
-                the 1958 Munich air disaster. The United Trinity statue of Best (left), Denis Law (centre) and Bobby Charlton (right) outside Old Trafford Though opponents would often use rough play to try to stifle his technical ability, Busby ensured
-                that "fierce, sometimes brutal" training sessions left Best well used to coping with tough challenges. In the 1964–65 season, his first full season as a first team regular, Best helped Manchester United to claim the league title. A 1–0
-                victory at Elland Road proved decisive as the title race came down to goal average between the "Red Devils" and bitter rivals Leeds United; Leeds did manage to gain some measure of revenge though by knocking Manchester United out of the
-                FA Cup at the semi-final stage. Over the course of the campaign Best contributed 14 goals in 59 competitive games. He scored the opening goal of the 1965 FA Charity Shield at Old Trafford, which ended in a 2–2 draw with Liverpool. The
-                rising star of English football, Best was catapulted to superstar status at the age of 19 when he scored two goals in a European Cup quarter-final match against Benfica at the Estádio da Luz on 9 March 1966. The Portuguese media dubbed
+                <h4>Club career</h4> At the age of 15, Best was discovered in Belfast by Manchester United scout Bob Bishop, whose telegram to United manager Matt Busby read: "I think I've found you a genius."His local club Glentoran had previously rejected
+                him for being "too small and light". Best was subsequently given a trial and signed up by United's chief scout Joe Armstrong. His first time moving to the club, Best quickly became homesick and stayed for only two days before going back
+                home to Northern Ireland. He returned to Manchester and spent two years as an amateur, as English clubs were not allowed to take Northern Irish players on as apprentices. He was given a job as an errand boy on the Manchester Ship Canal,
+                allowing him to train with the club twice a week. Best made his First Division debut, aged 17, on 14 September 1963 against West Bromwich Albion at Old Trafford in a 1–0 victory. He then dropped back into the reserves, before scoring his
+                first goal for the first team in his second appearance in a 5–1 win over Burnley on 28 December. Manager Matt Busby then kept Best in the team, and by the end of the 1963–64 season, he had made 26 appearances, scoring six goals. Manchester
+                United finished second, four points behind Liverpool. They also reached the semi-finals of the FA Cup, where a defeat to West Ham United cost Best the chance to break a record; in the final Preston North End's Howard Kendall became the
+                youngest ever player in a FA Cup Final – he shared the same birthday as Best. That same season, Best was a part of the Manchester United side that won the 1964 FA Youth Cup, the sixth FA Youth Cup won under the management of Jimmy Murphy,
+                and the first since the 1958 Munich air disaster. The United Trinity statue of Best (left), Denis Law (centre) and Bobby Charlton (right) outside Old Trafford Though opponents would often use rough play to try to stifle his technical ability,
+                Busby ensured that "fierce, sometimes brutal" training sessions left Best well used to coping with tough challenges. In the 1964–65 season, his first full season as a first team regular, Best helped Manchester United to claim the league
+                title. A 1–0 victory at Elland Road proved decisive as the title race came down to goal average between the "Red Devils" and bitter rivals Leeds United; Leeds did manage to gain some measure of revenge though by knocking Manchester United
+                out of the FA Cup at the semi-final stage. Over the course of the campaign Best contributed 14 goals in 59 competitive games. He scored the opening goal of the 1965 FA Charity Shield at Old Trafford, which ended in a 2–2 draw with Liverpool.
+                The rising star of English football, Best was catapulted to superstar status at the age of 19 when he scored two goals in a European Cup quarter-final match against Benfica at the Estádio da Luz on 9 March 1966. The Portuguese media dubbed
                 him "O Quinto Beatle", "the fifth Beatle" in English, and on the team's return to England Best was photographed in his new sombrero with the headline, "El Beatle". His talent and showmanship made him a crowd and media favourite, and he
                 went from being headline news in the back pages to the front pages. Other nicknames included the "Belfast Boy", and he was often referred to as Georgie, or Geordie in his native Belfast. However United failed to win any major honours in
                 the 1965–66 season, and Best was injured from 26 March onwards with a twisted knee following a bad tackle from a Preston North End player. However United staff claimed it was light ligament damage so as to keep Best on the field for the
@@ -142,7 +169,6 @@
         </div>
     </footer>
     <!--/FOOTER-->
-    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
