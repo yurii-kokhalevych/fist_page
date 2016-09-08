@@ -56,17 +56,17 @@
                     <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
                     <label for="surname">Your surname*</label>
                     <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="gender">Your gender*</label>
-                    <input type="radio" name="gender" value="male" />Male
-                    <input type="radio" name="gender" value="female" />Female<br><br>
+                    <label for="male">Your gender*</label>
+                    <input type="radio" name="gender" value="male" id=male/>Male
+                    <input type="radio" name="gender" value="female" id=female/>Female<br><br>
                     <label for="birthday">Your date of birthday*</label>
                     <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
                     <label for="email">Your email*</label>
                     <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
                     <label for="mobilephone">Your mobilephone*</label>
-                    <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
                     <label for="city">City</label>
-                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
                     <input type="submit" value="OK" id="btn-send" />
                 </form>
 
