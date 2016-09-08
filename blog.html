@@ -9,9 +9,10 @@
   <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/blog.css" type="text/css" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
-
-<body background="heder_1.jpg">
+<div class="wrapper">
+<body background="img/heder_1.jpg">
   <!--HEDER-->
   <header class="header">
     <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
@@ -37,14 +38,15 @@
         <br>
         <input type="submit" value="Sign in" id="in">
         <input type="reset" value="Sign Out" id="out">
-        <input type="submit" value="Regist" id="reg">
+        <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
       </form>
       <!--/Login form-->
     </div>
   </nav>
   <!--/NAV-->
   <!--MAIN-->
-  <main>
+  <main class="main">
     <section class="section">
       <br>
       <fieldset id="contact1">
@@ -57,6 +59,7 @@
           <br>
           <label for="email">Your email</label>
           <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" />
+          <br><br>
           <p><textarea rows="8" cols="45" name="text" id="msg" placeholder="Your messege"></textarea></p>
 
           <input type="file" name="file" value="Download file" />
@@ -81,7 +84,7 @@
   <!--/FOOTER-->
   <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="blog.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+</div>
 </body>
 
 </html>

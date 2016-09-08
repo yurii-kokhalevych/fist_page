@@ -30,7 +30,7 @@
 	padding:10px
 }
 .page-navigator{	
-	top:80px;
+	top:50px;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
@@ -96,7 +96,7 @@
 .login input[type="submit"], .login input[type="reset"]{
 	clear: both;
 	border-color: black;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-right: 30px;
 	margin-left: 10px;
 }
@@ -109,8 +109,15 @@ button:hover
 
 body {
 	position: relative;
-	top:250px;
+	z-index:-1;
+	overflow: scroll;
+	padding-top: 90px;
 	}
+
+.w3-content img {
+    padding-top: 70px;
+}
+
 .header-of-article h3{
 	font-size: 40px;
 	font-family: fantasy;
@@ -132,7 +139,7 @@ body {
 
 .article button {
 	position: relative;
-	left: 600px;
+	left: 45%;
 	padding:10px;
 	border: 1px solid;
 	border-radius: 10px;
@@ -156,31 +163,50 @@ body {
 	clear: both;
 	}
 
-@media (max-width:600px) { 
-.page-navigator li, .login input[type="text"],.article button,
-.login input[type="password"],.login input[type="search"]	{
-	float: none; 
-	width: auto;
-	clear: both;
-	padding: 15px;
-	margin: 10px;
-	}
-}
 
-@media (max-width:400px) { 
+@media (max-width:500px) { 
 .page-navigator li, .login input[type="text"],.article button,
 .login input[type="password"],.login input[type="search"]	{
-	float: none; 
+	/*float: none; */
 	width: auto;
 	clear: both;
 	padding: 5px;
 	margin: 5px;
 	}
-
+.header h1{font-size:  20px;
+}
 	.page-navigator{	
 	width: 100%;
 	
-}}
+}
+	body {
+	top:5%;
+	}
+}
+
+
+@media (max-width:250px) {
+	.login{	
+	width: 100%;
+	position: relative;
+	z-index: -1;}
+	.page-navigator li, .login input[type="text"],.article button,
+.login input[type="password"],.login input[type="search"]	{
+	/*float: none; */
+	clear: both;
+	width: auto;
+	padding: 5px;
+	margin: 5px;
+	position: relative;
+	z-index: -1;}
+	body {
+	top:5%;
+	}
+.header h1{
+	font-size:  18px;
+}
+	}
+	
 .history {
     padding-top: 10px;
     padding-bottom: 600px;
@@ -190,25 +216,6 @@ body {
 .w3-display-container {
     position: relative;
     }
-
-@media (max-width:250px) {
-	.login{	
-	width: 100%;
-	position: relative;
-	z-index: -1;}
-	.page-navigator li, .login input[type="text"],.article button,
-.login input[type="password"],.login input[type="search"]	{
-	float: none; 
-	clear: both;
-	width: auto;
-	padding: 5px;
-	margin: 5px;
-	position: relative;
-	z-index: -1;}
-
-	}
-	
-
 span {
     display: block;
     height:15px;
@@ -239,4 +246,5 @@ body {
 }
 .footer {
   flex: 0 0 auto;
+  height: 20px;
 }

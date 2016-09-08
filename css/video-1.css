@@ -6,8 +6,5 @@
 	padding: 10px;
 	margin: 10px;
 	z-index: -1;
-	position: relative;
-}
-.filmstrip li>video:hover{
-	border:3px solid grey;
+	
 }

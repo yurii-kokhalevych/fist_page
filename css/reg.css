@@ -94,4 +94,10 @@
 }
 button{border-radius: 10px;	border: 2px solid transparent;	border-color: black;
 }
+.login input[type="submit"], .login input[type="reset"]{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+ body{ background-image: url('img/heder_1.jpg';}
+ 
  
