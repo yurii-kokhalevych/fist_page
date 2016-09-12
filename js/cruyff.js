@@ -1,6 +1,6 @@
 $(function(){
-    $("#mar6").click(function(){
-        $(".mar6").show("slow");
+    $("#mar4").click(function(){
+        $(".mar4").show("slow");
         $(".footer").hide();
         $(".header").hide();
         $(".page-navigator").hide();
@@ -8,30 +8,28 @@ $(function(){
         $("#ret1").hide();
         $("#ret2").hide();
         $("#ret3").hide();
-        $("#ret4").hide();
-        $("#ret5").hide();
         $("#ret").hide();
+        $("#ret5").hide();
+        $("#ret6").hide();
         $("#ret7").hide();
         $("#ret8").hide();
         $("#ret9").hide();
-        $("#ret6").animate({
+        $("#ret4").animate({
           top: 0,
           left: 0,
         });
-        $("#ret6").show();
+        $("#ret4").show();
     });
     
-    $("#ret6").click(function(){
+    $("#ret4").click(function(){
     $(".header").show();
     $(".page-navigator").show();
     $(".footer").show();
     $("#inl").show();
     $("#poz").show();
-    $("#mar6").animate({
-        top:"230px",
-        left:"550px"
-    });
-    $("#ret6").hide();
-    $(".mar6").hide("slow");
+    $("#mar4").animate({
+        top:"375px",left:"0px"});
+    $("#ret4").hide();
+    $(".mar4").hide("slow");
     });
 });

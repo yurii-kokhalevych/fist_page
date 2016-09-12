@@ -6,23 +6,25 @@
     <title>
         Top 10 best football players 20 century
     </title>
-    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/pele.css" type="text/css" />
+    <link rel="stylesheet" href="css/maradonna.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
+    <div class="wrapper">
     <!--HEDER-->
     <header class="header">
         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
     </header>
     <!--/HEDER-->
     <!--NAV-->
-    <nav class="page-navigator">
+    <nav class="page-navigator nav">
         <div class="container">
-            <ul>
-                <li><a href="index.html">Main<a></li>
+            <a class="toggle-nav" href="#">&#9776;</a>
+          <div class="nav-mobile">
+            <ul class="left">
+            <li><a href="index.html">Main</a></li>
               <li><a href="player_history.html">Player history</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="video.html">Video</a></li>
@@ -30,166 +32,175 @@
             </ul>
             <br>
             <!--Login form-->
+            <ul class="right">
+
             <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
                 <!--<input type="search" placeholder="Search">-->
                 <br>
                 <br>
                 <input type="submit" value="Sign in" id="in">
-                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Sign out" id="exit">
                 <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
             </form>
+</ul>
+
             <!--/Login form-->
+        </div>
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <main>
-        <section class="section">
-            <!--HEDER-->
-            <header class="header-of-section">
-                <h2>Diego Maradona</h2>
-            </header>
-            <!--/HEDER-->
-            <!--MAIN-->
-            <div id="openModal" class="modalDialog">
-                <div>
-                    <a href="#close" title="Close" class="close">X</a>
+    <main class="main"> 
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
 
-                    <h1>Registration form</h1>
-                    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
-                        <label for="name">Your name*</label>
-                        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
-                        <label for="surname">Your surname*</label>
-                        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                        <label for="gender">Your gender*</label>
-                        <input type="radio" name="gender" value="male" />Male
-                        <input type="radio" name="gender" value="female" />Female<br><br>
-                        <label for="birthday">Your date of birthday*</label>
-                        <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
-                        <label for="email">Your email*</label>
-                        <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
-                        <label for="mobilephone">Your mobilephone*</label>
-                        <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
-                        <label for="city">City</label>
-                        <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
-                        <input type="submit" value="OK" id="btn-send" />
-                    </form>
+                <h1>Registration form</h1>
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                    <label for="surname">Your surname*</label>
+                    <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                    <label for="male">Your gender*</label>
+                    <input type="radio" name="gender" value="male" id="male"/>Male
+                    <label for="female"></label>
+                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
+                    <label for="birthday">Your date of birthday*</label>
+                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <label for="email">Your email*</label>
+                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                    <label for="mobilephone">Your mobilephone*</label>
+                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="submit" value="OK" id="btn-send" />
+                </form>
 
-                </div>
             </div>
-            <div class="item">
-                <img src="maradona.jpg" alt="maradona" style="width:250px; height:450px;"></img>
-            </div>
-            <p>Diego Armando Maradona ( born 30 October 1960) is a retired Argentine professional footballer. He has served as a manager and coach at other clubs as well as the national team of Argentina. Many in the sport, including football writers, former
-                players, current players and football fans, regard Maradona as the greatest football player of all time. He was joint FIFA Player of the 20th Century with Pele. An advanced playmaker who operated in the classic number 10 position, Maradona
-                is the first player in football history to set the world record transfer fee twice, first when he transferred to Barcelona for a then world record ?5 million, and second, when he transferred to Napoli for another record fee ?6.9 million.
-                He played for Argentinos Juniors, Boca Juniors, Barcelona, Napoli, Sevilla and Newell's Old Boys during his club career, and is most famous for his time at Napoli, where he won numerous accolades. In his international career with Argentina,
-                he earned 91 caps and scored 34 goals. Maradona's exceptional vision, passing, ball control, dribbling skills, speed, reflexes and reaction time was combined with his small size (1.65 m or 5 ft 5 in tall) giving him a low center of gravity
-                which allowed him to be more maneuverable than most other football players; he would often dribble past multiple opposing players on a run. His presence on the pitch had a great effect on his team's general performance, while he would
-                often be singled out by the opposition. A precocious talent, Maradona was given the nickname "El Pibe de Oro" ("The Golden Boy"), a name that stuck with him throughout his career. Maradona played in four FIFA World Cups, including the
-                1986 World Cup in Mexico where he captained Argentina and led them to victory over West Germany in the final, and won the Golden Ball as the tournament's best player. In the 1986 World Cup quarter final, he scored both goals in a 2–1 victory
-                over England that entered football history for two different reasons. The first goal was an unpenalized handling foul known as the "Hand of God", while the second goal followed a 60 m (66 yd) dribble past five England players, voted "The
-                Goal of the Century" by FIFA.com voters in 2002. Maradona became coach of Argentina in November 2008. He was in charge of the team at the 2010 World Cup in South Africa before leaving at the end of the tournament. He coached Dubai-based
-                club Al Wasl in the UAE Pro-League for the 2011–12 season. In August 2013, Maradona joined Argentine Primera D club Deportivo Riestra's staff as "spiritual coach".
-            </p>
-
-            <p>
-                <h4>Club career</h4>
-                <hr> Argentinos Juniors and Boca Juniors Maradona celebrating his first goal with Boca Juniors, February 1981 On 20 October 1976, Maradona made his professional debut for Argentinos Juniors, 10 days before his 16th birthday. He entered to
-                the pitch wearing the number 16 jersey, and after the game stated, "That day I felt I had held the sky in my hands." Maradona scored his first goal in the Primera Division against Marplatense team San Lorenzo on 14 November 1976, two weeks
-                after turning 16. Maradona spent five years at Argentinos Juniors, from 1976 to 1981, scoring 115 goals in 167 appearances before his US$ 4 million transfer to Boca Juniors. Maradona received offers to join other clubs, including River
-                Plate who offered to make him the club's best paid player. Nevertheless, Maradona expressed his will to be transferred to Boca Juniors, the team he always wanted to play for. Maradona signed a contract with Boca Juniors on 20 February
-                1981. He made his debut two days later against Talleres de Cordoba, scoring twice in the club's 4–1 win. On 10 April, Maradona played his first Superclasico against River Plate at La Bombonera. Boca defeated River 3–0 with Maradona scoring
-                a goal after dribbling past Alberto Tarantini and Fillol. Despite the distrustful relationship between Maradona and Boca Juniors manager, Silvio Marzolini, Boca had a successful season, winning the league title after securing a point against
-                Racing Club. That would be the only title won by Maradona in the Argentine domestic league. Barcelona After the 1982 World Cup, in June, Maradona was transferred to Barcelona in Spain for a then world record fee of ?5 million ($7.6 million).
-                In 1983, under coach Cesar Luis Menotti, Barcelona and Maradona won the Copa del Rey (Spain's annual national cup competition), beating Real Madrid, and the Spanish Super Cup, beating Athletic Bilbao. On 26 June 1983, Barcelona defeated
-                Real Madrid on the road in one of the world's biggest club games, El Clasico, a match where Maradona scored and became the first Barcelona player to be applauded by archrival Real Madrid fans. Maradona dribbled past Madrid goalkeeper Agustin,
-                and as he approached the empty goal, he stopped just as Madrid defender Juan Jose came sliding in a desperate attempt to block the shot and ended up crashing into the post, before Maradona slotted the ball into the net. The manner of the
-                goal led to many inside the stadium start applauding; only Ronaldinho (in November 2005) and Andres Iniesta (in November 2015) have since been granted such an ovation as Barcelona players from Madrid fans at the Santiago Bernabeu. Due
-                to illness and injury as well as controversial incidents on the field, Maradona had a difficult tenure in Barcelona. First a bout of hepatitis, then a broken ankle in a La Liga game at the Camp Nou in September 1983 caused by an ill-timed
-                tackle by Athletic Bilbao's Andoni Goikoetxea, threatened to jeopardize Maradona's career, but after treatment and therapy, it was possible for him to be back on the pitch after a recovery period of three months. Athletic Bilbao defender
-                Andoni Goikoetxea, dubbed "The butcher from Bilbao", was involved in two controversial incidents with Maradona. The end of the 1983–84 season included a violent and chaotic fight Maradona was directly involved in at the 1984 Copa del Rey
-                final at the Santiago Bernabeu against Athletic Bilbao. After receiving another rough tackle by Goikoetxea which wounded his leg, being taunted with xenophobic insults throughout the match by Bilbao fans, and being provoked by Bilbao's
-                Miguel Sola at full time as Barcelona lost 1–0, Maradona snapped. He aggressively got up, stood inches from Sola's face and the two exchanged words. This started a chain reaction of emotional reactions from both teams. Using expletives,
-                Sola mimicked a gesture from the crowd towards Maradona by using a xenophobic term. Maradona then headbutted Sola, elbowed another Bilbao player in the face and kneed another player in the head, knocking him out cold. The Bilbao squad
-                surrounded Maradona to exact some retribution with Goikoetxea connecting with a high kick to his chest, before the rest of the Barcelona squad joined in to help Maradona. From this point, on the Barcelona and Bilbao players brawled on
-                the field with Maradona in the centre of the action, kicking and punching anyone in a Bilbao shirt. The mass brawl was played out in front of the Spanish King Juan Carlos and an audience of 100,000 fans inside the stadium, and more than
-                half of Spain watching on television. Sixty people were injured, with the incident effectively sealing Maradona's transfer out of the club in what was his last game in a Barcelona shirt. One Barcelona executive stated, "When I saw those
-                scenes of Maradona fighting and the chaos that followed I realized we couldn't go any further with him." Maradona got into frequent disputes with FC Barcelona executives, particularly club president Josep Lluis Nunez, culminating with
-                a demand to be transferred out of Camp Nou in 1984. During his two injury-hit seasons at Barcelona, Maradona scored 38 goals in 58 games. Maradona transferred to Napoli in Italy's Serie A for another world record fee, ?6.9 million ($10.48M).
-                Napoli Maradona arrived in Naples and was presented to the world media as a Napoli player on 5 July 1984, where he was welcomed by 75,000 fans at his presentation at the Stadio San Paolo. Sports writer David Goldblatt commented, "They
-                were convinced that the saviour had arrived." A local newspaper stated that despite the lack of a "mayor, houses, schools, buses, employment and sanitation, none of this matters because we have Maradona". Prior to Maradona's arrival, Italian
-                football was dominated by teams from the north and centre of the country, such as Milan, Juventus, Internazionale and Roma, and no team in the south of the Italian Peninsula had ever won a league title. At Napoli, Maradona reached the
-                peak of his professional career: he soon inherited the captain's armband from Napoli veteran defender Giuseppe Bruscolotti and quickly became an adored star among the club's fans; in his time there he elevated the team to the most successful
-                era in its history. Maradona played for Napoli at a period when North-South tensions in Italy were at a peak due to a variety of issues, notably the economic differences between the two. Led by Maradona, Napoli won their first ever Serie
-                A Italian Championship in 1986–87. Goldblatt wrote, "The celebrations were tumultuous. A rolling series of impromptu street parties and festivities broke out contagiously across the city in a round-the-clock carnival which ran for over
-                a week. The world was turned upside down. The Neapolitans held mock funerals for Juventus and Milan, burning their coffins, their death notices announcing 'May 1987, the other Italy has been defeated. A new empire is born.'" Murals of
-                Maradona were painted on the city's ancient buildings, and newborn children were named in his honor. The following season, the team's prolific attacking trio, formed by Maradona, Bruno Giordano and Careca, was later dubbed the "Ma-Gi-Ca"
-                (magic) front-line. Napoli would win their second league title in 1989–90, and finish runners up in the league twice, in 1987–88 and 1988–89. Other honors during the Maradona era at Napoli included the Coppa Italia in 1987, (second place
-                in the Coppa Italia in 1989), the UEFA Cup in 1989 and the Italian Supercup in 1990. Despite primarily playing in a creative role as an attacking midfielder, Maradona was the top scorer in Serie A in 1987–88, with 15 goals, and is the
-                all-time leading goalscorer for Napoli, with 115 goals. When asked who was the toughest player he ever faced, Milan legend Franco Baresi stated, "Maradona; when he was on form, there was almost no way of stopping him," a view shared by
-                his Milan teammate and fellow all-time great Paolo Maldini, who stated, "The best ever I played against was Maradona." While Maradona was successful on the field, during his time in Italy his personal problems increased. His cocaine use
-                continued, and he received US $70,000 in fines from his club for missing games and practices, ostensibly because of "stress". He faced a scandal there regarding an illegitimate son, and he was also the object of some suspicion over an
-                alleged friendship with the Camorra. Later on, in honour of Maradona and his achievements during his career at Napoli, the number 10 jersey of Napoli was officially retired. Sevilla, Newell's Old Boys and Boca Juniors After serving a 15-month
-                ban for failing a drug test for cocaine, Maradona left Napoli in disgrace in 1992. Despite interest from Real Madrid and Marseille, he signed for Sevilla, where he stayed for one year. In 1993, he played for Newell's Old Boys and in 1995
-                returned to Boca Juniors for a two-year stint.[24] Maradona also appeared for Tottenham Hotspur in a friendly match against Internazionale, shortly before the 1986 World Cup. The match was a testimonial for Osvaldo Ardiles, who insisted
-                that his friend Maradona play.
-                <h4>International career</h4>
-                <hr> During his time with the Argentina national team, Maradona scored 34 goals in 91 appearances. He made his full international debut at age 16, against Hungary, on 27 February 1977. Maradona was left off the Argentine squad for the 1978
-                World Cup on home soil by coach Cesar Luis Menotti who felt he was too young at age 17. At age 18, Maradona played the 1979 FIFA World Youth Championship in Japan and emerged as the star of the tournament, shining in Argentina's 3–1 final
-                win over the Soviet Union. On 2 June 1979, Maradona scored his first senior international goal in a 3–1 win against Scotland at Hampden Park. Maradona and his compatriot and heir apparent, Lionel Messi, are the only players to win the
-                Golden Ball at both the FIFA U-20 World Cup and FIFA World Cup. Maradona did so in 1979 and 1986, which Messi emulated in 2005 and 2014. Maradona played his first World Cup tournament in 1982 in his new country of residence, Spain. Argentina
-                played Belgium in the opening game of the 1982 Cup at the Camp Nou in Barcelona. The Catalan crowd was eager to see their new world-record signing Maradona in action, but he did not perform to expectations, as Argentina, the defending
-                champions, lost 1–0. Although the team convincingly beat both Hungary and El Salvador in Alicante to progress to the second round, there were internal tensions within the team, with the younger, less experienced players at odds with the
-                older, more experienced players. In a team that also included such players as Mario Kempes, Osvaldo Ardiles, Ramon Diaz, Daniel Bertoni, Alberto Tarantini, Ubaldo Fillol and Daniel Passarella, the Argentine side was defeated in the second
-                round by Brazil and by eventual winners Italy. The Italian match is renowned for Maradona being aggressively man-marked by Claudio Gentile, as Italy beat Argentina at the Sarria Stadium in Barcelona, 2–1. Maradona played in all five matches
-                without being substituted, scoring twice against Hungary. He was fouled repeatedly in all five games and particularly in the last one against Brazil at the Sarria, a game that was blighted by poor officiating and violent fouls. With Argentina
-                already down 3–0 to Brazil, Maradona's temper eventually got the better of him and he was sent off with five minutes remaining for a serious retaliatory foul against Batista. Diego Maradona holding the 1986 World Cup trophy Maradona captained
-                the Argentine national team to victory in the 1986 World Cup in Mexico, winning the final in Mexico City against West Germany. Throughout the tournament, Maradona asserted his dominance and was the most dynamic player of the tournament.
-                He played every minute of every Argentina game, scoring five goals and making five assists, three of those in the opening match against South Korea at the Olimpico Stadium. His first goal of the tournament came against Italy in the second
-                group game in Puebla. Argentina eliminated Uruguay in the first knockout round in Puebla, setting up a match against England at the Azteca Stadium in Mexico City. After scoring two contrasting goals in the 2–1 quarter-final win against
-                England, his legend was cemented. The majesty of his second goal and the notoriety of his first led to the French newspaper L'Equipe describing Maradona as "half-angel, half-devil". This match was played with the background of the Falklands
-                War between Argentina and the United Kingdom. Replays showed that the first goal was scored by striking the ball with his hand. Maradona was coyly evasive, describing it as "a little with the head of Maradona and a little with the hand
-                of God". It became known as the "Hand of God". Ultimately, on 22 August 2005, Maradona acknowledged on his television show that he had hit the ball with his hand purposely, and no contact with his head was made, and that he immediately
-                knew the goal was illegitimate. This became known as an international fiasco in World Cup history. The goal stood, much to the wrath of the English players. Maradona's second goal, just four minutes after the hotly disputed hand-goal,
-                was later voted by FIFA as the greatest goal in the history of the World Cup. He received the ball in his own half, swivelled around and with 11 touches ran more than half the length of the field, dribbling past five English outfield players
-                (Peter Beardsley, Steve Hodge, Peter Reid, Terry Butcher and Terry Fenwick) before he left goalkeeper Peter Shilton on his backside with a feint, and slotted the ball into the net. This goal was voted "Goal of the Century" in a 2002 online
-                poll conducted by FIFA. Maradona scoring the "Goal of the Century" against England in Mexico 1986 Maradona followed this with two more goals in a semi-final match against Belgium at the Azteca, including another virtuoso dribbling display
-                for the second goal. In the final match, West Germany attempted to contain him by double-marking, but he nevertheless found the space past the West German player Lothar Matthaus to give the final pass to Jorge Burruchaga for the winning
-                goal. Argentina beat West Germany 3–2 in front of 115,000 fans at the Azteca. During the course of the tournament, Maradona attempted or created more than half of Argentina's shots, embarked on 90 dribbles some three times more than any
-                other player and was fouled 53 times, winning his team twice as many free kicks as any player. Maradona scored or assisted 10 of Argentina's 14 goals, including the assist for the winning goal in the final, ensuring that he would be remembered
-                as one of the greatest names in football history. By the end of the World Cup, Maradona went on to win the Golden Ball as the best player of the tournament by unanimous vote and was widely regarded to have won the World Cup virtually single-handedly,
-                something that he did not entirely agree with. In a tribute to him, Azteca Stadium authorities built a statue of him scoring the "Goal of the Century" and placed it at the entrance of the stadium. Maradona captained Argentina again in
-                the 1990 World Cup in Italy to yet another World Cup final. An ankle injury affected his overall performance, and he was much less dominant than four years earlier. After losing their opening game to the Cameroon at the San Siro in Milan,
-                Argentina were almost eliminated in the first round, only qualifying in third position from their group. In the round of 16 match against Brazil in Turin, Claudio Caniggia scored the only goal after being set up by Maradona. In the quarter-final,
-                Argentina faced Yugoslavia in Florence; the match ending 0–0 after 120 minutes, and Argentina advancing on penalty kicks, despite Maradona missing one of the penalties in the shootout with a weak shot to the goalkeeper's right. The semi-final
-                against the host nation Italy at Maradona's club stadium in Naples, the Stadio San Paolo, was also resolved on penalties after a 1–1 draw. This time, however, Maradona was successful with his effort, daringly rolling the ball into the
-                net with an almost exact replica of his missed shot in the previous round. At the final in Rome, Argentina lost 1–0 to West Germany, the only goal being a penalty by Andreas Brehme in the 85th minute after a controversial foul on Rudi
-                Voller. At the 1994 World Cup in the United States, Maradona played in only two games (both at the Foxboro Stadium near Boston), scoring one goal against Greece, before being sent home after failing a drug test for ephedrine doping. In
-                his autobiography, Maradona argued that the test result was due to his personal trainer giving him the power drink Rip Fuel. His claim was that the U.S. version, unlike the Argentine one, contained the chemical and that, having run out
-                of his Argentine dosage, his trainer unwittingly bought the U.S. formula. FIFA expelled him from USA '94 and Argentina were subsequently eliminated in the second round by Romania in Los Angeles. Maradona has also separately claimed that
-                he had an agreement with FIFA, on which the organization reneged, to allow him to use the drug for weight loss before the competition in order to be able to play. His failed drugs test at the 1994 World Cup signaled the end of his international
-                career, which had lasted 17 years and yielded 34 goals from 91 games.
-
-            </p>
-            <!--MAIN-->
-        </section>
-
-
-    </main>
-    <!--/MAIN-->
-    <!--FOOTER-->
-    <footer class="footer">
-        <div>
-            <p>
-                Copirigth © yuriyk.com 2016
-            </p>
         </div>
-    </footer>
-    <!--/FOOTER-->
-    <script type="text/javascript" src="index.js"></script>
+                <div class="item">
+                    <img src="img/maradona.jpg" alt="maradona" style="width:250px; height:450px;"></img>
+                </div>
+                <p>Diego Armando Maradona ( born 30 October 1960) is a retired Argentine professional footballer. He has served as a manager and coach at other clubs as well as the national team of Argentina. Many in the sport, including football writers,
+                    former players, current players and football fans, regard Maradona as the greatest football player of all time. He was joint FIFA Player of the 20th Century with Pele. An advanced playmaker who operated in the classic number 10 position,
+                    Maradona is the first player in football history to set the world record transfer fee twice, first when he transferred to Barcelona for a then world record ?5 million, and second, when he transferred to Napoli for another record fee
+                    ?6.9 million. He played for Argentinos Juniors, Boca Juniors, Barcelona, Napoli, Sevilla and Newell's Old Boys during his club career, and is most famous for his time at Napoli, where he won numerous accolades. In his international
+                    career with Argentina, he earned 91 caps and scored 34 goals. Maradona's exceptional vision, passing, ball control, dribbling skills, speed, reflexes and reaction time was combined with his small size (1.65 m or 5 ft 5 in tall) giving
+                    him a low center of gravity which allowed him to be more maneuverable than most other football players; he would often dribble past multiple opposing players on a run. His presence on the pitch had a great effect on his team's general
+                    performance, while he would often be singled out by the opposition. A precocious talent, Maradona was given the nickname "El Pibe de Oro" ("The Golden Boy"), a name that stuck with him throughout his career. Maradona played in four
+                    FIFA World Cups, including the 1986 World Cup in Mexico where he captained Argentina and led them to victory over West Germany in the final, and won the Golden Ball as the tournament's best player. In the 1986 World Cup quarter final,
+                    he scored both goals in a 2–1 victory over England that entered football history for two different reasons. The first goal was an unpenalized handling foul known as the "Hand of God", while the second goal followed a 60 m (66 yd) dribble
+                    past five England players, voted "The Goal of the Century" by FIFA.com voters in 2002. Maradona became coach of Argentina in November 2008. He was in charge of the team at the 2010 World Cup in South Africa before leaving at the end
+                    of the tournament. He coached Dubai-based club Al Wasl in the UAE Pro-League for the 2011–12 season. In August 2013, Maradona joined Argentine Primera D club Deportivo Riestra's staff as "spiritual coach".
+                </p>
+
+                <p>
+                    <h4>Club career</h4>
+                    <hr> Argentinos Juniors and Boca Juniors Maradona celebrating his first goal with Boca Juniors, February 1981 On 20 October 1976, Maradona made his professional debut for Argentinos Juniors, 10 days before his 16th birthday. He entered
+                    to the pitch wearing the number 16 jersey, and after the game stated, "That day I felt I had held the sky in my hands." Maradona scored his first goal in the Primera Division against Marplatense team San Lorenzo on 14 November 1976,
+                    two weeks after turning 16. Maradona spent five years at Argentinos Juniors, from 1976 to 1981, scoring 115 goals in 167 appearances before his US$ 4 million transfer to Boca Juniors. Maradona received offers to join other clubs, including
+                    River Plate who offered to make him the club's best paid player. Nevertheless, Maradona expressed his will to be transferred to Boca Juniors, the team he always wanted to play for. Maradona signed a contract with Boca Juniors on 20
+                    February 1981. He made his debut two days later against Talleres de Cordoba, scoring twice in the club's 4–1 win. On 10 April, Maradona played his first Superclasico against River Plate at La Bombonera. Boca defeated River 3–0 with
+                    Maradona scoring a goal after dribbling past Alberto Tarantini and Fillol. Despite the distrustful relationship between Maradona and Boca Juniors manager, Silvio Marzolini, Boca had a successful season, winning the league title after
+                    securing a point against Racing Club. That would be the only title won by Maradona in the Argentine domestic league. Barcelona After the 1982 World Cup, in June, Maradona was transferred to Barcelona in Spain for a then world record
+                    fee of ?5 million ($7.6 million). In 1983, under coach Cesar Luis Menotti, Barcelona and Maradona won the Copa del Rey (Spain's annual national cup competition), beating Real Madrid, and the Spanish Super Cup, beating Athletic Bilbao.
+                    On 26 June 1983, Barcelona defeated Real Madrid on the road in one of the world's biggest club games, El Clasico, a match where Maradona scored and became the first Barcelona player to be applauded by archrival Real Madrid fans. Maradona
+                    dribbled past Madrid goalkeeper Agustin, and as he approached the empty goal, he stopped just as Madrid defender Juan Jose came sliding in a desperate attempt to block the shot and ended up crashing into the post, before Maradona slotted
+                    the ball into the net. The manner of the goal led to many inside the stadium start applauding; only Ronaldinho (in November 2005) and Andres Iniesta (in November 2015) have since been granted such an ovation as Barcelona players from
+                    Madrid fans at the Santiago Bernabeu. Due to illness and injury as well as controversial incidents on the field, Maradona had a difficult tenure in Barcelona. First a bout of hepatitis, then a broken ankle in a La Liga game at the
+                    Camp Nou in September 1983 caused by an ill-timed tackle by Athletic Bilbao's Andoni Goikoetxea, threatened to jeopardize Maradona's career, but after treatment and therapy, it was possible for him to be back on the pitch after a recovery
+                    period of three months. Athletic Bilbao defender Andoni Goikoetxea, dubbed "The butcher from Bilbao", was involved in two controversial incidents with Maradona. The end of the 1983–84 season included a violent and chaotic fight Maradona
+                    was directly involved in at the 1984 Copa del Rey final at the Santiago Bernabeu against Athletic Bilbao. After receiving another rough tackle by Goikoetxea which wounded his leg, being taunted with xenophobic insults throughout the
+                    match by Bilbao fans, and being provoked by Bilbao's Miguel Sola at full time as Barcelona lost 1–0, Maradona snapped. He aggressively got up, stood inches from Sola's face and the two exchanged words. This started a chain reaction
+                    of emotional reactions from both teams. Using expletives, Sola mimicked a gesture from the crowd towards Maradona by using a xenophobic term. Maradona then headbutted Sola, elbowed another Bilbao player in the face and kneed another
+                    player in the head, knocking him out cold. The Bilbao squad surrounded Maradona to exact some retribution with Goikoetxea connecting with a high kick to his chest, before the rest of the Barcelona squad joined in to help Maradona.
+                    From this point, on the Barcelona and Bilbao players brawled on the field with Maradona in the centre of the action, kicking and punching anyone in a Bilbao shirt. The mass brawl was played out in front of the Spanish King Juan Carlos
+                    and an audience of 100,000 fans inside the stadium, and more than half of Spain watching on television. Sixty people were injured, with the incident effectively sealing Maradona's transfer out of the club in what was his last game
+                    in a Barcelona shirt. One Barcelona executive stated, "When I saw those scenes of Maradona fighting and the chaos that followed I realized we couldn't go any further with him." Maradona got into frequent disputes with FC Barcelona
+                    executives, particularly club president Josep Lluis Nunez, culminating with a demand to be transferred out of Camp Nou in 1984. During his two injury-hit seasons at Barcelona, Maradona scored 38 goals in 58 games. Maradona transferred
+                    to Napoli in Italy's Serie A for another world record fee, ?6.9 million ($10.48M). Napoli Maradona arrived in Naples and was presented to the world media as a Napoli player on 5 July 1984, where he was welcomed by 75,000 fans at his
+                    presentation at the Stadio San Paolo. Sports writer David Goldblatt commented, "They were convinced that the saviour had arrived." A local newspaper stated that despite the lack of a "mayor, houses, schools, buses, employment and sanitation,
+                    none of this matters because we have Maradona". Prior to Maradona's arrival, Italian football was dominated by teams from the north and centre of the country, such as Milan, Juventus, Internazionale and Roma, and no team in the south
+                    of the Italian Peninsula had ever won a league title. At Napoli, Maradona reached the peak of his professional career: he soon inherited the captain's armband from Napoli veteran defender Giuseppe Bruscolotti and quickly became an
+                    adored star among the club's fans; in his time there he elevated the team to the most successful era in its history. Maradona played for Napoli at a period when North-South tensions in Italy were at a peak due to a variety of issues,
+                    notably the economic differences between the two. Led by Maradona, Napoli won their first ever Serie A Italian Championship in 1986–87. Goldblatt wrote, "The celebrations were tumultuous. A rolling series of impromptu street parties
+                    and festivities broke out contagiously across the city in a round-the-clock carnival which ran for over a week. The world was turned upside down. The Neapolitans held mock funerals for Juventus and Milan, burning their coffins, their
+                    death notices announcing 'May 1987, the other Italy has been defeated. A new empire is born.'" Murals of Maradona were painted on the city's ancient buildings, and newborn children were named in his honor. The following season, the
+                    team's prolific attacking trio, formed by Maradona, Bruno Giordano and Careca, was later dubbed the "Ma-Gi-Ca" (magic) front-line. Napoli would win their second league title in 1989–90, and finish runners up in the league twice, in
+                    1987–88 and 1988–89. Other honors during the Maradona era at Napoli included the Coppa Italia in 1987, (second place in the Coppa Italia in 1989), the UEFA Cup in 1989 and the Italian Supercup in 1990. Despite primarily playing in
+                    a creative role as an attacking midfielder, Maradona was the top scorer in Serie A in 1987–88, with 15 goals, and is the all-time leading goalscorer for Napoli, with 115 goals. When asked who was the toughest player he ever faced,
+                    Milan legend Franco Baresi stated, "Maradona; when he was on form, there was almost no way of stopping him," a view shared by his Milan teammate and fellow all-time great Paolo Maldini, who stated, "The best ever I played against was
+                    Maradona." While Maradona was successful on the field, during his time in Italy his personal problems increased. His cocaine use continued, and he received US $70,000 in fines from his club for missing games and practices, ostensibly
+                    because of "stress". He faced a scandal there regarding an illegitimate son, and he was also the object of some suspicion over an alleged friendship with the Camorra. Later on, in honour of Maradona and his achievements during his
+                    career at Napoli, the number 10 jersey of Napoli was officially retired. Sevilla, Newell's Old Boys and Boca Juniors After serving a 15-month ban for failing a drug test for cocaine, Maradona left Napoli in disgrace in 1992. Despite
+                    interest from Real Madrid and Marseille, he signed for Sevilla, where he stayed for one year. In 1993, he played for Newell's Old Boys and in 1995 returned to Boca Juniors for a two-year stint.[24] Maradona also appeared for Tottenham
+                    Hotspur in a friendly match against Internazionale, shortly before the 1986 World Cup. The match was a testimonial for Osvaldo Ardiles, who insisted that his friend Maradona play.
+                    <h4>International career</h4>
+                    <hr> During his time with the Argentina national team, Maradona scored 34 goals in 91 appearances. He made his full international debut at age 16, against Hungary, on 27 February 1977. Maradona was left off the Argentine squad for the
+                    1978 World Cup on home soil by coach Cesar Luis Menotti who felt he was too young at age 17. At age 18, Maradona played the 1979 FIFA World Youth Championship in Japan and emerged as the star of the tournament, shining in Argentina's
+                    3–1 final win over the Soviet Union. On 2 June 1979, Maradona scored his first senior international goal in a 3–1 win against Scotland at Hampden Park. Maradona and his compatriot and heir apparent, Lionel Messi, are the only players
+                    to win the Golden Ball at both the FIFA U-20 World Cup and FIFA World Cup. Maradona did so in 1979 and 1986, which Messi emulated in 2005 and 2014. Maradona played his first World Cup tournament in 1982 in his new country of residence,
+                    Spain. Argentina played Belgium in the opening game of the 1982 Cup at the Camp Nou in Barcelona. The Catalan crowd was eager to see their new world-record signing Maradona in action, but he did not perform to expectations, as Argentina,
+                    the defending champions, lost 1–0. Although the team convincingly beat both Hungary and El Salvador in Alicante to progress to the second round, there were internal tensions within the team, with the younger, less experienced players
+                    at odds with the older, more experienced players. In a team that also included such players as Mario Kempes, Osvaldo Ardiles, Ramon Diaz, Daniel Bertoni, Alberto Tarantini, Ubaldo Fillol and Daniel Passarella, the Argentine side was
+                    defeated in the second round by Brazil and by eventual winners Italy. The Italian match is renowned for Maradona being aggressively man-marked by Claudio Gentile, as Italy beat Argentina at the Sarria Stadium in Barcelona, 2–1. Maradona
+                    played in all five matches without being substituted, scoring twice against Hungary. He was fouled repeatedly in all five games and particularly in the last one against Brazil at the Sarria, a game that was blighted by poor officiating
+                    and violent fouls. With Argentina already down 3–0 to Brazil, Maradona's temper eventually got the better of him and he was sent off with five minutes remaining for a serious retaliatory foul against Batista. Diego Maradona holding
+                    the 1986 World Cup trophy Maradona captained the Argentine national team to victory in the 1986 World Cup in Mexico, winning the final in Mexico City against West Germany. Throughout the tournament, Maradona asserted his dominance
+                    and was the most dynamic player of the tournament. He played every minute of every Argentina game, scoring five goals and making five assists, three of those in the opening match against South Korea at the Olimpico Stadium. His first
+                    goal of the tournament came against Italy in the second group game in Puebla. Argentina eliminated Uruguay in the first knockout round in Puebla, setting up a match against England at the Azteca Stadium in Mexico City. After scoring
+                    two contrasting goals in the 2–1 quarter-final win against England, his legend was cemented. The majesty of his second goal and the notoriety of his first led to the French newspaper L'Equipe describing Maradona as "half-angel, half-devil".
+                    This match was played with the background of the Falklands War between Argentina and the United Kingdom. Replays showed that the first goal was scored by striking the ball with his hand. Maradona was coyly evasive, describing it as
+                    "a little with the head of Maradona and a little with the hand of God". It became known as the "Hand of God". Ultimately, on 22 August 2005, Maradona acknowledged on his television show that he had hit the ball with his hand purposely,
+                    and no contact with his head was made, and that he immediately knew the goal was illegitimate. This became known as an international fiasco in World Cup history. The goal stood, much to the wrath of the English players. Maradona's
+                    second goal, just four minutes after the hotly disputed hand-goal, was later voted by FIFA as the greatest goal in the history of the World Cup. He received the ball in his own half, swivelled around and with 11 touches ran more than
+                    half the length of the field, dribbling past five English outfield players (Peter Beardsley, Steve Hodge, Peter Reid, Terry Butcher and Terry Fenwick) before he left goalkeeper Peter Shilton on his backside with a feint, and slotted
+                    the ball into the net. This goal was voted "Goal of the Century" in a 2002 online poll conducted by FIFA. Maradona scoring the "Goal of the Century" against England in Mexico 1986 Maradona followed this with two more goals in a semi-final
+                    match against Belgium at the Azteca, including another virtuoso dribbling display for the second goal. In the final match, West Germany attempted to contain him by double-marking, but he nevertheless found the space past the West German
+                    player Lothar Matthaus to give the final pass to Jorge Burruchaga for the winning goal. Argentina beat West Germany 3–2 in front of 115,000 fans at the Azteca. During the course of the tournament, Maradona attempted or created more
+                    than half of Argentina's shots, embarked on 90 dribbles some three times more than any other player and was fouled 53 times, winning his team twice as many free kicks as any player. Maradona scored or assisted 10 of Argentina's 14
+                    goals, including the assist for the winning goal in the final, ensuring that he would be remembered as one of the greatest names in football history. By the end of the World Cup, Maradona went on to win the Golden Ball as the best
+                    player of the tournament by unanimous vote and was widely regarded to have won the World Cup virtually single-handedly, something that he did not entirely agree with. In a tribute to him, Azteca Stadium authorities built a statue of
+                    him scoring the "Goal of the Century" and placed it at the entrance of the stadium. Maradona captained Argentina again in the 1990 World Cup in Italy to yet another World Cup final. An ankle injury affected his overall performance,
+                    and he was much less dominant than four years earlier. After losing their opening game to the Cameroon at the San Siro in Milan, Argentina were almost eliminated in the first round, only qualifying in third position from their group.
+                    In the round of 16 match against Brazil in Turin, Claudio Caniggia scored the only goal after being set up by Maradona. In the quarter-final, Argentina faced Yugoslavia in Florence; the match ending 0–0 after 120 minutes, and Argentina
+                    advancing on penalty kicks, despite Maradona missing one of the penalties in the shootout with a weak shot to the goalkeeper's right. The semi-final against the host nation Italy at Maradona's club stadium in Naples, the Stadio San
+                    Paolo, was also resolved on penalties after a 1–1 draw. This time, however, Maradona was successful with his effort, daringly rolling the ball into the net with an almost exact replica of his missed shot in the previous round. At the
+                    final in Rome, Argentina lost 1–0 to West Germany, the only goal being a penalty by Andreas Brehme in the 85th minute after a controversial foul on Rudi Voller. At the 1994 World Cup in the United States, Maradona played in only two
+                    games (both at the Foxboro Stadium near Boston), scoring one goal against Greece, before being sent home after failing a drug test for ephedrine doping. In his autobiography, Maradona argued that the test result was due to his personal
+                    trainer giving him the power drink Rip Fuel. His claim was that the U.S. version, unlike the Argentine one, contained the chemical and that, having run out of his Argentine dosage, his trainer unwittingly bought the U.S. formula. FIFA
+                    expelled him from USA '94 and Argentina were subsequently eliminated in the second round by Romania in Los Angeles. Maradona has also separately claimed that he had an agreement with FIFA, on which the organization reneged, to allow
+                    him to use the drug for weight loss before the competition in order to be able to play. His failed drugs test at the 1994 World Cup signaled the end of his international career, which had lasted 17 years and yielded 34 goals from 91
+                    games.
+
+                </p>
+                <!--MAIN-->
+            </section>
+
+
+        </main>
+        <!--/MAIN-->
+        <!--FOOTER-->
+        <footer class="footer">
+            <div>
+                <p>
+                    Copyrigth © yuriyk.com 2016
+                </p>
+            </div>
+        </footer>
+        <!--/FOOTER-->
+        </div>
+        <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/log.js"></script>
+        <script type="text/javascript" src="js/test-1.js"></script>
+        <script type="text/javascript" src="js/id.js"></script>
+        <script type="text/javascript" src="js/blog.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/log.js"></script>
+    
 </body>
 
 </html>

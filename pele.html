@@ -6,160 +6,177 @@
     <title>
         Top 10 best football players 20 century
     </title>
-    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/pele.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
+    <div class="wrapper">
     <!--HEDER-->
     <header class="header">
         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
     </header>
     <!--/HEDER-->
     <!--NAV-->
-    <nav class="page-navigator">
+    <nav class="page-navigator nav">
         <div class="container">
-            <ul>
-                <li><a href="index.html">Main<a></li>
+            <a class="toggle-nav" href="#">&#9776;</a>
+          <div class="nav-mobile">
+            <ul class="left">
+            <li><a href="index.html">Main</a></li>
               <li><a href="player_history.html">Player history</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="video.html">Video</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html">Comments</a></li>
             </ul>
             <br>
             <!--Login form-->
+            <ul class="right">
+
             <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
                 <!--<input type="search" placeholder="Search">-->
                 <br>
                 <br>
                 <input type="submit" value="Sign in" id="in">
-                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Sign out" id="exit">
                 <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
             </form>
+</ul>
+
             <!--/Login form-->
+        </div>
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <main>
-         <div id="openModal" class="modalDialog">
+    <main class="main"> 
+        <div id="openModal" class="modalDialog">
             <div>
                 <a href="#close" title="Close" class="close">X</a>
 
                 <h1>Registration form</h1>
-                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
                     <label for="name">Your name*</label>
                     <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
                     <label for="surname">Your surname*</label>
                     <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="gender">Your gender*</label>
-                    <input type="radio" name="gender" value="male" />Male
-                    <input type="radio" name="gender" value="female" />Female<br><br>
+                    <label for="male">Your gender*</label>
+                    <input type="radio" name="gender" value="male" id="male"/>Male
+                    <label for="female"></label>
+                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
                     <label for="birthday">Your date of birthday*</label>
-                    <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
                     <label for="email">Your email*</label>
                     <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
                     <label for="mobilephone">Your mobilephone*</label>
-                    <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
                     <label for="city">City</label>
-                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
                     <input type="submit" value="OK" id="btn-send" />
                 </form>
 
             </div>
         </div>
-        <section class="section">
-            <!--HEDER-->
-            <header class="header-of-section">
-                <h2>Pele</h2>
-            </header>
-            <!--/HEDER-->
-            <!--MAIN-->
-            <div class="item">
-                <img src="pele-1.jpg" alt="pele" style="width:250px; height:450px;"></img>
+            <section class="section">
+                <!--HEDER-->
+                <header class="header-of-section">
+                    <h2>Pele</h2>
+                </header>
+                <!--/HEDER-->
+                <!--MAIN-->
+                <div class="item">
+                    <img src="img/pele-1.jpg" alt="pele" style="width:250px; height:450px;"></img>
+                </div>
+                <p>Edson Arantes do Nascimento born 23 October 1940), known as Pele, is a retired Brazilian professional footballer who played as a forward. He is widely regarded as the greatest player of all time. Pele has also been known for connecting
+                    the phrase "The Beautiful Game" with football. In 1999, he was voted World Player of the Century by the International Federation of Football History & Statistics (IFFHS). That year, France Football asked their former Ballon d'Or winners
+                    to choose the Football Player of the Century; they selected Pele. In 1999, Pele was elected Athlete of the Century by the IOC. That year, Time named him in their list of 100 most influential people of the 20th century. In 2013 he received
+                    the FIFA Ballon d'Or Prix d'Honneur in recognition of his career and achievements as a global icon of football. According to the IFFHS, Pele is the most successful league goal-scorer in the world, with 541 league goals. During his
+                    career, Pele scored 1281 goals in 1363 games, which included unofficial friendlies and tour games. He was listed in the Guinness World Records for most career goals scored in football for this. During his playing days, Pele was for
+                    a period the best-paid athlete in the world. In Brazil, he is hailed as a national hero for his accomplishments in football and for his outspoken support of policies that improve the social conditions of the poor. In 1961, Brazil President
+                    Janio Quadros had Pele declared a national treasure. During his career, he became known as "The Black Pearl" (A Perola Negra), "The King of Football" (O Rei do Futebol), "The King Pele" (O Rei Pele) or simply "The King" (O Rei). Pele
+                    began playing for Santos at age 15 and the Brazil national football team at 16. During his international career, he won three FIFA World Cups: 1958, 1962 and 1970, being the only player ever to do so. Pele is the all-time leading goalscorer
+                    for Brazil with 77 goals in 91 games. At club level he is also the record goalscorer for Santos, and led them to the 1962 and 1963 Copa Libertadores. Pele's "electrifying play and penchant for spectacular goals" made him a star around
+                    the world, and his club team Santos toured internationally in order to take full advantage of his popularity. Since retiring in 1977, Pele has been a worldwide ambassador for football and has made many acting and commercial ventures.
+                    In 2010, he was named the Honorary President of the New York Cosmos.
+
+                </p>
+
+                <p>
+                    <h4>Club career</h4>
+                    <hr> In 1956, de Brito took Pele to Santos, an industrial and port city located near Sao Paulo, to try out for professional club Santos FC, telling the directors at Santos that the 15-year-old would be "the greatest football player in
+                    the world." Pele impressed Santos coach Lula during his trial at the Estadio Vila Belmiro, and he signed a professional contract with the club in June 1956. Pele was highly promoted in the local media as a future superstar. He made
+                    his senior team debut on 7 September 1956 at the age of 15 against Corinthians Santo Andre and had an impressive performance in a 7–1 victory, scoring the first of his record 1281 goals in football during the match. When the 1957 season
+                    started, Pele was given a starting place in the first team and, at the age of 16, became the top scorer in the league. Ten months after signing professionally, the teenager was called up to the Brazil national team. After the 1962
+                    World Cup, wealthy European clubs such as Real Madrid, Juventus and Manchester United tried to sign him, but the government of Brazil declared Pele an "official national treasure" to prevent him from being transferred out of the country.
+                    Pele with Santos in the Netherlands, October 1962 Pele won his first major title with Santos in 1958 as the team won the Campeonato Paulista; Pele would finish the tournament as top scorer with 58 goals, a record that stands today.
+                    A year later, he would help the team earn their first victory in the Torneio Rio-Sao Paulo with a 3–0 over Vasco da Gama. However, Santos was unable to retain the Paulista title. In 1960, Pele scored 33 goals to help his team regain
+                    the Campeonato Paulista trophy but lost out on the Rio-Sao Paulo tournament after finishing in 8th place. Another 47 goals from Pele saw Santos retain the Campeonato Paulista. The club went on to win the Taca Brasil that same year,
+                    beating Bahia in the finals; Pele finished as top scorer of the tournament with nine goals. The victory allowed Santos to participate in the Copa Libertadores, the most prestigious club tournament in the Western hemisphere. As the
+                    defending champions, Santos qualified automatically to the semi-final stage of the 1963 Copa Libertadores. The ballet blanco managed to retain the title after victories over Botafogo and Boca Juniors. Pele helped Santos overcome a
+                    Botafogo team that contained Brazilian legends such as Garrincha and Jairzinho with a last-minute goal in the first leg of the semi-finals which made it 1–1. In the second leg, Pele scored a hat-trick in the Estadio do Maracana as
+                    Santos won, 0–4, in the second leg. Santos started the final series by winning, 3–2, in the first leg and defeating Boca Juniors 1–2, in La Bombonera, with another goal from Pele. Santos became the first (and to date the only) Brazilian
+                    team to lift the Copa Libertadores in Argentine soil. Pele finished the tournament with 5 goals. Santos lost the Campeonato Paulista after finishing in third place but went on to win the Rio-Sao Paulo tournament after a 0–3 win over
+                    Flamengo in the final, with Pele scoring one. Pele would also help Santos retain the Intercontinental Cup and the Taca Brasil. Pele is the all-time leading scorer with Santos. In the 1964 Copa Libertadores, Santos were beaten in both
+                    legs of the semi-finals by Independiente. The club won the Campeonato Paulista, with Pele netting 34 goals. Santos also shared the Rio-Sao Paulo title with Botafogo and won the Taca Brasil for the fourth consecutive year. In the 1965
+                    Copa Libertadores, Santos reached the semi-finals and met Penarol in a rematch of the 1962 final. After two matches, a playoff was needed to break the tie.Unlike 1962, Penarol came out on top and eliminated Santos 2–1. Pele would,
+                    however, finish as the topscorer of the tournament with eight goals. This proved to be the start of a decline as Santos failed to retain the Torneio Rio-Sao Paulo. In 1966, Pele and Santos also failed to retain the Taca Brasil as O
+                    Rei's goals weren't enough to prevent a 9–4 defeat by Cruzeiro (led by Tostao) in the final series. The club did however win the Campeonato Paulista in 1967, 1968 and 1969. On 19 November 1969, Pele scored his 1000th goal in all competitions,
+                    in what was a highly anticipated moment in Brazil. The goal, popularly dubbed O Milesimo (The Thousandth), occurred in a match against Vasco da Gama, when Pele scored from a penalty kick, at the Maracana Stadium. Pele states that his
+                    most memorable goal was scored at Rua Javari stadium on a Campeonato Paulista match against Sao Paulo rival Juventus on 2 August 1959. As there is no video footage of this match, Pele asked that a computer animation be made of this
+                    specific goal. In March 1961, Pele scored the gol de placa (goal worthy of a plaque), against Fluminense at the Maracana. Pele received the ball on the edge of his own penalty area, and ran the length of the field, eluding opposition
+                    players with feints, before striking the ball beyond the goalkeeper. A plaque was commissioned with a dedication to "the most beautiful goal in the history of the Maracana". Pele's "electrifying play and penchant for spectacular goals"
+                    made him a star around the world. His team Santos toured internationally in order to take full advantage of his popularity. In 1967, the two factions involved in the Nigerian Civil War agreed to a 48-hour ceasefire so they could watch
+                    Pele play an exhibition game in Lagos. During his time at Santos, Pele played alongside many gifted players, including Zito, Pepe, and Coutinho; the latter partnered him in numerous one-two plays, attacks, and goals. New York Cosmos
+                    Pele (left) with Eusebio (far right) before a game in the NASL in April 1977 After the 1974 season (his 19th with Santos), Pele retired from Brazilian club football although he continued to occasionally play for Santos in official
+                    competitive matches. Two years later, he came out of semi-retirement to sign with the New York Cosmos of the North American Soccer League (NASL) for the 1975 season. Though well past his prime at this point, Pele is credited with significantly
+                    increasing public awareness and interest of the sport in the United States. Hoping to fuel the same kind of awareness in the Dominican Republic, he and the Cosmos team played in an exhibition match against Haitian team, Violette AC,
+                    in the Santo Domingo Olympic Stadium on 3 June 1976, where over 25,000 fans watched him score a winning goal in the last seconds of the match, leading the Cosmos to a 2–1 victory. He led the Cosmos to the 1977 NASL championship, in
+                    his third and final season with the club. On 1 October 1977, Pele closed out his career in an exhibition match between the Cosmos and Santos. Santos arrived in New York and New Jersey after previously defeating the Seattle Sounders,
+                    2–0. The match was played in front of a sold out crowd at Giants Stadium and was televised in the United States on ABC's Wide World of Sports as well as throughout the world. Pele's father and wife both attended the match, as well
+                    as Muhammad Ali and Bobby Moore. Pele played the first half for the Cosmos and the second half for Santos. Pele scored his final goal from a direct free kick, and Cosmos won 2–1.
+
+                    <h4>International career</h4>
+                    <hr> Pele (crouched, second from right to left) and the Brazil national team at 1959 Copa America Pele's first international match was a 2–1 defeat against Argentina on 7 July 1957 at the Maracana. In that match, he scored his first goal
+                    for Brazil aged 16 years and nine months to become the youngest player to score in international football. 1958 World Cup Pele cries on the shoulder of Gilmar dos Santos Neves, after Brazil won the 1958 World Cup. Pele arrived in Sweden
+                    sidelined by a knee injury but on his return from the treatment room, his colleagues closed ranks and insisted upon his selection. His first match was against the USSR in the third match of the first round of the 1958 FIFA World Cup,
+                    where he gave the assist to Vava's second goal. He was the youngest player of that tournament, and at the time the youngest ever to play in the World Cup. He scored his first World Cup goal against Wales in quarter-finals, the only
+                    goal of the match, to help Brazil advance to semifinals, while becoming the youngest ever World Cup goalscorer at 17 years and 239 days. Against France in the semifinal, Brazil were leading 2–1 at halftime, and then Pele scored a hat-trick,
+                    becoming the youngest in World Cup history to do so. On 29 June 1958 Pele became the youngest player to play in a World Cup final match at 17 years and 249 days. He scored two goals in that final as Brazil beat Sweden 5–2 in the capital
+                    of Stockholm. His first goal where he flicked the ball over a defender before volleying into the corner of the net, was selected as one of the best goals in the history of the World Cup. Following Pele's second goal, Swedish player
+                    Sigvard Parling would later comment; "When Pele scored the fifth goal in that Final, I have to be honest and say I felt like applauding". When the match ended, Pele passed out on the field, and had to be attended by the medical staff.
+                    He then recovered, and was compelled by the victory to weep as he was being congratulated by his teammates. He finished the tournament with six goals in four matches played, tied for second place, behind record-breaker Just Fontaine,
+                    and was named best young player of the tournament. It was in the 1958 World Cup that Pele began wearing a jersey with number 10. Recently it has become known that the event was the result of disorganization: the leaders did not send
+                    the shirt numbers of players and it was up to FIFA to choose the number 10 shirt to Pele who was a substitute on the occasion. The press proclaimed Pele the greatest revelation of the 1958 World Cup, and he was also retroactively given
+                    the Silver Ball as the second best player of the tournament, behind Didi.
+
+                </p>
+                <!--MAIN-->
+            </section>
+
+
+        </main>
+        <!--/MAIN-->
+        <!--FOOTER-->
+        <footer class="footer">
+            <div>
+                <p>
+                    Copyrigth © yuriyk.com 2016
+                </p>
             </div>
-            <p>Edson Arantes do Nascimento born 23 October 1940), known as Pele, is a retired Brazilian professional footballer who played as a forward. He is widely regarded as the greatest player of all time. Pele has also been known for connecting the
-                phrase "The Beautiful Game" with football. In 1999, he was voted World Player of the Century by the International Federation of Football History & Statistics (IFFHS). That year, France Football asked their former Ballon d'Or winners to
-                choose the Football Player of the Century; they selected Pele. In 1999, Pele was elected Athlete of the Century by the IOC. That year, Time named him in their list of 100 most influential people of the 20th century. In 2013 he received
-                the FIFA Ballon d'Or Prix d'Honneur in recognition of his career and achievements as a global icon of football. According to the IFFHS, Pele is the most successful league goal-scorer in the world, with 541 league goals. During his career,
-                Pele scored 1281 goals in 1363 games, which included unofficial friendlies and tour games. He was listed in the Guinness World Records for most career goals scored in football for this. During his playing days, Pele was for a period the
-                best-paid athlete in the world. In Brazil, he is hailed as a national hero for his accomplishments in football and for his outspoken support of policies that improve the social conditions of the poor. In 1961, Brazil President Janio Quadros
-                had Pele declared a national treasure. During his career, he became known as "The Black Pearl" (A Perola Negra), "The King of Football" (O Rei do Futebol), "The King Pele" (O Rei Pele) or simply "The King" (O Rei). Pele began playing for
-                Santos at age 15 and the Brazil national football team at 16. During his international career, he won three FIFA World Cups: 1958, 1962 and 1970, being the only player ever to do so. Pele is the all-time leading goalscorer for Brazil with
-                77 goals in 91 games. At club level he is also the record goalscorer for Santos, and led them to the 1962 and 1963 Copa Libertadores. Pele's "electrifying play and penchant for spectacular goals" made him a star around the world, and his
-                club team Santos toured internationally in order to take full advantage of his popularity. Since retiring in 1977, Pele has been a worldwide ambassador for football and has made many acting and commercial ventures. In 2010, he was named
-                the Honorary President of the New York Cosmos.
-
-            </p>
-
-            <p>
-                <h4>Club career</h4>
-                <hr> In 1956, de Brito took Pele to Santos, an industrial and port city located near Sao Paulo, to try out for professional club Santos FC, telling the directors at Santos that the 15-year-old would be "the greatest football player in the
-                world." Pele impressed Santos coach Lula during his trial at the Estadio Vila Belmiro, and he signed a professional contract with the club in June 1956. Pele was highly promoted in the local media as a future superstar. He made his senior
-                team debut on 7 September 1956 at the age of 15 against Corinthians Santo Andre and had an impressive performance in a 7–1 victory, scoring the first of his record 1281 goals in football during the match. When the 1957 season started,
-                Pele was given a starting place in the first team and, at the age of 16, became the top scorer in the league. Ten months after signing professionally, the teenager was called up to the Brazil national team. After the 1962 World Cup, wealthy
-                European clubs such as Real Madrid, Juventus and Manchester United tried to sign him, but the government of Brazil declared Pele an "official national treasure" to prevent him from being transferred out of the country. Pele with Santos
-                in the Netherlands, October 1962 Pele won his first major title with Santos in 1958 as the team won the Campeonato Paulista; Pele would finish the tournament as top scorer with 58 goals, a record that stands today. A year later, he would
-                help the team earn their first victory in the Torneio Rio-Sao Paulo with a 3–0 over Vasco da Gama. However, Santos was unable to retain the Paulista title. In 1960, Pele scored 33 goals to help his team regain the Campeonato Paulista trophy
-                but lost out on the Rio-Sao Paulo tournament after finishing in 8th place. Another 47 goals from Pele saw Santos retain the Campeonato Paulista. The club went on to win the Taca Brasil that same year, beating Bahia in the finals; Pele
-                finished as top scorer of the tournament with nine goals. The victory allowed Santos to participate in the Copa Libertadores, the most prestigious club tournament in the Western hemisphere. As the defending champions, Santos qualified
-                automatically to the semi-final stage of the 1963 Copa Libertadores. The ballet blanco managed to retain the title after victories over Botafogo and Boca Juniors. Pele helped Santos overcome a Botafogo team that contained Brazilian legends
-                such as Garrincha and Jairzinho with a last-minute goal in the first leg of the semi-finals which made it 1–1. In the second leg, Pele scored a hat-trick in the Estadio do Maracana as Santos won, 0–4, in the second leg. Santos started
-                the final series by winning, 3–2, in the first leg and defeating Boca Juniors 1–2, in La Bombonera, with another goal from Pele. Santos became the first (and to date the only) Brazilian team to lift the Copa Libertadores in Argentine soil.
-                Pele finished the tournament with 5 goals. Santos lost the Campeonato Paulista after finishing in third place but went on to win the Rio-Sao Paulo tournament after a 0–3 win over Flamengo in the final, with Pele scoring one. Pele would
-                also help Santos retain the Intercontinental Cup and the Taca Brasil. Pele is the all-time leading scorer with Santos. In the 1964 Copa Libertadores, Santos were beaten in both legs of the semi-finals by Independiente. The club won the
-                Campeonato Paulista, with Pele netting 34 goals. Santos also shared the Rio-Sao Paulo title with Botafogo and won the Taca Brasil for the fourth consecutive year. In the 1965 Copa Libertadores, Santos reached the semi-finals and met Penarol
-                in a rematch of the 1962 final. After two matches, a playoff was needed to break the tie.Unlike 1962, Penarol came out on top and eliminated Santos 2–1. Pele would, however, finish as the topscorer of the tournament with eight goals. This
-                proved to be the start of a decline as Santos failed to retain the Torneio Rio-Sao Paulo. In 1966, Pele and Santos also failed to retain the Taca Brasil as O Rei's goals weren't enough to prevent a 9–4 defeat by Cruzeiro (led by Tostao)
-                in the final series. The club did however win the Campeonato Paulista in 1967, 1968 and 1969. On 19 November 1969, Pele scored his 1000th goal in all competitions, in what was a highly anticipated moment in Brazil. The goal, popularly
-                dubbed O Milesimo (The Thousandth), occurred in a match against Vasco da Gama, when Pele scored from a penalty kick, at the Maracana Stadium. Pele states that his most memorable goal was scored at Rua Javari stadium on a Campeonato Paulista
-                match against Sao Paulo rival Juventus on 2 August 1959. As there is no video footage of this match, Pele asked that a computer animation be made of this specific goal. In March 1961, Pele scored the gol de placa (goal worthy of a plaque),
-                against Fluminense at the Maracana. Pele received the ball on the edge of his own penalty area, and ran the length of the field, eluding opposition players with feints, before striking the ball beyond the goalkeeper. A plaque was commissioned
-                with a dedication to "the most beautiful goal in the history of the Maracana". Pele's "electrifying play and penchant for spectacular goals" made him a star around the world. His team Santos toured internationally in order to take full
-                advantage of his popularity. In 1967, the two factions involved in the Nigerian Civil War agreed to a 48-hour ceasefire so they could watch Pele play an exhibition game in Lagos. During his time at Santos, Pele played alongside many gifted
-                players, including Zito, Pepe, and Coutinho; the latter partnered him in numerous one-two plays, attacks, and goals. New York Cosmos Pele (left) with Eusebio (far right) before a game in the NASL in April 1977 After the 1974 season (his
-                19th with Santos), Pele retired from Brazilian club football although he continued to occasionally play for Santos in official competitive matches. Two years later, he came out of semi-retirement to sign with the New York Cosmos of the
-                North American Soccer League (NASL) for the 1975 season. Though well past his prime at this point, Pele is credited with significantly increasing public awareness and interest of the sport in the United States. Hoping to fuel the same
-                kind of awareness in the Dominican Republic, he and the Cosmos team played in an exhibition match against Haitian team, Violette AC, in the Santo Domingo Olympic Stadium on 3 June 1976, where over 25,000 fans watched him score a winning
-                goal in the last seconds of the match, leading the Cosmos to a 2–1 victory. He led the Cosmos to the 1977 NASL championship, in his third and final season with the club. On 1 October 1977, Pele closed out his career in an exhibition match
-                between the Cosmos and Santos. Santos arrived in New York and New Jersey after previously defeating the Seattle Sounders, 2–0. The match was played in front of a sold out crowd at Giants Stadium and was televised in the United States on
-                ABC's Wide World of Sports as well as throughout the world. Pele's father and wife both attended the match, as well as Muhammad Ali and Bobby Moore. Pele played the first half for the Cosmos and the second half for Santos. Pele scored
-                his final goal from a direct free kick, and Cosmos won 2–1.
-
-                <h4>International career</h4>
-                <hr> Pele (crouched, second from right to left) and the Brazil national team at 1959 Copa America Pele's first international match was a 2–1 defeat against Argentina on 7 July 1957 at the Maracana. In that match, he scored his first goal for
-                Brazil aged 16 years and nine months to become the youngest player to score in international football. 1958 World Cup Pele cries on the shoulder of Gilmar dos Santos Neves, after Brazil won the 1958 World Cup. Pele arrived in Sweden sidelined
-                by a knee injury but on his return from the treatment room, his colleagues closed ranks and insisted upon his selection. His first match was against the USSR in the third match of the first round of the 1958 FIFA World Cup, where he gave
-                the assist to Vava's second goal. He was the youngest player of that tournament, and at the time the youngest ever to play in the World Cup. He scored his first World Cup goal against Wales in quarter-finals, the only goal of the match,
-                to help Brazil advance to semifinals, while becoming the youngest ever World Cup goalscorer at 17 years and 239 days. Against France in the semifinal, Brazil were leading 2–1 at halftime, and then Pele scored a hat-trick, becoming the
-                youngest in World Cup history to do so. On 29 June 1958 Pele became the youngest player to play in a World Cup final match at 17 years and 249 days. He scored two goals in that final as Brazil beat Sweden 5–2 in the capital of Stockholm.
-                His first goal where he flicked the ball over a defender before volleying into the corner of the net, was selected as one of the best goals in the history of the World Cup. Following Pele's second goal, Swedish player Sigvard Parling would
-                later comment; "When Pele scored the fifth goal in that Final, I have to be honest and say I felt like applauding". When the match ended, Pele passed out on the field, and had to be attended by the medical staff. He then recovered, and
-                was compelled by the victory to weep as he was being congratulated by his teammates. He finished the tournament with six goals in four matches played, tied for second place, behind record-breaker Just Fontaine, and was named best young
-                player of the tournament. It was in the 1958 World Cup that Pele began wearing a jersey with number 10. Recently it has become known that the event was the result of disorganization: the leaders did not send the shirt numbers of players
-                and it was up to FIFA to choose the number 10 shirt to Pele who was a substitute on the occasion. The press proclaimed Pele the greatest revelation of the 1958 World Cup, and he was also retroactively given the Silver Ball as the second
-                best player of the tournament, behind Didi.
-
-            </p>
-            <!--MAIN-->
-        </section>
-
-
-    </main>
-    <!--/MAIN-->
-    <!--FOOTER-->
-    <footer class="footer">
-        <div>
-            <p>
-                Copirigth © yuriyk.com 2016
-            </p>
+        </footer>
+        <!--/FOOTER-->
         </div>
-    </footer>
-    <!--/FOOTER-->
+        <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/log.js"></script>
+        <script type="text/javascript" src="js/test-1.js"></script>
+        <script type="text/javascript" src="js/id.js"></script>
+        <script type="text/javascript" src="js/blog.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/log.js"></script>
     
 </body>
 

@@ -6,23 +6,25 @@
     <title>
         Top 10 best football players 20 century
     </title>
-    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/gerd_müller.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
+    <div class="wrapper">
     <!--HEDER-->
     <header class="header">
         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
     </header>
     <!--/HEDER-->
     <!--NAV-->
-    <nav class="page-navigator">
+    <nav class="page-navigator nav">
         <div class="container">
-            <ul>
-                <li><a href="index.html">Main<a></li>
+            <a class="toggle-nav" href="#">&#9776;</a>
+          <div class="nav-mobile">
+            <ul class="left">
+            <li><a href="index.html">Main</a></li>
               <li><a href="player_history.html">Player history</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="video.html">Video</a></li>
@@ -30,43 +32,50 @@
             </ul>
             <br>
             <!--Login form-->
+            <ul class="right">
+
             <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
                 <!--<input type="search" placeholder="Search">-->
                 <br>
                 <br>
                 <input type="submit" value="Sign in" id="in">
-                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Sign out" id="exit">
                 <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
             </form>
+</ul>
+
             <!--/Login form-->
+        </div>
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <main>
+    <main class="main"> 
         <div id="openModal" class="modalDialog">
             <div>
                 <a href="#close" title="Close" class="close">X</a>
 
                 <h1>Registration form</h1>
-                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
                     <label for="name">Your name*</label>
                     <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
                     <label for="surname">Your surname*</label>
                     <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="gender">Your gender*</label>
-                    <input type="radio" name="gender" value="male" />Male
-                    <input type="radio" name="gender" value="female" />Female<br><br>
+                    <label for="male">Your gender*</label>
+                    <input type="radio" name="gender" value="male" id="male"/>Male
+                    <label for="female"></label>
+                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
                     <label for="birthday">Your date of birthday*</label>
-                    <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
                     <label for="email">Your email*</label>
                     <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
                     <label for="mobilephone">Your mobilephone*</label>
-                    <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
                     <label for="city">City</label>
-                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
                     <input type="submit" value="OK" id="btn-send" />
                 </form>
 
@@ -80,7 +89,7 @@
             <!--/HEDER-->
             <!--MAIN-->
             <div class="item">
-                <img src="muller.jpg" alt="gerd_müller" style="width:250px; height:450px;"></img>
+                <img src="img/muller.jpg" alt="gerd_müller" style="width:250px; height:450px;"></img>
             </div>
             <p>Gerhard "Gerd" Muller born 3 November 1945 is a German retired footballer. A prolific striker renowned for his clinical finishing, especially in and around the six-yard box, he is regarded as one of the greatest goalscorers of all time. At
                 international level with West Germany, he scored 68 goals in 62 appearances, and at club level, after 15 years with Bayern Munich, he scored a record 365 goals in 427 Bundesliga games and an international record of 66 goals in 74 European
@@ -122,11 +131,19 @@
     <footer class="footer">
         <div>
             <p>
-                Copirigth © yuriyk.com 2016
+                Copyrigth © yuriyk.com 2016
             </p>
         </div>
     </footer>
     <!--/FOOTER-->
+    </div>
+    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/log.js"></script>
+        <script type="text/javascript" src="js/test-1.js"></script>
+        <script type="text/javascript" src="js/id.js"></script>
+        <script type="text/javascript" src="js/blog.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/log.js"></script>
 
 </body>
 

@@ -6,23 +6,25 @@
     <title>
         Top 10 best football players 20 century
     </title>
-    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/ferenc_puskás.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
+    <div class="wrapper">
     <!--HEDER-->
     <header class="header">
         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
     </header>
     <!--/HEDER-->
     <!--NAV-->
-    <nav class="page-navigator">
+    <nav class="page-navigator nav">
         <div class="container">
-            <ul>
-                <li><a href="index.html">Main<a></li>
+            <a class="toggle-nav" href="#">&#9776;</a>
+          <div class="nav-mobile">
+            <ul class="left">
+            <li><a href="index.html">Main</a></li>
               <li><a href="player_history.html">Player history</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="video.html">Video</a></li>
@@ -30,126 +32,140 @@
             </ul>
             <br>
             <!--Login form-->
+            <ul class="right">
+
             <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
                 <!--<input type="search" placeholder="Search">-->
                 <br>
                 <br>
                 <input type="submit" value="Sign in" id="in">
-                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Sign out" id="exit">
                 <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
             </form>
+</ul>
+
             <!--/Login form-->
+        </div>
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <main>
+    <main class="main"> 
         <div id="openModal" class="modalDialog">
             <div>
                 <a href="#close" title="Close" class="close">X</a>
 
                 <h1>Registration form</h1>
-                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
                     <label for="name">Your name*</label>
                     <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
                     <label for="surname">Your surname*</label>
                     <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="gender">Your gender*</label>
-                    <input type="radio" name="gender" value="male" />Male
-                    <input type="radio" name="gender" value="female" />Female<br><br>
+                    <label for="male">Your gender*</label>
+                    <input type="radio" name="gender" value="male" id="male"/>Male
+                    <label for="female"></label>
+                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
                     <label for="birthday">Your date of birthday*</label>
-                    <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
                     <label for="email">Your email*</label>
                     <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
                     <label for="mobilephone">Your mobilephone*</label>
-                    <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
+                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
                     <label for="city">City</label>
-                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
                     <input type="submit" value="OK" id="btn-send" />
                 </form>
 
             </div>
         </div>
-        <section class="section">
-            <!--HEDER-->
-            <header class="header-of-section">
-                <h2>Ferenc Puskás</h2>
-            </header>
-            <!--/HEDER-->
-            <!--MAIN-->
-            <div class="item">
-                <img src="puskas.jpg" alt="puskas" style="width:250px; height:450px;"></img>
+            <section class="section">
+                <!--HEDER-->
+                <header class="header-of-section">
+                    <h2>Ferenc Puskás</h2>
+                </header>
+                <!--/HEDER-->
+                <!--MAIN-->
+                <div class="item">
+                    <img src="img/puskas.jpg" alt="puskas" style="width:250px; height:450px;"></img>
+                </div>
+                <p>Ferenc Puskas born Ferenc Purczeld, (1 April 1927 – 17 November 2006) was a Hungarian footballer and manager, widely regarded as one of the greatest players of all time. A prolific forward, he scored 84 goals in 85 international matches
+                    for Hungary, and 514 goals in 529 matches in the Hungarian and Spanish leagues. Puskas's Hungary career is often said to be 83 goals in 84 games - the extra game and goal was from a match vs Lebanon that was played in 1956, however
+                    it was only recognised as an official game by the Hungarian FA in May 2002. He became Olympic champion in 1952 and led his nation to the final of the 1954 World Cup where he was named the tournament's best player. He won three European
+                    Cups (1959, 1960, 1966), 10 national championships (5 Hungarian & 5 Spanish Primera Division) and 8 top individual scoring honors. Puskas started his career in Hungary playing for Kispest and Budapest Honved. He was top scorer in the
+                    Hungarian League on four occasions, and in 1948, he was the top goal scorer in Europe. During the 1950s, he was both a prominent member and captain of the Hungarian national team, known as the Mighty Magyars. In 1958, two years after
+                    the Hungarian Revolution, he emigrated to Spain where he played for Real Madrid. While playing with Real Madrid, Puskas won four Pichichis and scored seven goals in two European Champions Cup finals. In 1995, he was recognized as the
+                    top scorer of the 20th century by the IFFHS. After retiring as a player, he became a coach. The highlight of his coaching career came in 1971 when he guided Panathinaikos to the European Cup final, where they lost 2–0 to AFC Ajax.
+                    Despite his defection in 1956, the Hungarian government granted him a full pardon in 1993, allowing him to return and take temporary charge of the Hungarian national team. In 1998, he became one of the first ever FIFA/SOS Charity ambassadors.
+                    In 2002, the Nepstadion in Budapest was renamed the Puskas Ferenc Stadion in his honor. He was also declared the best Hungarian player of the last 50 years by the Hungarian Football Federation in the UEFA Jubilee Awards in November
+                    2003. In October 2009, FIFA announced the introduction of the FIFA Puskas Award, awarded to the player who has scored the "most beautiful goal" over the past year. He was also listed in Pele's FIFA 100.
+
+                </p>
+
+                <p>
+                    <h4>Career in Hungary</h4>
+                    <hr> Ferenc Puskas with Ger Lagendijk<br> Puskas was born as Ferenc Purczeld on 1 April 1927, in Budapest and brought up in Kispest, then a suburb, today part of the city. His father, Ferenc Puskas Sr. (1903–1952) was a Danube Swabian
+                    of German ethnicity, who Magyarized his family surname to "Puskas" in 1937. His mother, Margit Biro (1904–1976), was a seamstress. He began his career as a junior with Kispest AC, where his father, who had previously played for the
+                    club, was a coach. He had grandchildren's, whose were the children of his brother's son; the two sons of his brother are Zoltan and Istvan, the first one have 3 children; Ilonka, Camila and Andres, and the second one have two, Matthias
+                    and Thomas. He initially used the pseudonym "Miklos Kovacs" to help circumvent the minimum age rules before officially signing at the age of 12. Among his early teammates was his childhood friend and future international teammate Jozsef
+                    Bozsik. He made his first senior appearance for Kispest in November 1943 in a match against Nagyvaradi AC. It was here where he got the nickname "Ocsi" or "Buddy". Kispest was taken over by the Hungarian Ministry of Defence in 1949,
+                    becoming the Hungarian Army team and changing its name to Budapest Honved. As a result, football players were given military ranks. Puskas eventually became a major (Hungarian: Ornagy), which led to the nickname "The Galloping Major".
+                    As the army club, Honved used conscription to acquire the best Hungarian players, leading to the recruitment of Zoltan Czibor and Sandor Kocsis. During his career at Budapest Honved, Puskas helped the club win five Hungarian League
+                    titles. He also finished as top goal scorer in the league in 1947–48, 1949–50, 1950 and 1953, scoring 50, 31, 25 and 27 goals, respectively. In 1948, he was the top goal scorer in Europe.
+
+                    <br>The Golden Team in 1953<br> Puskas made his debut for Hungary team on 20 August 1945 and scored in a 5–2 win over Austria. He went on to play 85 games and scored 84 times for Hungary. His international goal record included two
+                    hat tricks against Austria, one against Luxembourg and four goals in a 12–0 win over Albania. Together with Zoltan Czibor, Sandor Kocsis, Jozsef Bozsik, and Nandor Hidegkuti, he formed the nucleus of the Golden Team that was to remain
+                    unbeaten for 32 consecutive games. During this run, they became Olympic Champions in 1952, beating Yugoslavia 2–0 in the final in Helsinki. Puskas scored four times at the Olympic tournament, including the opening goal in the final.
+                    They also defeated England twice, first with a 6–3 win at Wembley Stadium., and then 7–1 in Budapest. Puskas scored two goals in each game against England. In 1953, they also became Central European Champions. Hungary won the championship
+                    after finishing top of the table with 11 points. Puskas finished the tournament as top scorer with 10 goals and scored twice as Hungary claimed the trophy with a 3–0 win over Italy at the Stadio Olimpico in 1953. Puskas scored three
+                    goals in the two first-round matches Hungary played at the 1954 FIFA World Cup. They defeated South Korea 9–0 and then West Germany 8–3. In the latter game, he suffered a hairline fracture of the ankle after a tackle by Werner Liebrich,
+                    and did not return until the final. Puskas played the entire 1954 World Cup final against West Germany with the hairline fracture. Despite this, he scored his fourth goal of the tournament to put Hungary ahead after six minutes, and
+                    with Czibor adding another goal two minutes later, it seemed that the pre-tournament favorites would take the title. However, the West Germans pulled back two goals before half time, with six minutes left the West Germans scored the
+                    winner. Two minutes from the end of the match, Puskas appeared to score an equalizer but the goal was disallowed due to an offside call.
+                    <h4>Spanish career</h4>
+                    <hr> Puskas's player licence, showing his mother's maiden name Biro as a second surname in accordance with Spanish naming customs
+                    <br>Puskas at Real Madrid<br> After refusing to return to Hungary, Puskas initially played a few unofficial games for RCD Espanyol. At the same time, both AC Milan and Juventus attempted to sign him, but then he received a two-year
+                    ban from UEFA (for refusing to return to Budapest) which prevented him from playing in Europe. He moved to Austria and then Italy. After his ban, Puskas tried to play in Italy but was not able to find a top-flight club willing to sign
+                    him, as Italian managers were concerned about his age and weight. He was considered by Manchester United to strengthen a squad ravaged by the Munich Air Disaster in 1958, but because of FA rules regarding foreigners and Puskas' not
+                    knowing the English language, stand-in manager Jimmy Murphy could not fulfill his wish of signing the Hungarian. However, a few months later, Puskas joined Real Madrid and at the age of 31 embarked on the second phase of his career.
+                    During his first La Liga season, Puskas scored four hat-tricks, including one in his second game, against Sporting de Gijon on 21 September 1958. In the game against UD Las Palmas on 4 January 1959, Puskas and Alfredo di Stefano scored
+                    hat-tricks in a 10–1 win. During the 1960–61 season, Puskas scored four times in a game against Elche CF and the following season, he scored five goals against the same team. Puskas scored two hat-tricks against FC Barcelona in 1963,
+                    one at the Bernabeu and one at the Camp Nou. During eight seasons with Real, Puskas played 180 La Liga games and scored 156 goals. He scored 20 or more goals in each of his first six seasons in the Spanish league, and won the Pichichi
+                    four times: in 1960, 1961, 1963, and 1964, scoring 26, 27, 26 and 20 goals, respectively. He helped Real win La Liga five times in a row between 1961 and 1965 and the Copa del Generalisimo in 1962. He scored both goals in the 2–1 victory
+                    over Sevilla FC in the Copa final. Puskas also played a further 39 games for Real in the European Cup, scoring 35 goals. He helped Real reach the final of the 1959 European Cup, scoring in the first leg and in the decisive replay of
+                    the semi-final against Atletico Madrid, but missed the final due to injury. In the following season he began Real's 1960 European Cup campaign with a hat-trick against Jeunesse Esch and in the semi-final against FC Barcelona, he once
+                    again guided Real into the final with three goals over two legs. In the final itself, Real beat Eintracht Frankfurt 7–3 with Puskas scoring four goals and di Stefano scoring three. In subsequent European campaigns, he would score a
+                    further three hat-tricks, including one in the 1962 final against Benfica, which Real lost 5–3. In 1965, he scored five goals over two games against Feyenoord as he helped Real Madrid to the 1966 European Cup final – Real won the game
+                    against Partizan Belgrade, but Puskas did not play in the final.<br> Spanish national appearances<br> In 1962, Puskas took Spanish nationality, and subsequently played four times for Spain. Three of these games were at the 1962 World
+                    Cup. For once, his goalscoring form deserted him and he failed to score any goals for Spain.<br> Appearance for South Liverpool<br> In 1967, at the age of 40, he appeared in a fundraising friendly game for South Liverpool, the English
+                    non-League side, in front of a 10,000-strong sell-out crowd at the club's Holly Park stadium.
+
+                </p>
+                <!--MAIN-->
+            </section>
+
+
+        </main>
+        <!--/MAIN-->
+        <!--FOOTER-->
+        <footer class="footer">
+            <div>
+                <p>
+                    Copyrigth © yuriyk.com 2016
+                </p>
             </div>
-            <p>Ferenc Puskas born Ferenc Purczeld, (1 April 1927 – 17 November 2006) was a Hungarian footballer and manager, widely regarded as one of the greatest players of all time. A prolific forward, he scored 84 goals in 85 international matches for
-                Hungary, and 514 goals in 529 matches in the Hungarian and Spanish leagues. Puskas's Hungary career is often said to be 83 goals in 84 games - the extra game and goal was from a match vs Lebanon that was played in 1956, however it was
-                only recognised as an official game by the Hungarian FA in May 2002. He became Olympic champion in 1952 and led his nation to the final of the 1954 World Cup where he was named the tournament's best player. He won three European Cups (1959,
-                1960, 1966), 10 national championships (5 Hungarian & 5 Spanish Primera Division) and 8 top individual scoring honors. Puskas started his career in Hungary playing for Kispest and Budapest Honved. He was top scorer in the Hungarian League
-                on four occasions, and in 1948, he was the top goal scorer in Europe. During the 1950s, he was both a prominent member and captain of the Hungarian national team, known as the Mighty Magyars. In 1958, two years after the Hungarian Revolution,
-                he emigrated to Spain where he played for Real Madrid. While playing with Real Madrid, Puskas won four Pichichis and scored seven goals in two European Champions Cup finals. In 1995, he was recognized as the top scorer of the 20th century
-                by the IFFHS. After retiring as a player, he became a coach. The highlight of his coaching career came in 1971 when he guided Panathinaikos to the European Cup final, where they lost 2–0 to AFC Ajax. Despite his defection in 1956, the
-                Hungarian government granted him a full pardon in 1993, allowing him to return and take temporary charge of the Hungarian national team. In 1998, he became one of the first ever FIFA/SOS Charity ambassadors. In 2002, the Nepstadion in
-                Budapest was renamed the Puskas Ferenc Stadion in his honor. He was also declared the best Hungarian player of the last 50 years by the Hungarian Football Federation in the UEFA Jubilee Awards in November 2003. In October 2009, FIFA announced
-                the introduction of the FIFA Puskas Award, awarded to the player who has scored the "most beautiful goal" over the past year. He was also listed in Pele's FIFA 100.
-
-            </p>
-
-            <p>
-                <h4>Career in Hungary</h4>
-                <hr> Ferenc Puskas with Ger Lagendijk<br> Puskas was born as Ferenc Purczeld on 1 April 1927, in Budapest and brought up in Kispest, then a suburb, today part of the city. His father, Ferenc Puskas Sr. (1903–1952) was a Danube Swabian of German
-                ethnicity, who Magyarized his family surname to "Puskas" in 1937. His mother, Margit Biro (1904–1976), was a seamstress. He began his career as a junior with Kispest AC, where his father, who had previously played for the club, was a coach.
-                He had grandchildren's, whose were the children of his brother's son; the two sons of his brother are Zoltan and Istvan, the first one have 3 children; Ilonka, Camila and Andres, and the second one have two, Matthias and Thomas. He initially
-                used the pseudonym "Miklos Kovacs" to help circumvent the minimum age rules before officially signing at the age of 12. Among his early teammates was his childhood friend and future international teammate Jozsef Bozsik. He made his first
-                senior appearance for Kispest in November 1943 in a match against Nagyvaradi AC. It was here where he got the nickname "Ocsi" or "Buddy". Kispest was taken over by the Hungarian Ministry of Defence in 1949, becoming the Hungarian Army
-                team and changing its name to Budapest Honved. As a result, football players were given military ranks. Puskas eventually became a major (Hungarian: Ornagy), which led to the nickname "The Galloping Major". As the army club, Honved used
-                conscription to acquire the best Hungarian players, leading to the recruitment of Zoltan Czibor and Sandor Kocsis. During his career at Budapest Honved, Puskas helped the club win five Hungarian League titles. He also finished as top goal
-                scorer in the league in 1947–48, 1949–50, 1950 and 1953, scoring 50, 31, 25 and 27 goals, respectively. In 1948, he was the top goal scorer in Europe.
-
-                <br>The Golden Team in 1953<br> Puskas made his debut for Hungary team on 20 August 1945 and scored in a 5–2 win over Austria. He went on to play 85 games and scored 84 times for Hungary. His international goal record included two hat
-                tricks against Austria, one against Luxembourg and four goals in a 12–0 win over Albania. Together with Zoltan Czibor, Sandor Kocsis, Jozsef Bozsik, and Nandor Hidegkuti, he formed the nucleus of the Golden Team that was to remain unbeaten
-                for 32 consecutive games. During this run, they became Olympic Champions in 1952, beating Yugoslavia 2–0 in the final in Helsinki. Puskas scored four times at the Olympic tournament, including the opening goal in the final. They also defeated
-                England twice, first with a 6–3 win at Wembley Stadium., and then 7–1 in Budapest. Puskas scored two goals in each game against England. In 1953, they also became Central European Champions. Hungary won the championship after finishing
-                top of the table with 11 points. Puskas finished the tournament as top scorer with 10 goals and scored twice as Hungary claimed the trophy with a 3–0 win over Italy at the Stadio Olimpico in 1953. Puskas scored three goals in the two first-round
-                matches Hungary played at the 1954 FIFA World Cup. They defeated South Korea 9–0 and then West Germany 8–3. In the latter game, he suffered a hairline fracture of the ankle after a tackle by Werner Liebrich, and did not return until the
-                final. Puskas played the entire 1954 World Cup final against West Germany with the hairline fracture. Despite this, he scored his fourth goal of the tournament to put Hungary ahead after six minutes, and with Czibor adding another goal
-                two minutes later, it seemed that the pre-tournament favorites would take the title. However, the West Germans pulled back two goals before half time, with six minutes left the West Germans scored the winner. Two minutes from the end of
-                the match, Puskas appeared to score an equalizer but the goal was disallowed due to an offside call.
-                <h4>Spanish career</h4>
-                <hr> Puskas's player licence, showing his mother's maiden name Biro as a second surname in accordance with Spanish naming customs
-                <br>Puskas at Real Madrid<br> After refusing to return to Hungary, Puskas initially played a few unofficial games for RCD Espanyol. At the same time, both AC Milan and Juventus attempted to sign him, but then he received a two-year ban
-                from UEFA (for refusing to return to Budapest) which prevented him from playing in Europe. He moved to Austria and then Italy. After his ban, Puskas tried to play in Italy but was not able to find a top-flight club willing to sign him,
-                as Italian managers were concerned about his age and weight. He was considered by Manchester United to strengthen a squad ravaged by the Munich Air Disaster in 1958, but because of FA rules regarding foreigners and Puskas' not knowing
-                the English language, stand-in manager Jimmy Murphy could not fulfill his wish of signing the Hungarian. However, a few months later, Puskas joined Real Madrid and at the age of 31 embarked on the second phase of his career. During his
-                first La Liga season, Puskas scored four hat-tricks, including one in his second game, against Sporting de Gijon on 21 September 1958. In the game against UD Las Palmas on 4 January 1959, Puskas and Alfredo di Stefano scored hat-tricks
-                in a 10–1 win. During the 1960–61 season, Puskas scored four times in a game against Elche CF and the following season, he scored five goals against the same team. Puskas scored two hat-tricks against FC Barcelona in 1963, one at the Bernabeu
-                and one at the Camp Nou. During eight seasons with Real, Puskas played 180 La Liga games and scored 156 goals. He scored 20 or more goals in each of his first six seasons in the Spanish league, and won the Pichichi four times: in 1960,
-                1961, 1963, and 1964, scoring 26, 27, 26 and 20 goals, respectively. He helped Real win La Liga five times in a row between 1961 and 1965 and the Copa del Generalisimo in 1962. He scored both goals in the 2–1 victory over Sevilla FC in
-                the Copa final. Puskas also played a further 39 games for Real in the European Cup, scoring 35 goals. He helped Real reach the final of the 1959 European Cup, scoring in the first leg and in the decisive replay of the semi-final against
-                Atletico Madrid, but missed the final due to injury. In the following season he began Real's 1960 European Cup campaign with a hat-trick against Jeunesse Esch and in the semi-final against FC Barcelona, he once again guided Real into the
-                final with three goals over two legs. In the final itself, Real beat Eintracht Frankfurt 7–3 with Puskas scoring four goals and di Stefano scoring three. In subsequent European campaigns, he would score a further three hat-tricks, including
-                one in the 1962 final against Benfica, which Real lost 5–3. In 1965, he scored five goals over two games against Feyenoord as he helped Real Madrid to the 1966 European Cup final – Real won the game against Partizan Belgrade, but Puskas
-                did not play in the final.<br> Spanish national appearances<br> In 1962, Puskas took Spanish nationality, and subsequently played four times for Spain. Three of these games were at the 1962 World Cup. For once, his goalscoring form deserted
-                him and he failed to score any goals for Spain.<br> Appearance for South Liverpool<br> In 1967, at the age of 40, he appeared in a fundraising friendly game for South Liverpool, the English non-League side, in front of a 10,000-strong
-                sell-out crowd at the club's Holly Park stadium.
-
-            </p>
-            <!--MAIN-->
-        </section>
-
-
-    </main>
-    <!--/MAIN-->
-    <!--FOOTER-->
-    <footer class="footer">
-        <div>
-            <p>
-                Copirigth © yuriyk.com 2016
-            </p>
+        </footer>
+        <!--/FOOTER-->
         </div>
-    </footer>
-    <!--/FOOTER-->
-
+        <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/log.js"></script>
+        <script type="text/javascript" src="js/test-1.js"></script>
+        <script type="text/javascript" src="js/id.js"></script>
+        <script type="text/javascript" src="js/blog.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/log.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 $(function(){
-    $("#mar").click(function(){
-        $(".mar").show("slow");
+    $("#mar8").click(function(){
+        $(".mar8").show("slow");
         $(".footer").hide();
         $(".header").hide();
         $(".page-navigator").hide();
@@ -12,24 +12,26 @@ $(function(){
         $("#ret5").hide();
         $("#ret6").hide();
         $("#ret7").hide();
-        $("#ret8").hide();
+        $("#ret").hide();
         $("#ret9").hide();
-        $("#ret").animate({
+        $("#ret8").animate({
           top: 0,
           left: 0,
         });
-        $("#ret").show();
+        $("#ret8").show();
     });
     
-    $("#ret").click(function(){
+    $("#ret8").click(function(){
     $(".header").show();
     $(".page-navigator").show();
     $(".footer").show();
     $("#inl").show();
     $("#poz").show();
-    $("#mar").animate({
-        top:"230px"});
-    $("#ret").hide();
-    $(".mar").hide("slow");
+    $("#mar8").animate({
+        top:"535px",
+        left:"0px"
+    });
+    $("#ret8").hide();
+    $(".mar8").hide("slow");
     });
 });

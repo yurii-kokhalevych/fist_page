@@ -11,171 +11,225 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="css/video-1.css" type="text/css" />
   <link rel="stylesheet" href="css/reg.css" type="text/css" />
-  <link rel="stylesheet" href="video-2.css" type="text/css" />
+  <link rel="stylesheet" href="css/video-2.css" type="text/css" />
 </head>
 
 <body background="img/heder_1.jpg">
   <div class="wrapper">
-  <!--HEDER-->
-  <header class="header">
-    <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-  </header>
-  <!--/HEDER-->
-  <!--NAV-->
-  <nav class="page-navigator">
-    <div class="container">
-      <ul>
-        <li><a href="index.html">Main<a></li>
-              <li><a href="player_history.html">Player history</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="blog.html">Comments</a></li>
-      </ul>
-      <br>
-      <!--Login form-->
-      <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-        <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
-        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
-        <!--<input type="search" placeholder="Search">-->
-        <br>
-        <br>
-        <input type="submit" value="Sign in" id="in">
-                <input type="reset" value="Sign Out" id="out">
-                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
-      </form>
-      <!--/Login form-->
-    </div>
-  </nav>
-  <!--/NAV-->
-  <!--MAIN-->
-  <main class="main">
-    <div id="openModal" class="modalDialog">
-    <div>
-        <a href="#close" title="Close" class="close">X</a>
-         
-            <h1>Registration form</h1>
-    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
-        <label for="name">Your name*</label>
-        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
-        <label for="surname">Your surname*</label>
-        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-        <label for="gender">Your gender*</label>
-        <input type="radio" name="gender" value="male"/>Male
-        <input type="radio" name="gender" value="female"/>Female<br><br>
-        <label for="birthday">Your date of birthday*</label>
-        <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
-        <label for="email">Your email*</label>
-        <input type="text" id="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
-        <label for="mobilephone">Your mobilephone*</label>
-        <input type="text" id="mobilephone"pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 "required/><br><br>
-        <label for="city">City</label>
-        <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
-        <input type="submit" value="OK" id="btn-send"/>
-    </form>
-    
-    </div>
-</div>
-<div id="comments_block">
-    <ul class="filmstrip">
-      <li><video width="350" height="260" controls>
+    <!--HEDER-->
+    <header class="header">
+      <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+    </header>
+    <!--/HEDER-->
+    <!--NAV-->
+    <nav class="page-navigator nav">
+      <div class="container">
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <div class="nav-mobile">
+          <ul class="left">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="player_history.html">Player history</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="blog.html">Comments</a></li>
+          </ul>
+          <br>
+          <!--Login form-->
+          <ul class="right">
+
+            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+              <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+              <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
+              <!--<input type="search" placeholder="Search">-->
+              <br>
+              <br>
+              <input type="submit" value="Sign in" id="in">
+              <input type="submit" value="Sign out" id="exit">
+              <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
+            </form>
+          </ul>
+
+          <!--/Login form-->
+        </div>
+      </div>
+    </nav>
+    <!--/NAV-->
+    <!--MAIN-->
+    <main class="main">
+      <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+
+          <h1>Registration form</h1>
+          <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
+            <label for="name">Your name*</label>
+            <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+            <label for="surname">Your surname*</label>
+            <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+            <label for="male">Your gender*</label>
+            <input type="radio" name="gender" value="male" id="male" />Male
+            <label for="female"></label>
+            <input type="radio" name="gender" value="female" id="female" />Female<br><br>
+            <label for="birthday">Your date of birthday*</label>
+            <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+            <label for="email">Your email*</label>
+            <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+            <label for="mobilephone">Your mobilephone*</label>
+            <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
+            <label for="city">City</label>
+            <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+            <input type="submit" value="OK" id="btn-send" />
+          </form>
+
+        </div>
+      </div>
+      <div id="comments_block">
+        <ul class="filmstrip">
+          <li><video width="350" height="260" controls>
           <source src="video/beckenbauer/Franz_Beckenbauer_Top_5_Goals.mp4" type="video/mp4" >
           </video>
-          <h3>Franz_Beckenbauer_Top_5_Goals<h3></li>
-      <li><video width="350" height="260"  controls>
+            <h3>Franz_Beckenbauer_Top_5_Goals
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/beckenbauer/Franz_Beckenbauer.mp4" type="video/mp4">
           </video>
-          <h3>Franz_Beckenbauer<h3></li>
-      <li><video width="350" height="260"  controls>
+            <h3>Franz_Beckenbauer
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/best/George_Best_Amazing_Skills_Hd.mp4" type="video/mp4">
           </video>
-          <h3>George_Best_Amazing_Skills<h3></li>
-      <li><video width="350" height="260" title="George_Best_Legendary_Dribbling_Skills" controls>
+            <h3>George_Best_Amazing_Skills
+              <h3>
+          </li>
+          <li><video width="350" height="260" title="George_Best_Legendary_Dribbling_Skills" controls>
           <source src="video/best/George_Best_Legendary_Dribbling_Skills.mp4" type="video/mp4">
           </video>
-          <h3>George_Best_Legendary_Dribbling_Skills<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>George_Best_Legendary_Dribbling_Skills
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/charlton/Best_Law_and_Charlton_Classic_Goals.mp4" type="video/mp4">
           </video>
-          <h3>est_Law_and_Charlton_Classic_Goals<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>est_Law_and_Charlton_Classic_Goals
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/charlton/Bobby_Charlton_England_Goals_Compilation.mp4" type="video/mp4">
           </video>
-          <h3>Bobby_Charlton_England_Goals_Compilation<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Bobby_Charlton_England_Goals_Compilation
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/cruyff/Joha_Cruijff_best_ goals.mp4" type="video/mp4">
           </video>
-          <h3>Joha_Cruijff_best_ goals<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Joha_Cruijff_best_ goals
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/cruyff/Johan_Cruyff_Dribbling_Compilation.mp4" type="video/mp4">
           </video>
-          <h3>Johan_Cruyff_Dribbling_Compilation<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Johan_Cruyff_Dribbling_Compilation
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/eusebio/Eusebio_Goals_Skills.mp4" type="video/mp4">
           </video>
-          <h3>Eusebio_Goals_Skills<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Eusebio_Goals_Skills
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/eusebio/Eusebio_The_King.mp4" type="video/mp4">
           </video>
-          <h3>Eusebio_The_King<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Eusebio_The_King
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/maradona/The_Best_of_Diego_Maradona.mp4" type="video/mp4">
           </video>
-          <h3>The_Best_of_Diego_Maradona<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>The_Best_of_Diego_Maradona
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/maradona/MARADONA_20_memory_gols.mp4" type="video/mp4">
           </video>
-          <h3>MARADONA_20_memory_gols<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>MARADONA_20_memory_gols
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/muller/Top_10_Goals-The_Mullers.mp4" type="video/mp4">
           </video>
-          <h3>Top_10_Goals-The_Mullers<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Top_10_Goals-The_Mullers
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/muller/Gerd_Muller_1970-1974_FIFA_World_Cup_Classic_Players.mp4" type="video/mp4">
           </video>
-          <h3>Gerd_Muller_1970-1974_FIFA_World_Cup_Classic_Players<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Gerd_Muller_1970-1974_FIFA_World_Cup_Classic_Players
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/pele/Pele _The King_Best Goals_Skills_Ever.mp4" type="video/mp4">
           </video>
-          <h3>Pele _The King_Best Goals_Skills_Ever<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Pele _The King_Best Goals_Skills_Ever
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/pele/Pele-Top_20_Goals.mp4" type="video/mp4">
           </video>
-          <h3>Pele-Top_20_Goals<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Pele-Top_20_Goals
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/platini/Michel_Platini_The_Real_Number_10.mp4" type="video/mp4">
           </video>
-          <h3>Michel_Platini_The_Real_Number_10<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Michel_Platini_The_Real_Number_10
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/platini/Michel_Platini_Best_Goals_amp_Amazing_HD.mp4" type="video/mp4">
           </video>
-          <h3>Michel_Platini_Best_Goals_amp_Amazing<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Michel_Platini_Best_Goals_amp_Amazing
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/puskas/Ferenc_Puskas_best_goals.mp4" type="video/mp4">
           </video>
-          <h3>Ferenc_Puskas_best_goals<h3></li>
-      <li><video width="350" height="260" controls>
+            <h3>Ferenc_Puskas_best_goals
+              <h3>
+          </li>
+          <li><video width="350" height="260" controls>
           <source src="video/puskas/Ferenc_Puskas_Top_Goals_skills_Hungarian.mp4" type="video/mp4">
           </video>
-          <h3>Ferenc_Puskas_Top_Goals_skills_Hungarian<h3></li>
+            <h3>Ferenc_Puskas_Top_Goals_skills_Hungarian
+              <h3>
+          </li>
 
-    </ul>
-    </div>
+        </ul>
+      </div>
 
 
-  </main>
-  <!--/MAIN-->
-  <!--FOOTER-->
-  <footer class="footer">
-    <div>
-      <p>
-        Copirigth © yuriyk.com 2016
-      </p>
-    </div>
-  </footer>
-  <!--/FOOTER-->
-  <script type="text/javascript" src="video-1.js"></script>
-  <script type="text/javascript" src="video-2.js"></script>
+    </main>
+    <!--/MAIN-->
+    <!--FOOTER-->
+    <footer class="footer">
+      <div>
+        <p>
+          Copyrigth © yuriyk.com 2016
+        </p>
+      </div>
+    </footer>
+    <!--/FOOTER-->
+    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/video-1.js"></script>
+    <script type="text/javascript" src="js/video-2.js"></script>
+    <script type="text/javascript" src="js/log.js"></script>
+    <script type="text/javascript" src="js/test-1.js"></script>
+    <script type="text/javascript" src="js/id.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>
   </div>
-  </body>
+</body>
 
 </html>

@@ -6,24 +6,29 @@
     <title>
         Top 10 best football players 20 century
     </title>
-    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/player_history.css" type="text/css" />
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
+   
+
 </head>
 
-<body background="img/heder_1.jpg">
-    <div class="wrapper">
+<body background="img/heder_1.jpg" style="height:100%; weight:100%">
+<div class="wrapper">
     <!--HEDER-->
     <header class="header">
         <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
     </header>
     <!--/HEDER-->
     <!--NAV-->
-    <nav class="page-navigator">
+    <nav class="page-navigator nav">
         <div class="container">
-            <ul>
-                <li><a href="index.html">Main<a></li>
+            <a class="toggle-nav" href="#">&#9776;</a>
+          <div class="nav-mobile">
+            <ul class="left">
+            <li><a href="index.html">Main</a></li>
               <li><a href="player_history.html">Player history</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="video.html">Video</a></li>
@@ -31,82 +36,94 @@
             </ul>
             <br>
             <!--Login form-->
+            <ul class="right">
+
             <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters">
+                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
                 <!--<input type="search" placeholder="Search">-->
                 <br>
                 <br>
                 <input type="submit" value="Sign in" id="in">
-                <input type="reset" value="Sign Out" id="out">
+                <input type="submit" value="Sign out" id="exit">
                 <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+
             </form>
+</ul>
+
             <!--/Login form-->
+        </div>
         </div>
     </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <div id="openModal" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
+    <main class="main"> 
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
 
-            <h1>Registration form</h1>
-            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1" width="50%">
-                <label for="name">Your name*</label>
-                <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
-                <label for="surname">Your surname*</label>
-                <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                <label for="gender">Your gender*</label>
-                <input type="radio" name="gender" value="male" />Male
-                <input type="radio" name="gender" value="female" />Female<br><br>
-                <label for="birthday">Your date of birthday*</label>
-                <input type="text" id="name" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
-                <label for="email">Your email*</label>
-                <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
-                <label for="mobilephone">Your mobilephone*</label>
-                <input type="text" id="mobilephone" pattern="+38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example +38096-4768-678 " required/><br><br>
-                <label for="city">City</label>
-                <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
-                <input type="submit" value="OK" id="btn-send" />
-            </form>
+                <h1>Registration form</h1>
+                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                    <label for="surname">Your surname*</label>
+                    <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                    <label for="male">Your gender*</label>
+                    <input type="radio" name="gender" value="male" id="male"/>Male
+                    <label for="female"></label>
+                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
+                    <label for="birthday">Your date of birthday*</label>
+                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                    <label for="email">Your email*</label>
+                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                    <label for="mobilephone">Your mobilephone*</label>
+                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="submit" value="OK" id="btn-send" />
+                </form>
 
+            </div>
         </div>
+            <div class="images">
+                <a href="franz_beckenbauer.html"><img src="img/bekenbauer.jpg" alt="bekenbauer" title="Franz Beckenbauer" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="george_best.html"><img src="img/best.jpg" alt="best" title="George Best" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="eusébio_da_silva_ferreira.html"><img src="img/eusebio.jpg" alt="eusebio" title="Eusébio da Silva Ferreira" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="johan_cruyff.html"><img src="img/kroif.jpg" alt="kroif" title="Johan Cruyff" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="diego_maradona.html"><img src="img/maradonna.jpg" alt="maradonna" title="Diego Maradona" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="gerd_müller.html"><img src="img/muler.jpg" alt="muler" title="Gerd Müller" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="pele.html"><img src="img/pele.jpg" alt="pele" title="Pele" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="ferenc_puskás.html"><img src="img/puskas_1.jpg" alt="puskas" title="Ferenc Puskás" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="michel_platini.html"><img src="img/platini.jpg" alt="platini" title="Michel Platini" style="width:200px; height:200px;"></img>
+                </a>
+                <a href="bobby_charlton.html"><img src="img/charlton-2.jpg" alt="charlton" title="Bobby Charlton" style="width:200px; height:200px;"></img>
+                </a>
+            </div>
+        </main>
+        <!--/MAIN-->
+        <!--FOOTER-->
+        <footer class="footer">
+            <div>
+                <p>
+                    Copyrigth © yuriyk.com 2016
+                </p>
+            </div>
+        </footer>
+        <!--/FOOTER-->
     </div>
-    <main class="main">
-        <div class="images">
-            <a href="franz_beckenbauer.html"><img src="bekenbauer.jpg" alt="bekenbauer" title="Franz Beckenbauer" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="george_best.html"><img src="best.jpg" alt="best" title="George Best" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="eusébio_da_silva_ferreira.html"><img src="eusebio.jpg" alt="eusebio" title="Eusébio da Silva Ferreira" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="johan_cruyff.html"><img src="kroif.jpg" alt="kroif" title="Johan Cruyff" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="diego_maradona.html"><img src="maradonna.jpg" alt="maradonna" title="Diego Maradona" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="gerd_müller.html"><img src="muler.jpg" alt="muler" title="Gerd Müller" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="pele.html"><img src="pele.jpg" alt="pele" title="Pele" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="ferenc_puskás.html"><img src="puskas_1.jpg" alt="puskas" title="Ferenc Puskás" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="michel_platini.html"><img src="platini.jpg" alt="platini" title="Michel Platini" style="width:200px; height:200px;"></img>
-            </a>
-            <a href="bobby_charlton.html"><img src="charlton-2.jpg" alt="charlton" title="Bobby Charlton" style="width:200px; height:200px;"></img>
-            </a>
-        </div>
-    </main>
-    <!--/MAIN-->
-    <!--FOOTER-->
-    <footer class="footer">
-        <div>
-            <p>
-                Copirigth © yuriyk.com 2016
-            </p>
-        </div>
-    </footer>
-    <!--/FOOTER-->
-    </div>
+<script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/log.js"></script>
+<script type="text/javascript" src="js/test-1.js"></script>
+<script type="text/javascript" src="js/id.js"></script>
+<script type="text/javascript" src="js/blog.js"></script>
 </body>
 
 </html>

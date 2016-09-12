@@ -1,6 +1,6 @@
 $(function(){
-    $("#mar7").click(function(){
-        $(".mar7").show("slow");
+    $("#mar6").click(function(){
+        $(".mar6").show("slow");
         $(".footer").hide();
         $(".header").hide();
         $(".page-navigator").hide();
@@ -10,28 +10,28 @@ $(function(){
         $("#ret3").hide();
         $("#ret4").hide();
         $("#ret5").hide();
-        $("#ret6").hide();
         $("#ret").hide();
+        $("#ret7").hide();
         $("#ret8").hide();
         $("#ret9").hide();
-        $("#ret7").animate({
+        $("#ret6").animate({
           top: 0,
           left: 0,
         });
-        $("#ret7").show();
+        $("#ret6").show();
     });
     
-    $("#ret7").click(function(){
+    $("#ret6").click(function(){
     $(".header").show();
     $(".page-navigator").show();
     $(".footer").show();
     $("#inl").show();
     $("#poz").show();
-    $("#mar7").animate({
-        top:"230px",
-        left:"610px"
+    $("#mar6").animate({
+        top:"455px",
+        left:"0px"
     });
-    $("#ret7").hide();
-    $(".mar7").hide("slow");
+    $("#ret6").hide();
+    $(".mar6").hide("slow");
     });
 });

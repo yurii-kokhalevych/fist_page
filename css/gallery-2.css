@@ -6,54 +6,64 @@
  }
 #mar{
   position: fixed;
-  top:230px;
+  top:215px;
+  width: 100%;
   left:0;
 }
 #mar1{
   position: fixed;
-  top:230px;
-  left:100px;
+  top:255px;
+  width: 100%;
+  left:0px;
 }
 
 #mar2{
   position: fixed;
-  top:230px;
-  left:190px;
+  top:295px;
+  width: 100%;
+  left:0px;
 }
 #mar3{
   position: fixed;
-  top:230px;
-  left:270px;
+  top:335px;
+  width: 100%;
+  left:0px;
 }
 #mar4{
   position: fixed;
-  top:230px;
-  left:390px;
+  top:375px;
+  left:0px;
+  width: 100%;
 }
 #mar5{
   position: fixed;
-  top:230px;
-  left:470px;
+  top:415px;
+  left:0px;
+  width: 100%;
 }
 #mar6{
   position: fixed;
-  top:230px;
-  left:550px;
+  top:455px;
+  left:0px;
+  width: 100%;
 }
 #mar7{
   position: fixed;
-  top:230px;
-  left:610px;
+  top:495px;
+  left:0px;
+  width: 100%;
 }
 #mar8{
   position: fixed;
-  top:230px;
-  left:690px;
+  top:535px;
+  left:0px;
+  width: 100%;
 }
 #mar9{
   position: fixed;
-  top:230px;
-  left:760px;
+  top:575px;
+  left:0px;
+  width: 100%;
 }
 
 #ret, #ret1, #ret2, #ret3, #ret4, #ret5, #ret6, #ret7, #ret8, #ret9{

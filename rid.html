@@ -6,59 +6,71 @@
     <title>
         Top 10 best football players 20 century
     </title>
+      <!--<link rel="stylesheet" href="css/index-1.css" type="text/css" />-->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/new.css" type="text/css" />
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
-    <link rel="stylesheet" href="css/test-1.css" type="text/css" />
-    
+  
+
 
 </head>
 
 <body background="img/heder_1.jpg" style="height:100%; weight:100%">
-<div class="wrapper">
-    <!--HEDER-->
-    <header class="header">
-        <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-    </header>
-    <!--/HEDER-->
-    <!--NAV-->
-    <nav class="page-navigator nav">
-        <div class="container">
-            <a class="toggle-nav" href="#">&#9776;</a>
-          <div class="nav-mobile">
-            <ul class="left">
-            <li><a href="index.html">Main</a></li>
-              <li><a href="player_history.html">Player history</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="blog.html">Comments</a></li>
-            </ul>
+    <div class="wrapper">
+        <!--HEDER-->
+        <header class="header">
+            <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+        </header>
+        <!--/HEDER-->
+        <!--NAV-->
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                    <li ><a href="index.html">Main</a></li>
+                    <li ><a href="player_history.html">Player history</a></li>
+                    <li ><a href="gallery.html">Gallery</a></li>
+                    <li ><a href="video.html">Video</a></li>
+                    <li ><a href="blog.html">Comments</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+        <br>
+        <!--Login form-->
+        <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+            <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+            <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
+            <!--<input type="search" placeholder="Search">-->
             <br>
-            <!--Login form-->
-            <ul class="right">
+            <br>
+            <input type="submit" value="Sign in" id="in">
+            <input type="reset" value="Sign Out" id="out">
+            <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
 
-            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
-                <!--<input type="search" placeholder="Search">-->
-                <br>
-                <br>
-                <input type="submit" value="Sign in" id="in">
-                <input type="submit" value="Sign out" id="exit">
-                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+        </form>
 
-            </form>
-</ul>
+        <!--/Login form-->
+    </div>
 
-            <!--/Login form-->
-        </div>
-        </div>
-    </nav>
     <!--/NAV-->
     <!--MAIN-->
-    <main class="main"> 
+    <main class="main">
         <div id="openModal" class="modalDialog">
             <div>
                 <a href="#close" title="Close" class="close">X</a>
@@ -69,10 +81,9 @@
                     <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
                     <label for="surname">Your surname*</label>
                     <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="male">Your gender*</label>
-                    <input type="radio" name="gender" value="male" id="male"/>Male
-                    <label for="female"></label>
-                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
+                    <label for="gender">Your gender*</label>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female<br><br>
                     <label for="birthday">Your date of birthday*</label>
                     <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
                     <label for="email">Your email*</label>
@@ -80,7 +91,7 @@
                     <label for="mobilephone">Your mobilephone*</label>
                     <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
                     <label for="city">City</label>
-                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                    <input type="text" id="sity" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
                     <input type="submit" value="OK" id="btn-send" />
                 </form>
 
@@ -128,7 +139,7 @@
             <!--MAIN OF ARTICLE-->
         </article>
     </main>
-    
+
     <!--/MAIN-->
     <!--FOOTER-->
     <footer class="footer">
@@ -139,14 +150,13 @@
         </div>
     </footer>
     <!--/FOOTER-->
-    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/button.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script><script type="text/javascript" src="js/button.js"></script>
     <script type="text/javascript" src="js/slide-1.js"></script>
-<script type="text/javascript" src="js/log.js"></script>
-<script type="text/javascript" src="js/test-1.js"></script>
-<script type="text/javascript" src="js/id.js"></script>
-<script type="text/javascript" src="js/blog.js"></script>
-</div>
+    <script type="text/javascript" src="js/log.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
