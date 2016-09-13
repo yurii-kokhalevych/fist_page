@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>
         Top 10 best football players 20 century
     </title>
@@ -11,139 +11,139 @@
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
-<body background="img/heder_1.jpg">
+<body>
     <div class="wrapper">
-    <!--HEDER-->
-    <header class="header">
-        <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-    </header>
-    <!--/HEDER-->
-    <!--NAV-->
-    <nav class="page-navigator nav">
-        <div class="container">
-            <a class="toggle-nav" href="#">&#9776;</a>
-          <div class="nav-mobile">
-            <ul class="left">
-            <li><a href="index.html">Main</a></li>
-              <li><a href="player_history.html">Player history</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="blog.html">Comments</a></li>
-            </ul>
-            <br>
-            <!--Login form-->
-            <ul class="right">
+        <!--HEDER-->
+        <header class="header">
+            <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+        </header>
+        <!--/HEDER-->
+        <!--NAV-->
+        <nav class="page-navigator nav">
+            <div class="container">
+                <a class="toggle-nav" href="#">&#9776;</a>
+                <div class="nav-mobile">
+                    <ul class="left">
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="player_history.html">Player history</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="blog.html">Comments</a></li>
+                    </ul>
+                    <br>
+                    <!--Login form-->
+                    <ul class="right">
 
-            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
-                <!--<input type="search" placeholder="Search">-->
-                <br>
-                <br>
-                <input type="submit" value="Sign in" id="in">
-                <input type="submit" value="Sign out" id="exit">
-                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+                        <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+                            <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                            <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
+                            <!--<input type="search" placeholder="Search">-->
+                            <br>
+                            <br>
+                            <input type="submit" value="Sign in" id="in">
+                            <input type="submit" value="Sign out" id="exit">
+                            <a class="button" href="#openModal" style="text-decoration:none" id=regis>Regist</a>
 
-            </form>
-</ul>
+                        </form>
+                    </ul>
 
-            <!--/Login form-->
-        </div>
-        </div>
-    </nav>
-    <!--/NAV-->
-    <!--MAIN-->
-    <main class="main"> 
-        <div id="openModal" class="modalDialog">
+                    <!--/Login form-->
+                </div>
+            </div>
+        </nav>
+        <!--/NAV-->
+        <!--MAIN-->
+        <main class="main">
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+
+                    <h1>Registration form</h1>
+                    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
+                        <label for="name">Your name*</label>
+                        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                        <label for="surname">Your surname*</label>
+                        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                        <label for="male">Your gender*</label>
+                        <input type="radio" name="gender" value="male" id="male" />Male
+                        <label for="female"></label>
+                        <input type="radio" name="gender" value="female" id="female" />Female<br><br>
+                        <label for="birthday">Your date of birthday*</label>
+                        <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                        <label for="email">Your email*</label>
+                        <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                        <label for="mobilephone">Your mobilephone*</label>
+                        <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
+                        <label for="city">City</label>
+                        <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                        <input type="submit" value="OK" id="btn-send" />
+                    </form>
+
+                </div>
+            </div>
+            <section class="section">
+                <!--HEDER-->
+                <header class="header-of-section">
+                    <h2>Gerd Müller</h2>
+                </header>
+                <!--/HEDER-->
+                <!--MAIN-->
+                <div class="item">
+                    <img src="img/muller.jpg" alt="gerd_müller" style="width:250px; height:450px;"></img>
+                </div>
+                <p>Gerhard "Gerd" Muller born 3 November 1945 is a German retired footballer. A prolific striker renowned for his clinical finishing, especially in and around the six-yard box, he is regarded as one of the greatest goalscorers of all time.
+                    At international level with West Germany, he scored 68 goals in 62 appearances, and at club level, after 15 years with Bayern Munich, he scored a record 365 goals in 427 Bundesliga games and an international record of 66 goals in 74
+                    European club games. Averaging more than a goal a game with West Germany, Muller is now twelfth on the list of all time international goalscorers despite playing fewer matches than every other player in the top 25. Among the top scorers,
+                    he has the third-highest goal-to-game ratio. Nicknamed Bomber der Nation (the nation's Bomber) or simply Der Bomber, Muller was named European Footballer of the Year in 1970. After a successful season at Bayern Munich, he scored 10
+                    goals at the 1970 World Cup for West Germany where he received the Golden Boot as top goalscorer. He scored four goals in the 1974 World Cup, including the winning goal in the final. Muller held the all-time goal-scoring record in
+                    the World Cup with 14 goals for 32 years. In 1999, Muller was ranked ninth in the European player of the Century election held by the IFFHS, and he was voted thirteenth in the IFFHS' World Player of the Century election. In 2004, Pele
+                    named Muller in the FIFA 100 list of the world's greatest living players.
+
+                </p>
+
+                <p>
+                    <h4>Club career</h4>
+                    <hr> Muller autographing a football in 1967. To his right are Franz Beckenbauer and Sepp Maier. Born in Nordlingen, Germany, Muller began his football career at the TSV 1861 Nordlingen. Muller joined FC Bayern Munich in 1964 where he teamed
+                    up with future stars Franz Beckenbauer and Sepp Maier. The club, which would go on to become the most successful German club in history was then still in the Regionalliga Sud (Regional League South), which was one level below the Bundesliga
+                    at the time. After one season, Bayern Munich advanced to the Bundesliga and started a long string of successes. With his club, Muller amassed titles during the 60s and 70s: He won the German Championship four times, the DFB-Pokal four
+                    times, the European Champions' Cup three times, the Intercontinental Cup once, and the European Cup Winners' Cup once. A supremely opportunistic goal-scorer, he also became German top scorer seven times and European top scorer twice.
+                    Muller scored 365 goals in 427 Bundesliga matches for Bayern Munich, almost 100 goals more than the second most successful Bundesliga scorer, Klaus Fischer. He holds the single-season Bundesliga record with 40 goals in season 1971–72,
+                    a record that is particularly impressive because unlike other top-flight national leagues, the Bundesliga only has 18 teams and therefore only 34 games per season. Muller averaged a goal per game or better in seven of his 14 seasons.
+                    He scored 68 goals in 62 German international games. He held the record for most goals scored in a calendar year, striking 85 goals in 1972, until his total was surpassed 40 years later by Lionel Messi. Fort Lauderdale Strikers. After
+                    his career in the Bundesliga he went to the United States, where he joined the Fort Lauderdale Strikers of the North American Soccer League in 1979. He played three seasons with this team, scoring 38 goals, and once reaching, but losing,
+                    the league final in 1980. He was a 2nd-team NASL All Star in 1979.
+
+                    <h4>International career</h4>
+                    <hr> Muller (right) celebrating after winning the 1974 FIFA World Cup. Muller scored 68 goals in 62 games for West Germany. He was Germany's all-time leading scorer for almost 40 years until he was surpassed by Miroslav Klose in 2014,
+                    though Klose required more caps to do so. Muller's international career started in 1966 and ended on 7 July 1974 with victory at the 1974 World Cup at his home stadium in Munich. He scored the winning goal for the 2–1 victory over
+                    Johan Cruyff's Netherlands in the final. His four goals in that tournament and his ten goals at the 1970 World Cup combined made him the all-time highest World Cup goalscorer at the time with 14 goal. His record stood until the 2006
+                    tournament, coincidentally held in Germany, when it was broken by Brazilian striker Ronaldo, though he also required more matches than Muller to achieve his tally. Muller also participated in the 1972 European Championship, becoming
+                    top scorer with four goals (including two in the final) and winning the Championship with the West German team.
+
+                </p>
+                <!--MAIN-->
+            </section>
+
+
+        </main>
+        <!--/MAIN-->
+        <!--FOOTER-->
+        <footer class="footer">
             <div>
-                <a href="#close" title="Close" class="close">X</a>
-
-                <h1>Registration form</h1>
-                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
-                    <label for="name">Your name*</label>
-                    <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
-                    <label for="surname">Your surname*</label>
-                    <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="male">Your gender*</label>
-                    <input type="radio" name="gender" value="male" id="male"/>Male
-                    <label for="female"></label>
-                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
-                    <label for="birthday">Your date of birthday*</label>
-                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
-                    <label for="email">Your email*</label>
-                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
-                    <label for="mobilephone">Your mobilephone*</label>
-                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
-                    <label for="city">City</label>
-                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
-                    <input type="submit" value="OK" id="btn-send" />
-                </form>
-
+                <p>
+                    Copyrigth © yuriyk.com 2016
+                </p>
             </div>
-        </div>
-        <section class="section">
-            <!--HEDER-->
-            <header class="header-of-section">
-                <h2>Gerd Müller</h2>
-            </header>
-            <!--/HEDER-->
-            <!--MAIN-->
-            <div class="item">
-                <img src="img/muller.jpg" alt="gerd_müller" style="width:250px; height:450px;"></img>
-            </div>
-            <p>Gerhard "Gerd" Muller born 3 November 1945 is a German retired footballer. A prolific striker renowned for his clinical finishing, especially in and around the six-yard box, he is regarded as one of the greatest goalscorers of all time. At
-                international level with West Germany, he scored 68 goals in 62 appearances, and at club level, after 15 years with Bayern Munich, he scored a record 365 goals in 427 Bundesliga games and an international record of 66 goals in 74 European
-                club games. Averaging more than a goal a game with West Germany, Muller is now twelfth on the list of all time international goalscorers despite playing fewer matches than every other player in the top 25. Among the top scorers, he has
-                the third-highest goal-to-game ratio. Nicknamed Bomber der Nation (the nation's Bomber) or simply Der Bomber, Muller was named European Footballer of the Year in 1970. After a successful season at Bayern Munich, he scored 10 goals at the
-                1970 World Cup for West Germany where he received the Golden Boot as top goalscorer. He scored four goals in the 1974 World Cup, including the winning goal in the final. Muller held the all-time goal-scoring record in the World Cup with
-                14 goals for 32 years. In 1999, Muller was ranked ninth in the European player of the Century election held by the IFFHS, and he was voted thirteenth in the IFFHS' World Player of the Century election. In 2004, Pele named Muller in the
-                FIFA 100 list of the world's greatest living players.
-
-            </p>
-
-            <p>
-                <h4>Club career</h4>
-                <hr> Muller autographing a football in 1967. To his right are Franz Beckenbauer and Sepp Maier. Born in Nordlingen, Germany, Muller began his football career at the TSV 1861 Nordlingen. Muller joined FC Bayern Munich in 1964 where he teamed
-                up with future stars Franz Beckenbauer and Sepp Maier. The club, which would go on to become the most successful German club in history was then still in the Regionalliga Sud (Regional League South), which was one level below the Bundesliga
-                at the time. After one season, Bayern Munich advanced to the Bundesliga and started a long string of successes. With his club, Muller amassed titles during the 60s and 70s: He won the German Championship four times, the DFB-Pokal four
-                times, the European Champions' Cup three times, the Intercontinental Cup once, and the European Cup Winners' Cup once. A supremely opportunistic goal-scorer, he also became German top scorer seven times and European top scorer twice. Muller
-                scored 365 goals in 427 Bundesliga matches for Bayern Munich, almost 100 goals more than the second most successful Bundesliga scorer, Klaus Fischer. He holds the single-season Bundesliga record with 40 goals in season 1971–72, a record
-                that is particularly impressive because unlike other top-flight national leagues, the Bundesliga only has 18 teams and therefore only 34 games per season. Muller averaged a goal per game or better in seven of his 14 seasons. He scored
-                68 goals in 62 German international games. He held the record for most goals scored in a calendar year, striking 85 goals in 1972, until his total was surpassed 40 years later by Lionel Messi. Fort Lauderdale Strikers. After his career
-                in the Bundesliga he went to the United States, where he joined the Fort Lauderdale Strikers of the North American Soccer League in 1979. He played three seasons with this team, scoring 38 goals, and once reaching, but losing, the league
-                final in 1980. He was a 2nd-team NASL All Star in 1979.
-
-                <h4>International career</h4>
-                <hr> Muller (right) celebrating after winning the 1974 FIFA World Cup. Muller scored 68 goals in 62 games for West Germany. He was Germany's all-time leading scorer for almost 40 years until he was surpassed by Miroslav Klose in 2014, though
-                Klose required more caps to do so. Muller's international career started in 1966 and ended on 7 July 1974 with victory at the 1974 World Cup at his home stadium in Munich. He scored the winning goal for the 2–1 victory over Johan Cruyff's
-                Netherlands in the final. His four goals in that tournament and his ten goals at the 1970 World Cup combined made him the all-time highest World Cup goalscorer at the time with 14 goal. His record stood until the 2006 tournament, coincidentally
-                held in Germany, when it was broken by Brazilian striker Ronaldo, though he also required more matches than Muller to achieve his tally. Muller also participated in the 1972 European Championship, becoming top scorer with four goals (including
-                two in the final) and winning the Championship with the West German team.
-
-            </p>
-            <!--MAIN-->
-        </section>
-
-
-    </main>
-    <!--/MAIN-->
-    <!--FOOTER-->
-    <footer class="footer">
-        <div>
-            <p>
-                Copyrigth © yuriyk.com 2016
-            </p>
-        </div>
-    </footer>
-    <!--/FOOTER-->
+        </footer>
+        <!--/FOOTER-->
     </div>
     <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/log.js"></script>
-        <script type="text/javascript" src="js/test-1.js"></script>
-        <script type="text/javascript" src="js/id.js"></script>
-        <script type="text/javascript" src="js/blog.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/log.js"></script>
+    <script type="text/javascript" src="js/log.js"></script>
+    <script type="text/javascript" src="js/test-1.js"></script>
+    <script type="text/javascript" src="js/id.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/log.js"></script>
 
 </body>
 

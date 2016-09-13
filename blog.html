@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
   <title>
     Top 10 best football players 20 century
   </title>
@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="css/blog.css" type="text/css" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="css/reg.css" type="text/css" />
- 
+
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </head>
 
-<body background="img/heder_1.jpg">
+<body>
   <div class="wrapper">
     <!--HEDER-->
     <header class="header">
@@ -35,7 +35,7 @@
           </ul>
           <br>
           <!--Login form-->
-          <ul class="right">
+          <div class="right">
 
             <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
               <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
@@ -45,10 +45,10 @@
               <br>
               <input type="submit" value="Sign in" id="in">
               <input type="submit" value="Sign out" id="exit">
-              <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+              <a class="button" href="#openModal" style="text-decoration:none" id=regis>Regist</a>
 
             </form>
-          </ul>
+          </div>
 
           <!--/Login form-->
         </div>

@@ -1,3 +1,6 @@
+body{height: 100%; width: 100%;
+	background-image: url(img/heder_1.jpg);
+}
 .modalDialog {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
@@ -95,10 +98,12 @@
 }
 button{border-radius: 10px;	border: 2px solid transparent;	border-color: black;
 }
+.button{ border-radius: 10px;	border: 2px solid transparent;	border-color: black;background-color: #DCDCDC; padding-left:7px; padding-right: 7px; 
+}
 .login input[type="submit"], .login input[type="reset"]{
 	padding-left: 5px;
 	padding-right: 5px;
 }
- body{ background-image: url('img/heder_1.jpg';}
+ 
  
  

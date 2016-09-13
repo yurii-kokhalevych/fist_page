@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>
         Top 10 best football players 20 century
     </title>
@@ -11,174 +11,174 @@
     <link rel="stylesheet" href="css/reg.css" type="text/css" />
 </head>
 
-<body background="img/heder_1.jpg">
+<body>
     <div class="wrapper">
-    <!--HEDER-->
-    <header class="header">
-        <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
-    </header>
-    <!--/HEDER-->
-    <!--NAV-->
-    <nav class="page-navigator nav">
-        <div class="container">
-            <a class="toggle-nav" href="#">&#9776;</a>
-          <div class="nav-mobile">
-            <ul class="left">
-            <li><a href="index.html">Main</a></li>
-              <li><a href="player_history.html">Player history</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="blog.html">Comments</a></li>
-            </ul>
-            <br>
-            <!--Login form-->
-            <ul class="right">
+        <!--HEDER-->
+        <header class="header">
+            <h1>TOP 10 BEST FOOTBALL PLAYERS 20 CENTURY</h1>
+        </header>
+        <!--/HEDER-->
+        <!--NAV-->
+        <nav class="page-navigator nav">
+            <div class="container">
+                <a class="toggle-nav" href="#">&#9776;</a>
+                <div class="nav-mobile">
+                    <ul class="left">
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="player_history.html">Player history</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="blog.html">Comments</a></li>
+                    </ul>
+                    <br>
+                    <!--Login form-->
+                    <ul class="right">
 
-            <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
-                <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
-                <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
-                <!--<input type="search" placeholder="Search">-->
-                <br>
-                <br>
-                <input type="submit" value="Sign in" id="in">
-                <input type="submit" value="Sign out" id="exit">
-                <button><a href="#openModal" style="text-decoration:none" id=regis>Regist</a></button>
+                        <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login">
+                            <input type="text" placeholder="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Enter your email" id="mail">
+                            <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" id="password">
+                            <!--<input type="search" placeholder="Search">-->
+                            <br>
+                            <br>
+                            <input type="submit" value="Sign in" id="in">
+                            <input type="submit" value="Sign out" id="exit">
+                            <a class="button" href="#openModal" style="text-decoration:none" id=regis>Regist</a>
 
-            </form>
-</ul>
+                        </form>
+                    </ul>
 
-            <!--/Login form-->
-        </div>
-        </div>
-    </nav>
-    <!--/NAV-->
-    <!--MAIN-->
-    <main class="main"> 
-        <div id="openModal" class="modalDialog">
+                    <!--/Login form-->
+                </div>
+            </div>
+        </nav>
+        <!--/NAV-->
+        <!--MAIN-->
+        <main class="main">
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+
+                    <h1>Registration form</h1>
+                    <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
+                        <label for="name">Your name*</label>
+                        <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
+                        <label for="surname">Your surname*</label>
+                        <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
+                        <label for="male">Your gender*</label>
+                        <input type="radio" name="gender" value="male" id="male" />Male
+                        <label for="female"></label>
+                        <input type="radio" name="gender" value="female" id="female" />Female<br><br>
+                        <label for="birthday">Your date of birthday*</label>
+                        <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
+                        <label for="email">Your email*</label>
+                        <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
+                        <label for="mobilephone">Your mobilephone*</label>
+                        <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
+                        <label for="city">City</label>
+                        <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
+                        <input type="submit" value="OK" id="btn-send" />
+                    </form>
+
+                </div>
+            </div>
+            <section class="section">
+                <!--HEDER-->
+                <header class="header-of-section">
+                    <h2>Johan Cruyff</h2>
+                </header>
+                <!--/HEDER-->
+                <!--MAIN-->
+                <div class="item">
+                    <img src="img/cruyff.jpg" alt="cruyff" style="width:250px; height:450px;"></img>
+                </div>
+                <p>Hendrik Johannes "Johan" Cruijff OON ( 25 April 1947 – 24 March 2016) was a Dutch professional football player and coach. As a player, he won the Ballon d'Or three times, in 1971, 1973 and 1974. Cruyff was one of the most famous exponents
+                    of the football philosophy known as Total Football explored by Rinus Michels, and is widely regarded as one of the greatest players in football history. In the 1970s, Dutch football rose from near obscurity to become a powerhouse in
+                    the sport. Cruyff led the Netherlands to the final of the 1974 FIFA World Cup and received the Golden Ball as player of the tournament. At the 1974 finals he executed a feint that subsequently was named after him, the Cruyff Turn,
+                    a move widely replicated in the modern game. At club level, Cruyff started his career at Ajax, where he won eight Eredivisie titles, three European Cups and one Intercontinental Cup. In 1973, he moved to Barcelona for a world record
+                    transfer fee, winning La Liga in his first season and was named European Footballer of the Year. After retiring from playing in 1984, Cruyff became highly successful as manager of Ajax and later Barcelona; he remained an influential
+                    advisor to both clubs. His son Jordi also played football professionally. In 1999, Cruyff was voted European Player of the Century in an election held by the International Federation of Football History & Statistics, and came second
+                    behind Pele in their World Player of the Century poll. He came third in a vote organised by the French magazine France Football consulting their former Ballon d'Or winners to elect their Football Player of the Century. He was chosen
+                    on the World Team of the 20th Century in 1998, the FIFA World Cup Dream Team in 2002, and in 2004 was named in the FIFA 100 list of the world's greatest living players. Considered to be one of the most influential figures in football
+                    history, Cruyff's style of play and his football philosophy has influenced managers and players, including Frank Rijkaard, Pep Guardiola, Michael Laudrup, Arsene Wenger, Eric Cantona and Xavi. Ajax and Barcelona are among the clubs
+                    that have developed youth academies based on Cruyff's coaching methods. His coaching philosophy helped lay the foundations for the revival of Ajax's international successes in the 1990s. Spanish football's successes at both club and
+                    international level during the years 2008 to 2012 have been cited by many as evidence of Cruyff's impact on contemporary football.
+
+                </p>
+
+                <p>
+                    <h4>Club career</h4>
+                    <hr> Ajax and the golden era of Total Football Cruyff joined the Ajax youth system on his tenth birthday. Cruyff and his friends would frequent a "playground" in their neighbourhood and Ajax youth coach Jany van der Veen, who lived close
+                    by, noticed Cruyff's talent and decided to offer him a place at Ajax without a formal trial. He played football and baseball, showing talent both on the mound pitching and behind the plate as a catcher, before having to leave the club's
+                    baseball section at age 15 to focus on football. He made his first team debut on 15 November 1964 in the Eredivisie, against GVAV, scoring the only goal for Ajax in a 3–1 defeat. That year, Ajax finished in their lowest position since
+                    the establishment of professional football, in 13th. Cruyff really started to make an impression in the 1965–66 season and established himself as a regular first team player after scoring two goals against Door Wilskracht Sterk in
+                    the Olympic stadium on 24 October 1965 in a 2–0 victory. In the seven games that winter, he scored eight times and in March 1966 scored the first three goals in a league game against Telstar in a 6–2 win. Four days later, in a cup
+                    game against Veendam in a 7–0 win, he scored four goals. In total that season, Cruyff scored 25 goals in 23 games, and Ajax won the league championship. In the 1966–67 season, Ajax again won the league championship, and also won the
+                    KNVB Cup, for Cruyff's first "double". Cruyff ended the season as the leading goalscorer in the Eredivisie with 33. Cruyff won the league for the third successive year in the 1967–68 season. He was also named Dutch footballer of the
+                    year for the second successive time, a feat he repeated in 1969. On 28 May 1969, Cruyff played in his first European Cup final against Milan, but the Italians won 4–1. In the 1969–70 season, Cruyff won his second league and cup "double";
+                    at the beginning of the 1970–71 season, he suffered a long-term groin injury. He made his comeback on 30 October 1970 against PSV. In this game, he did not wear his usual number 9, which was in use by Gerrie Muhren, but instead used
+                    number 14. Ajax won 1–0. Although it was very uncommon in those days for the starters of a game not to play with numbers 1 to 11, from that moment onwards, Cruyff wore number 14, even with the Dutch national team. There was a documentary
+                    on Cruyff, Nummer 14 Johan Cruyff and in the Netherlands there is a magazine by Voetbal International, Nummer 14. In a league game against AZ '67 on 29 November 1970, Cruyff scored six goals in an 8–1 victory. After winning a replayed
+                    KNVB Cup final against Sparta Rotterdam by a score of 2–1, Ajax won in Europe for the first time. On 2 June 1971, in London, Ajax won the European Cup by defeating Panathinaikos 2–0. He signed a seven-year contract at Ajax. At the
+                    end of the season, he was named the Dutch and European Footballer of the Year for 1971. In 1972, Ajax won a second European Cup, beating Inter Milan 2–0 in the final, with Cruyff scoring both goals. This victory prompted Dutch newspapers
+                    to announce the demise of the Italian style of defensive football in the face of Total Football. Soccer: The Ultimate Encyclopaedia says, "Single-handed, Cruyff not only pulled Internazionale of Italy apart in the 1972 European Cup
+                    Final, but scored both goals in Ajax's 2–0 win." Cruyff also scored in the 3–2 victory over ADO Den Haag in the KNVB Cup final. In the league, Cruyff was the top scorer with 25 goals as Ajax became champions. Ajax won the Intercontinental
+                    Cup, beating Argentina's Independiente 1–1 in the first game followed by 3–0, and then in January 1973, they won the European Super Cup by beating Rangers 3–1 away and 3–2 in Amsterdam. Cruyff's only own goal came on 20 August 1972
+                    against FC Amsterdam. A week later, against Go Ahead Eagles in a 6–0 win, Cruyff scored four times for Ajax. The 1972–73 season was concluded with another league championship victory and a third successive European Cup with a 1–0 win
+                    over Juventus in the final, with the Encyclopedia stating Cruyff "inspired one of the greatest 20-minute spells of football ever seen". Barcelona and the first La Liga title in 14 years In mid-1973, Cruyff was sold to Barcelona for
+                    6 million guilders in a world record transfer fee. On 19 August 1973, he played his last match for Ajax where they defeated FC Amsterdam 6–1, the second match of the 1973–74 season. Cruyff endeared himself to the Barcelona fans when
+                    he chose a Catalan name, Jordi, for his son. He helped the club win La Liga for the first time since 1960, defeating their deadliest rivals Real Madrid 5–0 at their home of the Santiago Bernabeu. Thousands of Barcelona fans who watched
+                    the match on television poured out of their homes to join in street celebrations. A New York Times journalist wrote that Cruyff had done more for the spirit of the Catalan people in 90 minutes than many politicians in years of struggle.
+                    Football historian Jimmy Burns stated, "with Cruyff, the team felt they couldn’t lose". He gave them speed, flexibility and a sense of themselves. In 1974 Cruyff was crowned European Footballer of the Year. During his time at Barcelona,
+                    Cruyff scored one of his most famous goals, "The 'Phantom' Goal". In a game against Atletico Madrid, Cruyff leapt into the air, twisted his body so he was facing away from the goal, and kicked the ball past Miguel Reina in the Atletico
+                    goal with his right heel (the ball was at about neck height and had already travelled wide of the far post). The goal was featured in the documentary En un momento dado, in which fans of Cruyff attempted to recreate that moment. The
+                    goal has been dubbed Le but impossible de Cruyff (Cruyff's impossible goal). In 1978, Barcelona defeated Las Palmas 3–1, to win the Copa del Rey. Cruyff played two games with Paris Saint-Germain in 1975 during the Paris tournament.
+                    He had only agreed because he was a fan of designer Daniel Hechter, who was then president of PSG. Spells in the United States and later years of top-level playing career At the age of 32, Cruyff signed a lucrative deal with the Los
+                    Angeles Aztecs of the North American Soccer League (NASL). He had previously been rumoured to be joining the New York Cosmos but the deal did not materialize; he played a few exhibition games for the Cosmos. He stayed at the Aztecs
+                    for only one season, and was voted NASL Player of the Year. The following season, he moved to play for the Washington Diplomats. He played the whole 1980 campaign for the Diplomats, even as the team was facing dire financial trouble.
+                    In May 1981, Cruyff played as a guest player for Milan in a tournament, but was injured. As a result, he missed the beginning of the 1981 NASL soccer season, which ultimately led to Cruyff choosing to leave the team. Cruyff also loathed
+                    playing on artificial surfaces, which were common in the NASL at the time. Return to Spain with Levante In January 1981, Cruyff played three friendly matches for FC Dordrecht. Also in January 1981, manager Jock Wallace of English club
+                    Leicester City made an attempt to sign Cruyff, and despite negotiations lasting three weeks, in which Cruyff expressed his desire to play for the club, a deal could not be reached. Cruyff instead chose to sign with Spanish Segunda
+                    Division side Levante. In March 1981, Cruyff took the field for the first time for Levante. Injuries and disagreements with the administration of the club, however, blighted his spell in the Segunda Division, and he only made ten appearances,
+                    scoring two goals. Having failed to secure promotion to the first division, a contract with Levante fell through. Second spell at Ajax Johan Cruyff with Japanese fans in 1982 After his spell in the U.S. and a short-lived stay in Spain,
+                    Cruyff returned to play in his homeland, rejoining Ajax on 30 November 1980 as "technical advisor" to trainer Leo Beenhakker, Ajax being eighth in the league table at the time after 13 games played. After 34 games, however, Ajax finished
+                    the 1980–81 season in second after 34 games. In December 1981, Cruyff signed a contract extension with Ajax. In the 1981–82 and 1982–83 seasons, Ajax, along with Cruyff, became league champions. In 1982–83, Ajax won the Dutch Cup (KNVB-Beker).
+                    In 1982, he scored a famous goal against Helmond Sport. While playing for Ajax, Cruyff scored a penalty the same way Rik Coppens had done it 25 years earlier. He put the ball down as for a routine penalty kick, but instead of shooting
+                    at goal, Cruyff nudged the ball sideways to teammate Jesper Olsen, who in return passed it back to Cruyff to tap the ball into the empty net, as Otto Versfeld, the Helmond goalkeeper, looked on. Cruyff's farewell at Feyenoord Final
+                    season at Feyenoord and retirement At the end of the 1982–83 season, Ajax decided not to offer Cruyff a new contract. This angered Cruyff, who responded by signing for Ajax's archrivals Feyenoord. Cruyff's season at Feyenoord was a
+                    successful one in which the club won the Eredivisie for the first time in a decade, part of a league and KNVB Cup double. The team's success was due to the performances of Cruyff along with Ruud Gullit and Peter Houtman. Despite his
+                    relatively advanced age, Cruyff played all league matches that season except for one. Because of his performance on the field, he was voted as Dutch Footballer of the Year for the fifth time. At the end of the season, the veteran announced
+                    his final retirement. He ended his Eredivisie playing career on 13 May 1984 with a goal against PEC Zwolle. Cruyff played his last game in Saudi Arabia against Al-Ahli, bringing Feyenoord back into the game with a goal and an assist.
+                    <h4>International career</h4>
+                    <hr> Johan Cruyff in 1974, the year the Netherlands lost the World Cup final to West Germany As a Dutch international, Cruyff played 48 matches, scoring 33 goals. The national team never lost a match in which Cruyff scored. On 7 September
+                    1966, he made his official debut for the Netherlands in the UEFA Euro 1968 qualifier against Hungary, scoring in the 2–2 draw. In his second match, a friendly against Czechoslovakia, Cruyff was the first Dutch international to receive
+                    a red card. The Royal Dutch Football Association (KNVB) banned him from Ajax games but not internationals. Accusations of Cruyff's "aloofness" were not rebuffed by his habit of wearing a shirt with only two black stripes along the
+                    sleeves, as opposed to Adidas' usual design feature of three, worn by all the other Dutch players. Cruyff had a separate sponsorship deal with Puma. From 1970 onwards, he wore the number 14 jersey for the Netherlands, setting a trend
+                    for wearing shirt numbers outside the usual starting line-up numbers of 1 to 11.
+
+                </p>
+                <!--MAIN-->
+            </section>
+
+
+        </main>
+        <!--/MAIN-->
+        <!--FOOTER-->
+        <footer class="footer">
             <div>
-                <a href="#close" title="Close" class="close">X</a>
-
-                <h1>Registration form</h1>
-                <form action="https://formspree.io/borodatuu@gmail.com" method="POST" class="login1">
-                    <label for="name">Your name*</label>
-                    <input type="text" id="name" pattern="[A-Za-z].{2,}" title="Enter your name in English" /><br> <br>
-                    <label for="surname">Your surname*</label>
-                    <input type="text" id="surname" pattern="[A-Za-z].{2,}" title="Enter your surname in English" /><br> <br>
-                    <label for="male">Your gender*</label>
-                    <input type="radio" name="gender" value="male" id="male"/>Male
-                    <label for="female"></label>
-                    <input type="radio" name="gender" value="female" id="female"/>Female<br><br>
-                    <label for="birthday">Your date of birthday*</label>
-                    <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Example 12/12/1978" required /><br><br>
-                    <label for="email">Your email*</label>
-                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example rty@ukr.net" required/><br><br>
-                    <label for="mobilephone">Your mobilephone*</label>
-                    <input type="text" id="mobilephone" pattern="38[0-9]{3}-[0-9]{4}-[0-9]{3}" title="Example 38096-4768-678 " required/><br><br>
-                    <label for="city">City</label>
-                    <input type="text" id="city" pattern="[A-Za-z].{3,}" title="Enter your city" required/><br><br>
-                    <input type="submit" value="OK" id="btn-send" />
-                </form>
-
+                <p>
+                    Copyrigth © yuriyk.com 2016
+                </p>
             </div>
-        </div>
-        <section class="section">
-            <!--HEDER-->
-            <header class="header-of-section">
-                <h2>Johan Cruyff</h2>
-            </header>
-            <!--/HEDER-->
-            <!--MAIN-->
-            <div class="item">
-                <img src="img/cruyff.jpg" alt="cruyff" style="width:250px; height:450px;"></img>
-            </div>
-            <p>Hendrik Johannes "Johan" Cruijff OON ( 25 April 1947 – 24 March 2016) was a Dutch professional football player and coach. As a player, he won the Ballon d'Or three times, in 1971, 1973 and 1974. Cruyff was one of the most famous exponents
-                of the football philosophy known as Total Football explored by Rinus Michels, and is widely regarded as one of the greatest players in football history. In the 1970s, Dutch football rose from near obscurity to become a powerhouse in the
-                sport. Cruyff led the Netherlands to the final of the 1974 FIFA World Cup and received the Golden Ball as player of the tournament. At the 1974 finals he executed a feint that subsequently was named after him, the Cruyff Turn, a move widely
-                replicated in the modern game. At club level, Cruyff started his career at Ajax, where he won eight Eredivisie titles, three European Cups and one Intercontinental Cup. In 1973, he moved to Barcelona for a world record transfer fee, winning
-                La Liga in his first season and was named European Footballer of the Year. After retiring from playing in 1984, Cruyff became highly successful as manager of Ajax and later Barcelona; he remained an influential advisor to both clubs. His
-                son Jordi also played football professionally. In 1999, Cruyff was voted European Player of the Century in an election held by the International Federation of Football History & Statistics, and came second behind Pele in their World Player
-                of the Century poll. He came third in a vote organised by the French magazine France Football consulting their former Ballon d'Or winners to elect their Football Player of the Century. He was chosen on the World Team of the 20th Century
-                in 1998, the FIFA World Cup Dream Team in 2002, and in 2004 was named in the FIFA 100 list of the world's greatest living players. Considered to be one of the most influential figures in football history, Cruyff's style of play and his
-                football philosophy has influenced managers and players, including Frank Rijkaard, Pep Guardiola, Michael Laudrup, Arsene Wenger, Eric Cantona and Xavi. Ajax and Barcelona are among the clubs that have developed youth academies based on
-                Cruyff's coaching methods. His coaching philosophy helped lay the foundations for the revival of Ajax's international successes in the 1990s. Spanish football's successes at both club and international level during the years 2008 to 2012
-                have been cited by many as evidence of Cruyff's impact on contemporary football.
-
-            </p>
-
-            <p>
-                <h4>Club career</h4>
-                <hr> Ajax and the golden era of Total Football Cruyff joined the Ajax youth system on his tenth birthday. Cruyff and his friends would frequent a "playground" in their neighbourhood and Ajax youth coach Jany van der Veen, who lived close by,
-                noticed Cruyff's talent and decided to offer him a place at Ajax without a formal trial. He played football and baseball, showing talent both on the mound pitching and behind the plate as a catcher, before having to leave the club's baseball
-                section at age 15 to focus on football. He made his first team debut on 15 November 1964 in the Eredivisie, against GVAV, scoring the only goal for Ajax in a 3–1 defeat. That year, Ajax finished in their lowest position since the establishment
-                of professional football, in 13th. Cruyff really started to make an impression in the 1965–66 season and established himself as a regular first team player after scoring two goals against Door Wilskracht Sterk in the Olympic stadium on
-                24 October 1965 in a 2–0 victory. In the seven games that winter, he scored eight times and in March 1966 scored the first three goals in a league game against Telstar in a 6–2 win. Four days later, in a cup game against Veendam in a 7–0
-                win, he scored four goals. In total that season, Cruyff scored 25 goals in 23 games, and Ajax won the league championship. In the 1966–67 season, Ajax again won the league championship, and also won the KNVB Cup, for Cruyff's first "double".
-                Cruyff ended the season as the leading goalscorer in the Eredivisie with 33. Cruyff won the league for the third successive year in the 1967–68 season. He was also named Dutch footballer of the year for the second successive time, a feat
-                he repeated in 1969. On 28 May 1969, Cruyff played in his first European Cup final against Milan, but the Italians won 4–1. In the 1969–70 season, Cruyff won his second league and cup "double"; at the beginning of the 1970–71 season, he
-                suffered a long-term groin injury. He made his comeback on 30 October 1970 against PSV. In this game, he did not wear his usual number 9, which was in use by Gerrie Muhren, but instead used number 14. Ajax won 1–0. Although it was very
-                uncommon in those days for the starters of a game not to play with numbers 1 to 11, from that moment onwards, Cruyff wore number 14, even with the Dutch national team. There was a documentary on Cruyff, Nummer 14 Johan Cruyff and in the
-                Netherlands there is a magazine by Voetbal International, Nummer 14. In a league game against AZ '67 on 29 November 1970, Cruyff scored six goals in an 8–1 victory. After winning a replayed KNVB Cup final against Sparta Rotterdam by a
-                score of 2–1, Ajax won in Europe for the first time. On 2 June 1971, in London, Ajax won the European Cup by defeating Panathinaikos 2–0. He signed a seven-year contract at Ajax. At the end of the season, he was named the Dutch and European
-                Footballer of the Year for 1971. In 1972, Ajax won a second European Cup, beating Inter Milan 2–0 in the final, with Cruyff scoring both goals. This victory prompted Dutch newspapers to announce the demise of the Italian style of defensive
-                football in the face of Total Football. Soccer: The Ultimate Encyclopaedia says, "Single-handed, Cruyff not only pulled Internazionale of Italy apart in the 1972 European Cup Final, but scored both goals in Ajax's 2–0 win." Cruyff also
-                scored in the 3–2 victory over ADO Den Haag in the KNVB Cup final. In the league, Cruyff was the top scorer with 25 goals as Ajax became champions. Ajax won the Intercontinental Cup, beating Argentina's Independiente 1–1 in the first game
-                followed by 3–0, and then in January 1973, they won the European Super Cup by beating Rangers 3–1 away and 3–2 in Amsterdam. Cruyff's only own goal came on 20 August 1972 against FC Amsterdam. A week later, against Go Ahead Eagles in a
-                6–0 win, Cruyff scored four times for Ajax. The 1972–73 season was concluded with another league championship victory and a third successive European Cup with a 1–0 win over Juventus in the final, with the Encyclopedia stating Cruyff "inspired
-                one of the greatest 20-minute spells of football ever seen". Barcelona and the first La Liga title in 14 years In mid-1973, Cruyff was sold to Barcelona for 6 million guilders in a world record transfer fee. On 19 August 1973, he played
-                his last match for Ajax where they defeated FC Amsterdam 6–1, the second match of the 1973–74 season. Cruyff endeared himself to the Barcelona fans when he chose a Catalan name, Jordi, for his son. He helped the club win La Liga for the
-                first time since 1960, defeating their deadliest rivals Real Madrid 5–0 at their home of the Santiago Bernabeu. Thousands of Barcelona fans who watched the match on television poured out of their homes to join in street celebrations. A
-                New York Times journalist wrote that Cruyff had done more for the spirit of the Catalan people in 90 minutes than many politicians in years of struggle. Football historian Jimmy Burns stated, "with Cruyff, the team felt they couldn’t lose".
-                He gave them speed, flexibility and a sense of themselves. In 1974 Cruyff was crowned European Footballer of the Year. During his time at Barcelona, Cruyff scored one of his most famous goals, "The 'Phantom' Goal". In a game against Atletico
-                Madrid, Cruyff leapt into the air, twisted his body so he was facing away from the goal, and kicked the ball past Miguel Reina in the Atletico goal with his right heel (the ball was at about neck height and had already travelled wide of
-                the far post). The goal was featured in the documentary En un momento dado, in which fans of Cruyff attempted to recreate that moment. The goal has been dubbed Le but impossible de Cruyff (Cruyff's impossible goal). In 1978, Barcelona
-                defeated Las Palmas 3–1, to win the Copa del Rey. Cruyff played two games with Paris Saint-Germain in 1975 during the Paris tournament. He had only agreed because he was a fan of designer Daniel Hechter, who was then president of PSG.
-                Spells in the United States and later years of top-level playing career At the age of 32, Cruyff signed a lucrative deal with the Los Angeles Aztecs of the North American Soccer League (NASL). He had previously been rumoured to be joining
-                the New York Cosmos but the deal did not materialize; he played a few exhibition games for the Cosmos. He stayed at the Aztecs for only one season, and was voted NASL Player of the Year. The following season, he moved to play for the Washington
-                Diplomats. He played the whole 1980 campaign for the Diplomats, even as the team was facing dire financial trouble. In May 1981, Cruyff played as a guest player for Milan in a tournament, but was injured. As a result, he missed the beginning
-                of the 1981 NASL soccer season, which ultimately led to Cruyff choosing to leave the team. Cruyff also loathed playing on artificial surfaces, which were common in the NASL at the time. Return to Spain with Levante In January 1981, Cruyff
-                played three friendly matches for FC Dordrecht. Also in January 1981, manager Jock Wallace of English club Leicester City made an attempt to sign Cruyff, and despite negotiations lasting three weeks, in which Cruyff expressed his desire
-                to play for the club, a deal could not be reached. Cruyff instead chose to sign with Spanish Segunda Division side Levante. In March 1981, Cruyff took the field for the first time for Levante. Injuries and disagreements with the administration
-                of the club, however, blighted his spell in the Segunda Division, and he only made ten appearances, scoring two goals. Having failed to secure promotion to the first division, a contract with Levante fell through. Second spell at Ajax
-                Johan Cruyff with Japanese fans in 1982 After his spell in the U.S. and a short-lived stay in Spain, Cruyff returned to play in his homeland, rejoining Ajax on 30 November 1980 as "technical advisor" to trainer Leo Beenhakker, Ajax being
-                eighth in the league table at the time after 13 games played. After 34 games, however, Ajax finished the 1980–81 season in second after 34 games. In December 1981, Cruyff signed a contract extension with Ajax. In the 1981–82 and 1982–83
-                seasons, Ajax, along with Cruyff, became league champions. In 1982–83, Ajax won the Dutch Cup (KNVB-Beker). In 1982, he scored a famous goal against Helmond Sport. While playing for Ajax, Cruyff scored a penalty the same way Rik Coppens
-                had done it 25 years earlier. He put the ball down as for a routine penalty kick, but instead of shooting at goal, Cruyff nudged the ball sideways to teammate Jesper Olsen, who in return passed it back to Cruyff to tap the ball into the
-                empty net, as Otto Versfeld, the Helmond goalkeeper, looked on. Cruyff's farewell at Feyenoord Final season at Feyenoord and retirement At the end of the 1982–83 season, Ajax decided not to offer Cruyff a new contract. This angered Cruyff,
-                who responded by signing for Ajax's archrivals Feyenoord. Cruyff's season at Feyenoord was a successful one in which the club won the Eredivisie for the first time in a decade, part of a league and KNVB Cup double. The team's success was
-                due to the performances of Cruyff along with Ruud Gullit and Peter Houtman. Despite his relatively advanced age, Cruyff played all league matches that season except for one. Because of his performance on the field, he was voted as Dutch
-                Footballer of the Year for the fifth time. At the end of the season, the veteran announced his final retirement. He ended his Eredivisie playing career on 13 May 1984 with a goal against PEC Zwolle. Cruyff played his last game in Saudi
-                Arabia against Al-Ahli, bringing Feyenoord back into the game with a goal and an assist.
-                <h4>International career</h4>
-                <hr> Johan Cruyff in 1974, the year the Netherlands lost the World Cup final to West Germany As a Dutch international, Cruyff played 48 matches, scoring 33 goals. The national team never lost a match in which Cruyff scored. On 7 September
-                1966, he made his official debut for the Netherlands in the UEFA Euro 1968 qualifier against Hungary, scoring in the 2–2 draw. In his second match, a friendly against Czechoslovakia, Cruyff was the first Dutch international to receive
-                a red card. The Royal Dutch Football Association (KNVB) banned him from Ajax games but not internationals. Accusations of Cruyff's "aloofness" were not rebuffed by his habit of wearing a shirt with only two black stripes along the sleeves,
-                as opposed to Adidas' usual design feature of three, worn by all the other Dutch players. Cruyff had a separate sponsorship deal with Puma. From 1970 onwards, he wore the number 14 jersey for the Netherlands, setting a trend for wearing
-                shirt numbers outside the usual starting line-up numbers of 1 to 11.
-
-            </p>
-            <!--MAIN-->
-        </section>
-
-
-    </main>
-    <!--/MAIN-->
-    <!--FOOTER-->
-    <footer class="footer">
-        <div>
-            <p>
-                Copyrigth © yuriyk.com 2016
-            </p>
-        </div>
-    </footer>
-    <!--/FOOTER-->
+        </footer>
+        <!--/FOOTER-->
     </div>
     <script src="//code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/log.js"></script>
-        <script type="text/javascript" src="js/test-1.js"></script>
-        <script type="text/javascript" src="js/id.js"></script>
-        <script type="text/javascript" src="js/blog.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/log.js"></script>
+    <script type="text/javascript" src="js/log.js"></script>
+    <script type="text/javascript" src="js/test-1.js"></script>
+    <script type="text/javascript" src="js/id.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/log.js"></script>
 
 </body>
 
