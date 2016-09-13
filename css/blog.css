@@ -375,6 +375,27 @@ ul { list-style: none; }
 
 @media only screen and (max-width: 536px) and (min-width:501px) {
 .header h1 {font-size: 23px;}
+.modalDialog > div {
+	width: 200px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+	text-align: left;
+}
+.login1 input[type="text"],
+.login1 input[type="password"]
+{
+	padding: 5px;
+	margin-right: 5px;
+	float: right;
+	}
+	.login1 input[type="submit"]
+{margin-top: 5px;}
 .page-navigator{	
 	top:80px;
 	position: fixed;
@@ -492,7 +513,43 @@ ul { list-style: none; }
 
 
 @media only screen and (max-width: 500px) and (min-width:400px) {
+	#in {
+		position: fixed;
+		top: 400px;
+		left: 5px;
+	}
+	#exit {
+		position: fixed;
+		top: 400px;
+		left: 65px;
+	}
+	#regis {
+		position: fixed;
+		top: 400px;
+		left: 136px;
+	}
 .header h1 {font-size: 23px;}
+.modalDialog > div {
+	width: 200px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+	text-align: left;
+}
+.login1 input[type="text"],
+.login1 input[type="password"]
+{
+	padding: 5px;
+	margin-right: 5px;
+	float: right;
+	}
+	.login1 input[type="submit"]
+{margin-top: 5px;}
 .page-navigator{	
 	top:80px;
 	position: fixed;
@@ -609,7 +666,43 @@ ul { list-style: none; }
 }
 
 @media only screen and (max-width: 399px) {
+	#in {
+		position: fixed;
+		top: 400px;
+		left: 5px;
+	}
+	#exit {
+		position: fixed;
+		top: 400px;
+		left: 65px;
+	}
+	#regis {
+		position: fixed;
+		top: 400px;
+		left: 136px;
+	}
 .header h1 {font-size: 17px;}
+.modalDialog > div {
+	width: 200px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+	text-align: left;
+}
+.login1 input[type="text"],
+.login1 input[type="password"]
+{
+	padding: 5px;
+	margin-right: 5px;
+	float: right;
+	}
+	.login1 input[type="submit"]
+{margin-top: 5px;}
 .page-navigator{	
 	top:80px;
 	position: fixed;

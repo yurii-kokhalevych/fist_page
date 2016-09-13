@@ -148,10 +148,4 @@ body {
   flex: 0 0 auto;
   height: 20px;
 }
-@media (min-width:320px)and (max-width:600px) { 
-.page-navigator li, .login input[type="text"],.article button,
-.login input[type="password"],.login input[type="search"]	{
-	float: none; 
-	width: auto;
-	padding: 10px;
-	}}
+
