@@ -1,5 +1,5 @@
 body{height: 100%; width: 100%;
-	background-image: url(..img/heder_1.jpg);
+	background-image: url(../img/heder_1.jpg);
 }
 .modalDialog {
     position: fixed;
