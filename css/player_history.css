@@ -29,7 +29,7 @@
 	padding:10px
 }
 .page-navigator{	
-	top:100px;
+	top:98px;
 	position: fixed;
 	width: 100%;
 }
@@ -147,6 +147,7 @@ ul { list-style: none; }
 .nav-mobile style { display: block; }
 
 @media only screen and (min-device-width: 769px) and (max-width: 3000px){
+
 .w3-left:hover, .w3-right:focus {
     color: #fff;
     text-decoration: none;
